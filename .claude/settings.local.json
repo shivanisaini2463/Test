@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "mcp__Claude_in_Chrome__computer",
+      "mcp__45331807-4616-43b3-b6c7-35cedfb65ce8__get_design_context",
+      "mcp__45331807-4616-43b3-b6c7-35cedfb65ce8__get_screenshot",
+      "mcp__45331807-4616-43b3-b6c7-35cedfb65ce8__whoami",
+      "mcp__45331807-4616-43b3-b6c7-35cedfb65ce8__create_new_file",
+      "mcp__45331807-4616-43b3-b6c7-35cedfb65ce8__use_figma"
+    ]
+  }
+}
