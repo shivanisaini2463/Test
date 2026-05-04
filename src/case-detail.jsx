@@ -50,6 +50,7 @@ function Cover({ cover }) {
 }
 
 function ContextSection({ ctx }) {
+  if (!ctx) return null;
   return (
     <section className="cd-section">
       <div className="container cd-grid">

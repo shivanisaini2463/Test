@@ -148,13 +148,13 @@
     "year": "2024–25",
     "sector": "AI · Creative Growth Platform · D2C",
     "title": ["Creatives that", "convert at scale."],
-    "brief": "Led end-to-end product design for Phot AI — a Creative-Led Growth Platform for D2C and e-commerce brands. Designed three flagship modules — AngleLab (signal-based ad creative generation), ListingLab (AI marketplace listing optimisation), and VideoLab (performance video production) — plus a 5-agent AI architecture, reducing creative cycles from 2 weeks to same-day and delivering +47% average ROAS uplift.",
+    "brief": "Led end-to-end product design for Phot AI — a generative AI-powered creative growth platform built for D2C and e-commerce brands. Crafted three core modules: AngleLab for signal-driven ad ideation, ListingLab for AI-powered marketplace optimization, and VideoLab for high-performing video creatives, supported by a 5-agent AI architecture. The platform empowers users to ideate, iterate, and generate high-quality content seamlessly — with over 21+ million images created to date. By streamlining the creative workflow.",
     "facts": [
-      { "k": "My Role",  "v": "Lead Product Designer" },
-      { "k": "Team",     "v": "3 designers · 12 engineers · 2 PMs" },
+      { "k": "My Role",  "v": "Senior UI UX Designer" },
+      { "k": "Team",     "v": "3 designers · 12 engineers · 1 PM" },
       { "k": "Timeline", "v": "Mar 2024 — Feb 2025" },
       { "k": "Platforms","v": "Web App · SaaS + Managed Service" },
-      { "k": "Tools",    "v": "Figma, FullStory, Hotjar, Maze, Amplitude" },
+      { "k": "Tools",    "v": "Figma, MixPanel, Hotjar, Maze" },
       { "k": "Impact",   "v": "21M+ images · +47% avg ROAS uplift" }
     ],
     "cover": {
@@ -163,12 +163,7 @@
       "label": "Phot AI — Creative-Led Growth Platform",
       "img": "assets/photai-preview.jpg"
     },
-    "context": {
-      "kicker": "01 — Context",
-      "h": "Ad creatives were decaying 47% in CTR within 2 weeks — and every brand was guessing why.",
-      "b": "D2C and e-commerce brands face a brutal creative reality: ad creatives decay fast (-47% CTR after 2 weeks on average), 87% of tested angles fail, and the average brand spends 5+ hours manually producing a single marketplace listing. Agencies promise solutions but run on intuition, not signal. Phot AI was founded on a different thesis — creative decisions should be driven by data, not guesses. The product's job: build a system that turns product inputs into campaign-ready creatives, tested against real performance signals, at a speed no human team can match.",
-      "pills": ["D2C brands", "Amazon & Shopify sellers", "Performance marketers", "AI-native creative ops"]
-    },
+    "context": null,
     "research": {
       "kicker": "02 — Research",
       "h": "26 brands. The problem wasn't creative quality — it was creative intelligence.",
@@ -176,8 +171,7 @@
       "bullets": [
         { "k": "26 in-depth interviews", "v": "Founders, performance marketers, creative leads, e-com operators" },
         { "k": "10 shadowing sessions",  "v": "Tracked full creative cycle: brief → shoot → edit → publish → iterate" },
-        { "k": "14 tools audited",       "v": "Canva, Adobe Firefly, Midjourney, DALL·E, Pencil, Smartly, Predis & more" },
-        { "k": "180+ survey responses",  "v": "Creative production time, cost, angle testing frequency, ROAS trends" }
+        { "k": "14 tools audited",       "v": "Canva, Adobe Firefly, Midjourney, DALL·E, Pencil, Smartly, Predis & more" }
       ],
       "insights": [
         "87% of creative angles brands test fail — not because the product is bad, but because angle selection is based on gut feel, not competitive signal data.",
@@ -186,32 +180,7 @@
         "Listing quality on Amazon/Shopify was bleeding conversion silently: 1:1 listings-to-format ratio, unoptimised titles, and A+ content taking 5+ hours per SKU to produce manually."
       ]
     },
-    "personas": [
-      {
-        "initial": "S",
-        "name": "Sneha Kapoor",
-        "role": "Performance Marketing Manager, D2C Beauty Brand",
-        "quote": "My ads are performing for 12 days, then dying. I don't know which new angle to test. I'm just guessing and the budget keeps burning.",
-        "goals": ["Find winning ad angles before the current ones die", "Generate 40+ variants from one product image fast", "Know which creative is working before scaling spend"],
-        "pains": ["-47% CTR after 2 weeks — constant creative refresh needed", "No signal on which angle to test next", "Agency cycles take 2 weeks — by then the angle is already stale"]
-      },
-      {
-        "initial": "R",
-        "name": "Rohit Taneja",
-        "role": "E-commerce Manager, D2C Home & Living Brand on Amazon",
-        "quote": "I have 200 SKUs. Each listing needs titles, bullets, A+ content, and 8 photos. That's months of work. We can't keep up.",
-        "goals": ["Produce optimised Amazon listings at scale", "Improve search visibility and add-to-cart rates", "Generate A+ content without a copywriter or designer"],
-        "pains": ["Manual listing production: 5+ hours per SKU", "PDP traffic landing but not converting (2.3% avg CVR)", "No system — every listing is a one-off effort"]
-      },
-      {
-        "initial": "M",
-        "name": "Meera Joshi",
-        "role": "Founder, D2C Skincare Brand (bootstrapped)",
-        "quote": "I can't afford an agency. But I need content that performs like I have one. And I need to know what's working, not just what looks good.",
-        "goals": ["Produce professional, tested ad creatives without a team", "Iterate on winning angles weekly without production delays", "Connect creative decisions to actual revenue signal"],
-        "pains": ["Canva doesn't understand performance", "Midjourney is unpredictable for product shots", "No brand memory — re-brief every session, no consistency"]
-      }
-    ],
+    "personas": [],
     "problem": {
       "kicker": "03 — Problem Framing",
       "h": "Reframed from 'AI photo editor' to 'creative intelligence engine that closes the signal loop'.",
