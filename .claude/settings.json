@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import json; json.load\\(open\\('src/case-data.json'\\)\\); print\\('valid json'\\)\")",
+      "Bash(lsof -ti:4173 -sTCP:LISTEN)",
+      "Bash(xargs -r kill)",
+      "Bash(npx serve *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:4173/case-bcl.html)",
+      "Bash(npm ls *)",
+      "Bash(python3 -c \"import playwright; print\\('py playwright available'\\)\")"
+    ]
+  }
+}

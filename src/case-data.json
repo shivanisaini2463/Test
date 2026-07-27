@@ -2,164 +2,292 @@
   "redrob-llm": {
     "num": "01",
     "client": "Redrob AI",
-    "year": "2025–26",
-    "sector": "B2B & B2C · AI Intelligence Platform",
-    "title": ["India's AI.", "Your Edge."],
-    "brief": "Led end-to-end UX design of Redrob AI — India's first conversational intelligence workspace. Designed a natural-language search interface, a modular AI App Store with 14 apps, a Contacts CRM, AI agent-powered Chat Rooms, and a Projects layer — all built on Redrob 2B, the company's proprietary LLM serving India's most ambitious recruiters, sales professionals, and job seekers.",
+    "year": "2025 – Present",
+    "sector": "B2B SaaS · AI Recruiting · LLM",
+    "title": [
+      "From Search Tool to",
+      "AI Talent Intelligence Platform"
+    ],
+    "brief": "Transforming a Recruiter Search Platform into an AI-Powered Professional Workspace.",
     "facts": [
-      { "k": "My Role",   "v": "Lead Product Designer" },
-      { "k": "Team",      "v": "3 designers · 14 engineers · 2 PMs" },
-      { "k": "Timeline",  "v": "Aug 2025 — Apr 2026" },
-      { "k": "Platforms", "v": "Web App (SaaS) · Android" },
-      { "k": "Tools",     "v": "Figma, Maze, Notion, Mixpanel, Hotjar" },
-      { "k": "Impact",    "v": "700M+ profiles · 14 AI apps launched" }
+      {
+        "k": "My Role",
+        "v": "Senior Product Designer"
+      },
+      {
+        "k": "Duration",
+        "v": "2025 – Present"
+      },
+      {
+        "k": "Team",
+        "v": "1 PM · 2 Engineers · 1 AI Team · 2 QA"
+      },
+      {
+        "k": "Domain",
+        "v": "B2B SaaS · AI Recruiting · LLM"
+      }
     ],
     "cover": {
-      "c1": "#3a1e6b",
-      "c2": "#09060f",
-      "label": "Redrob AI — India's AI. Your Edge.",
+      "c1": "#3a3a3a",
+      "c2": "#0a0a0a",
+      "label": "Redrob AI — From Search Tool to Talent Intelligence Platform",
       "img": "assets/redrob-preview.jpg"
     },
-    "context": {
-      "kicker": "01 — Context",
-      "h": "India had the world's 3rd-largest talent pool with no intelligence platform built for it.",
-      "b": "India's startup ecosystem crossed 100,000+ registered companies, with hundreds of thousands of active recruiters and B2B sales teams. Yet every intelligence tool — LinkedIn, Apollo, Crunchbase — was built for Silicon Valley workflows, priced in dollars, and largely blind to India-specific company and professional data. Redrob's founding thesis: build a conversational AI workspace that treats India as the primary market, not an afterthought, and serves every user — from senior recruiter to fresh graduate — with one natural language interface powered by a proprietary LLM (Redrob 2B).",
-      "pills": ["700M+ Indian professionals", "B2B Sales & Recruiting", "India-first LLM (Redrob 2B)", "Multi-persona AI platform"]
-    },
-    "research": {
-      "kicker": "02 — Research",
-      "h": "56 sessions across 4 user types. The tool-switching tax was universal — but the need was deeply personal.",
-      "b": "Over an 8-week discovery sprint, I ran 56 research sessions spanning 4 distinct user types: recruiters, B2B sales reps (SDRs), job seekers, and founder-researchers. I used in-depth interviews, contextual inquiry sessions observing live workflows, competitive teardowns of 12 tools, and diary studies. The defining insight wasn't a feature gap — it was a positioning gap. India's most ambitious professionals had no platform designed with their context, their companies, and their cities in mind.",
-      "bullets": [
-        { "k": "24 in-depth interviews",     "v": "Recruiters, SDRs, job seekers, founders across 8 Indian cities" },
-        { "k": "16 contextual inquiry sessions", "v": "Observed live search and outreach workflows across all 4 user types" },
-        { "k": "12 tools audited",           "v": "LinkedIn, Apollo, Naukri, Crunchbase, Lusha, Hunter, Glassdoor & more" },
-        { "k": "200+ survey responses",      "v": "Tool satisfaction, switching frequency, and unmet needs across India" }
+    "overview": "Redrob began as a single-purpose people-search tool and evolved into a connected, AI-native prospecting platform — spanning People Search, Company Search, a self-serve Developer Hub, and Redrob AI, a fully conversational LLM interface.",
+    "problemStatement": {
+      "intro": "The product had a single functioning feature — People Search — designed to help recruiters discover and enrich candidate profiles. This created four interconnected challenges:",
+      "challenges": [
+        {
+          "k": "Usability challenge",
+          "v": "Recruiters relied heavily on complex filter combinations to find relevant candidates, making the experience time-consuming and cognitively demanding. It required excessive manual effort before users could achieve meaningful results."
+        },
+        {
+          "k": "Product evolution challenge",
+          "v": "The platform was built around People Search, while customer needs had expanded beyond candidate discovery. Recruiters increasingly wanted to explore target companies and integrate Redrob into their existing workflows through APIs."
+        },
+        {
+          "k": "AI transformation challenge",
+          "v": "The recruitment industry was rapidly shifting toward AI-assisted experiences, where users expected to express hiring intent in natural language instead of manual filters."
+        }
       ],
-      "insights": [
-        "The average recruiter switched between 4.3 tools per candidate search — costing 7–11 minutes per lookup. Users weren't slow; their toolstack was broken.",
-        "Indian company and professional data was absent or inaccurate on global tools. 68% of users reported finding a contact record outdated in the past week.",
-        "Job seekers wanted intelligence, not listings — they wanted to know which companies were actually hiring, who to reach, and what to say to them.",
-        "Every user — from senior recruiter to fresh graduate — wanted to type a question in plain language and get a direct answer. Filter-heavy search forms felt like operating a machine, not having a conversation."
-      ]
+      "closing": "The challenge was to improve the core search experience, expand the product ecosystem with new capabilities, and increase feature adoption through better discoverability."
     },
-    "personas": [
+    "businessGoals": "The objective was to evolve Redrob from a feature-centric recruiter search tool into a scalable, AI-powered Talent Intelligence platform — and to strategically reposition Redrob for its next phase of growth.",
+    "myRoleDetail": [
+      "Owned the UX strategy behind the platform evolution.",
+      "Started with auditing the existing product, running feedback loops with users and internal sales teams.",
+      "Translated findings into measurable improvements at every stage.",
+      "Defined the vision for how the product will scale with the future roadmap."
+    ],
+    "targetAudience": [
+      "Staffing agencies",
+      "Founders & small-team operators doing their own outbound prospecting",
+      "Recruiters sourcing candidate pools by role, skill and company"
+    ],
+    "phases": [
       {
-        "initial": "P",
-        "name": "Priya Sharma",
-        "role": "Senior Recruiter, Bangalore Tech Startup",
-        "quote": "I know exactly who I'm looking for. Why do I have to explain it to five different tools before I can actually find them?",
-        "goals": ["Find qualified Indian talent by natural language description", "Rank and shortlist without building a manual spreadsheet", "Track all sourcing and outreach from a single place"],
-        "pains": ["LinkedIn searches India poorly — wrong cities, wrong company sizes", "Contact data expires fast — phone numbers wrong 40% of the time", "No way to compare 3 candidates side-by-side without leaving the tool"]
+        "name": "Optimizing the Core Experience of People Search",
+        "triggers": [
+          "Limited filters reduced search precision.",
+          "The results interface lacked clear hierarchy.",
+          "There was no quick way to capture user feedback.",
+          "High-value business data was not monetized effectively."
+        ],
+        "research": [
+          "Conducted a UX audit, treating myself as a user.",
+          "Collected and analysed feedback from recruiters, sales teams, and internal stakeholders.",
+          "Ran a competitive analysis of Juicebox, Apollo, Clay, and Lusha."
+        ],
+        "decisions": [
+          "Expanded search filters — decision makers, growth intent signals, separated funding and revenue signals.",
+          "Improved the results interface by clubbing action items and simplifying the UI.",
+          "Introduced feedback mechanisms — quick feedback popups and ratings.",
+          "Introduced premium filters — moved high-value filters like revenue and advanced decision-maker targeting into paid plans."
+        ],
+        "outcomes": [
+          {
+            "v": "25–35%",
+            "k": "Faster time to first relevant profile"
+          },
+          {
+            "v": "10–15%",
+            "k": "Feedback response rate"
+          },
+          {
+            "v": "Higher",
+            "k": "Engagement with advanced filters"
+          }
+        ]
       },
       {
-        "initial": "A",
-        "name": "Arjun Mehta",
-        "role": "Sales Development Representative, B2B SaaS Company",
-        "quote": "My entire job is finding the right person at the right company and saying the right thing. I need all three to happen in under 30 seconds.",
-        "goals": ["Find decision-makers at target companies by role and seniority", "Get verified email and phone with company context attached", "Build targeted outreach lists with one search, not five tools"],
-        "pains": ["Apollo has poor India coverage — most leads are outdated or wrong", "Company context and contact are always on different screens", "Exporting data is a CSV nightmare that breaks every week"]
+        "name": "Introducing Company Search",
+        "triggers": [
+          "Users were frequently switching between Redrob, LinkedIn, company websites, and Google to gather organization-level insights before identifying the right people to contact.",
+          "This workflow increased research time and caused users to lose context while moving between multiple platforms."
+        ],
+        "research": [
+          "Benchmarked comparable workflows of Apollo and Lusha to understand established mental models.",
+          "Observed that after finding a company, the next immediate task was identifying decision-makers and relevant employees.",
+          "Designed the underlying People ↔ Company relationship model in collaboration with engineering, so the two entities felt like one connected graph rather than two separate tools."
+        ],
+        "decisions": [
+          "Shipped a standalone Company Search with advanced filters (industry, headcount, funding, tech stack).",
+          "Built a Company Detail Profile page summarising key account data at a glance — size, HQ location, founded year, industry.",
+          "Added a bi-directional pivot — jump from a company to its people, and from a person's card back to their company — inside a single connected flow."
+        ],
+        "outcomes": [
+          {
+            "v": "30%",
+            "k": "Increase in cross-feature adoption between Company Search and People Search"
+          },
+          {
+            "v": "25–35%",
+            "k": "Faster identification of relevant decision-makers"
+          },
+          {
+            "v": "Higher",
+            "k": "Retention by enabling end-to-end research within a single platform"
+          }
+        ]
       },
       {
-        "initial": "K",
-        "name": "Kavya Rao",
-        "role": "Final Year Engineer & Actively Searching",
-        "quote": "I don't want a list of 500 jobs. I want to know which companies are actually hiring, who the hiring manager is, and how to reach them.",
-        "goals": ["Discover companies in my domain actively hiring right now", "Get AI guidance to prepare for interviews at specific companies", "Build a structured job search plan instead of applying blindly"],
-        "pains": ["Job portals are flooded with stale, low-quality listings", "No visibility into real hiring velocity at a specific company", "No guidance on how to approach, who to contact, or what to say"]
+        "name": "Developer Hub — API Keys",
+        "triggers": [
+          "Enterprise and agency prospects were asking for programmatic access.",
+          "There was no dedicated experience for developers to generate and manage API keys, monitor usage and credits, track enrichment requests, or access documentation."
+        ],
+        "research": [
+          "Interviewed technical stakeholders, in-team developers, and enterprise prospects to understand integration expectations.",
+          "Ran a competitive analysis of developer platforms such as FullEnrich and Apollo API to understand what's important and how to showcase it.",
+          "Mapped the core flow: Generate API Key → Read Documentation → Integrate API → Monitor Usage → Track API Logs."
+        ],
+        "decisions": [
+          "Designed a self-service Developer Hub with API key generation and rotation.",
+          "Built a usage dashboard surfacing credits consumed, rate limits, and call history in real time.",
+          "Added API logs & status tracking — endpoint, request method, timestamp, contact info, enrichment status, webhook status, error messages."
+        ],
+        "outcomes": [
+          {
+            "v": "45%",
+            "k": "Reduction in API onboarding time through self-service docs & guided setup"
+          },
+          {
+            "v": "+64%",
+            "k": "Self-serve API activations"
+          },
+          {
+            "v": "19+",
+            "k": "Enterprise deals unblocked"
+          }
+        ]
+      },
+      {
+        "name": "Redrob Chrome Extension",
+        "triggers": [
+          "Recruiters spent significant time sourcing candidates on LinkedIn before switching to Redrob to enrich contact details and manage prospects.",
+          "This constant context switching fragmented the workflow: copy LinkedIn profile → open Redrob → search the same profile → enrich contact details → add to list."
+        ],
+        "research": [
+          "Learned that users weren't searching directly inside Redrob — LinkedIn was their primary discovery platform, while Redrob was used for enrichment and contact discovery.",
+          "Mapped the ideal workflow: Browse LinkedIn → View Redrob Insights → Add Prospect → Auto Enrich → Sync to Redrob."
+        ],
+        "decisions": [
+          "Designed a lightweight side panel that appears directly on LinkedIn profile and company pages, so users can access Redrob insights without leaving their workflow.",
+          "Enabled one-click capture of any LinkedIn profile — the extension auto-fetches profile data and prepares it for enrichment instead of manual copy-paste."
+        ],
+        "outcomes": [
+          {
+            "v": "50%",
+            "k": "Reduction in profile capture time"
+          },
+          {
+            "v": "35%",
+            "k": "Increase in prospects added to Redrob lists"
+          }
+        ]
+      },
+      {
+        "name": "Reimagining Search with AI Query & Prompt Library",
+        "triggers": [
+          "The rapid adoption of conversational AI had fundamentally changed user expectations.",
+          "Users no longer wanted to build searches manually — they wanted to simply describe what they were looking for."
+        ],
+        "research": [
+          "Ran comparative usability tests — filter-first vs. prompt-first flows — with think-aloud protocols across new and existing users.",
+          "Prototyped a natural-language input that parses free text into structured, still-editable filters, preserving user trust and control.",
+          "Designed a hybrid experience supporting both interaction styles instead of replacing filters completely."
+        ],
+        "decisions": [
+          "Made the prompt bar the primary entry point on People and Company Search, with manual filters kept as a visible, editable fallback rather than removed.",
+          "Parsed queries into transparent filter chips so users could see and correct exactly what the system understood.",
+          "Introduced a Prompt Library with categorised, role-specific examples (recruiter, SDR, founder, growth) users could insert and edit directly."
+        ],
+        "outcomes": [
+          {
+            "v": "35%",
+            "k": "Increase in successful first-time searches"
+          },
+          {
+            "v": "58%",
+            "k": "Sessions starting via prompt"
+          },
+          {
+            "v": "25%",
+            "k": "Reduction in manual filter interactions for new users"
+          }
+        ]
+      },
+      {
+        "name": "Redrob AI — A Fully Conversational, LLM-Based Platform",
+        "triggers": [
+          "The rapid adoption of LLMs such as ChatGPT, Claude, and Gemini had fundamentally changed user expectations.",
+          "Users expected AI to understand natural language, reason across multiple datasets, and provide answers instead of requiring manual navigation."
+        ],
+        "research": [
+          "Partnered cross-functionally with AI/ML and Product to define a conversational information architecture that could hold context across turns.",
+          "Designed how structured data (people/company cards, tables) renders legibly inside a chat-shaped interface — it could not become a wall of text."
+        ],
+        "decisions": [
+          "Built an MCP-based search architecture allowing users to enable different data sources before initiating a search.",
+          "Designed a conversational search experience — instead of manually selecting People Search or Company Search, users simply describe their objective, and the AI interprets intent, selects the appropriate sources, applies relevant filters behind the scenes, and returns structured results."
+        ],
+        "outcomes": [
+          {
+            "v": "40%",
+            "k": "Faster time to discover relevant people and companies"
+          },
+          {
+            "v": "Higher",
+            "k": "User engagement through conversational, context-aware interactions"
+          },
+          {
+            "v": "35%",
+            "k": "Increase in AI-assisted search adoption"
+          }
+        ]
       }
     ],
-    "problem": {
-      "kicker": "03 — Problem Framing",
-      "h": "Reframed from 'India's LinkedIn' to 'India's AI that gives you unfair knowledge'.",
-      "b": "The initial brief was to build a better LinkedIn for India. Research reframed it entirely. The real gap wasn't another profile directory — it was a conversational intelligence layer that unified people, company, and job data under one natural-language interface, trained on Indian professional context. This reframe changed everything: the primary interaction model shifted from filters and forms to conversation. The design challenge became — how do you make a complex data platform feel as simple as texting a colleague who knows everything?",
-      "statement": "How might we design a conversational AI workspace — with natural language as its primary interface — that gives India's most ambitious professionals instant, contextual access to people, company, and job intelligence, and makes them feel like the smartest person in any room?"
-    },
-    "journey": {
-      "kicker": "04 — User Journey",
-      "h": "From query to action in one flow — no tab switching, no manual enrichment.",
-      "b": "I mapped three parallel journeys for the recruiter, the SDR, and the job seeker. They shared the same core architecture — intent → search → enrich → act → collaborate — but diverged sharply in what 'acting' meant. This informed a key architectural decision: a unified search layer with user-type-aware result cards. Each user type sees the same interface but receives context optimised for their intent.",
-      "phases": [
-        { "name": "Intent",      "tasks": ["Open workspace", "Select mode chip: People / Company / Jobs", "Type natural language query"], "pain": "Early testing showed users didn't know what syntax worked — the LLM had to infer intent from ambiguous, casual phrasing" },
-        { "name": "Search",      "tasks": ["Redrob 2B processes query", "Searches 700M+ profiles / companies / listings", "Returns ranked, contextual results"], "pain": "Result relevance varied by query type — required significant LLM tuning cycles based on user feedback" },
-        { "name": "Enrich",      "tasks": ["View profile with role, company, location", "Unlock contact info (email, phone)", "Read company context alongside profile"], "pain": "Users wanted to preview result quality before spending contact unlock credits — no-preview model caused credit anxiety" },
-        { "name": "Act",         "tasks": ["Save to Contacts CRM", "Draft outreach via Gmail integration", "Attach to Project or export"], "pain": "Action felt disconnected — users left the platform to act on what they found, losing all context" },
-        { "name": "Collaborate", "tasks": ["Bring findings into Chat Room", "Ask AI agent (Finn, Pixel, Memo, Draft) for next step", "Build persistent Project with memory across sessions"], "pain": "No team-sharing model meant every recruiter and sales rep was working in isolation — findings couldn't compound" }
-      ]
-    },
-    "process": {
-      "kicker": "05 — Design Process",
-      "h": "14 sprints. 3 major pivots. One live platform — and a design system built to scale.",
-      "b": "The design process ran across 14 two-week sprints over 8 months in 4 phases. Phase 1 established the core conversational search interface and intent chip model. Phase 2 designed the AI App Store architecture. Phase 3 built Chat Rooms with named AI agents. Phase 4 shipped the Contacts CRM and Projects layer. Three major design pivots emerged from testing: the move from tab navigation to intent chips; the App Store model replacing a monolithic feature set; and named AI agents (Finn, Pixel, Memo, Draft) replacing a generic assistant interface. Each pivot was driven by user testing, not opinion.",
-      "artifacts": [
-        { "k": "Navigation Architecture",    "v": "6-icon sidebar with progressive disclosure — tested against top-nav and full-sidebar in 3 rounds" },
-        { "k": "Conversational Search + Intent Chips", "v": "Natural language input with People / Company / Jobs chips replacing all filter forms" },
-        { "k": "AI App Store",               "v": "Modular, activatable apps — 7 live at launch (People Search, Company Search, Job Search, Resume Ranker, Drive, Gmail, Calendar) + 7 on roadmap" },
-        { "k": "Chat Rooms & Named AI Agents", "v": "4 distinct agents with bounded scopes: Finn (finance), Pixel (UI/UX), Memo (meeting notes), Draft (content writing)" },
-        { "k": "Contacts CRM",               "v": "Auto-populated from every search session — Grade A contact filtering, phone unlock, LinkedIn sync" },
-        { "k": "Redrob Design System",        "v": "Dark-mode first, 80+ components, IBM Plex Serif brand typeface, full token architecture" }
-      ]
-    },
-    "solution": {
-      "kicker": "06 — Solution",
-      "h": "A conversational intelligence workspace where India's professionals know everything.",
-      "b": "The shipped product is a multi-surface AI workspace built on Redrob 2B, the company's own proprietary LLM. Natural language search with intent chips replaced filter-heavy forms. An AI App Store lets users activate only the modules they need — from People Search to Gmail to Calendar — keeping the experience uncluttered. Chat Rooms give teams a collaborative space with named AI agents as specialised members. The Contacts CRM auto-populates from every search interaction, creating a living professional network. Projects give persistent memory across sessions. Redrob GTM (700M+ profiles) and Redrob Signal (AI-powered IPL predictions, Android) extend the platform beyond the browser.",
-      "highlights": [
-        "Conversational search with intent chips — type in plain language, tag it as People / Company / Job. Redrob 2B infers context and returns direct, enriched answers — no filters, no forms.",
-        "AI App Store — 14 modular apps all powered by one LLM. Users activate only what they need: People Search, Company Search, Job Search, Resume Ranker (PRO), Drive, Gmail, Calendar, and 7 more on the roadmap including Interview Coach, Skill Tests, and VC-PE Scout.",
-        "Chat Rooms with named AI agents — Finn handles budget and finance queries, Pixel reviews design decisions, Memo summarises meeting threads and creates action items, Draft writes and improves any content. AI feels like a specialist colleague, not a generic chatbot.",
-        "Auto-populated Contacts CRM — every profile searched or unlocked flows automatically into a structured CRM with Grade A contact filtering, phone unlock credits, and LinkedIn badges.",
-        "Projects — persistent, contextual workspaces for ongoing tasks. Pre-built templates for Investing, Writing, Homework, and Travel reduce setup friction and make the LLM context-aware from the first session."
-      ]
-    },
-    "gallery": [
-      { "wide": true, "c1": "#3a1e6b", "c2": "#09060f", "deg": "45deg", "cap": "Home — conversational AI interface with Redrob 2B model selector", "img": "assets/redrob-preview.jpg" },
-      { "c1": "#2a1650", "c2": "#07040c", "deg": "90deg",  "cap": "AI App Store — 14 modular apps, one LLM powering all" },
-      { "c1": "#4a2a80", "c2": "#0c0812", "deg": "135deg", "cap": "People Search — 700M+ profiles via natural language query" },
-      { "c1": "#221240", "c2": "#070310", "deg": "60deg",  "cap": "Chat Rooms — named AI agents as specialised team members" },
-      { "c1": "#351a65", "c2": "#0a0518", "deg": "20deg",  "cap": "Contacts CRM — auto-populated, Grade A filter, phone unlock" },
-      { "wide": true, "c1": "#1e0f38", "c2": "#050209", "deg": "110deg", "cap": "Projects — persistent context with pre-built templates" }
-    ],
-    "outcomes": {
-      "kicker": "07 — Outcomes",
-      "h": "700M+ profiles. 14 apps at launch. India's first conversational intelligence platform, live.",
-      "metrics": [
-        { "v": "700M+", "k": "Professional profiles",  "sub": "Searchable via natural language query at launch" },
-        { "v": "14",    "k": "AI apps in the store",   "sub": "7 live at launch · 7 on the product roadmap" },
-        { "v": "71%",   "k": "Faster research time",   "sub": "vs. 4-tool baseline — measured in moderated user testing" },
-        { "v": "4",     "k": "AI agents deployed",     "sub": "Finn, Pixel, Memo, Draft — distinct scopes, real utility" }
-      ],
-      "quote": {
-        "q": "Redrob feels like someone finally built a professional tool for India — not a Western product with Indian data bolted on, but something built from the ground up for how we actually work.",
-        "a": "Early user, Sales Lead at a Bangalore B2B startup"
-      }
-    },
-    "reflection": {
-      "kicker": "08 — Reflection",
-      "h": "The most important design decision was what we chose not to show.",
-      "b": "The App Store model began as an engineering architecture decision — but became the most important UX decision on the entire product. By letting users activate only the apps they needed, we eliminated the onboarding paralysis that comes with capability-rich platforms, and dramatically improved first-session task completion rates. I'd apply this progressive capability disclosure principle to every multi-feature platform I design going forward. The second major learning: AI agents need names, personalities, and narrow scopes. When Finn 'handles budget queries' and Pixel 'reviews design decisions,' users form clear mental models and use them confidently and repeatedly. A generic 'AI assistant' gets ignored. Specificity is the whole game."
-    },
     "next": "phot-ai"
   },
-
   "phot-ai": {
     "num": "02",
     "client": "Phot AI",
     "year": "2024–25",
     "sector": "AI · Creative Growth Platform · D2C",
-    "title": ["Creatives that", "convert at scale."],
+    "title": [
+      "Creatives that",
+      "convert at scale."
+    ],
     "brief": "Led end-to-end product design for Phot AI — a generative AI-powered creative growth platform built for D2C and e-commerce brands. Crafted three core modules: AngleLab for signal-driven ad ideation, ListingLab for AI-powered marketplace optimization, and VideoLab for high-performing video creatives, supported by a 5-agent AI architecture. The platform empowers users to ideate, iterate, and generate high-quality content seamlessly — with over 21+ million images created to date. By streamlining the creative workflow.",
     "facts": [
-      { "k": "My Role",  "v": "Senior UI UX Designer" },
-      { "k": "Team",     "v": "3 designers · 12 engineers · 1 PM" },
-      { "k": "Timeline", "v": "Mar 2024 — Feb 2025" },
-      { "k": "Platforms","v": "Web App · SaaS + Managed Service" },
-      { "k": "Tools",    "v": "Figma, MixPanel, Hotjar, Maze" },
-      { "k": "Impact",   "v": "21M+ images · +47% avg ROAS uplift" }
+      {
+        "k": "My Role",
+        "v": "Senior UI UX Designer"
+      },
+      {
+        "k": "Team",
+        "v": "3 designers · 12 engineers · 1 PM"
+      },
+      {
+        "k": "Timeline",
+        "v": "Mar 2024 — Feb 2025"
+      },
+      {
+        "k": "Platforms",
+        "v": "Web App · SaaS + Managed Service"
+      },
+      {
+        "k": "Tools",
+        "v": "Figma, MixPanel, Hotjar, Maze"
+      },
+      {
+        "k": "Impact",
+        "v": "21M+ images · +47% avg ROAS uplift"
+      }
     ],
     "cover": {
-      "c1": "#6b1e5a",
-      "c2": "#0f050d",
+      "c1": "#333333",
+      "c2": "#0a0a0a",
       "label": "Phot AI — Creative-Led Growth Platform",
       "img": "assets/photai-preview.jpg"
     },
@@ -169,9 +297,18 @@
       "h": "26 brands. The problem wasn't creative quality — it was creative intelligence.",
       "b": "Over a 6-week discovery sprint, I ran 26 in-depth interviews across D2C founders, performance marketing managers, creative directors, and e-commerce operators; 10 workflow shadowing sessions tracking live creative production cycles end-to-end; and a competitive teardown of 14 tools. The dominant finding: brands weren't producing bad creatives. They were producing creatives without knowing which angles would actually work — and by the time they had signal, the ads were already fatigued.",
       "bullets": [
-        { "k": "26 in-depth interviews", "v": "Founders, performance marketers, creative leads, e-com operators" },
-        { "k": "10 shadowing sessions",  "v": "Tracked full creative cycle: brief → shoot → edit → publish → iterate" },
-        { "k": "14 tools audited",       "v": "Canva, Adobe Firefly, Midjourney, DALL·E, Pencil, Smartly, Predis & more" }
+        {
+          "k": "26 in-depth interviews",
+          "v": "Founders, performance marketers, creative leads, e-com operators"
+        },
+        {
+          "k": "10 shadowing sessions",
+          "v": "Tracked full creative cycle: brief → shoot → edit → publish → iterate"
+        },
+        {
+          "k": "14 tools audited",
+          "v": "Canva, Adobe Firefly, Midjourney, DALL·E, Pencil, Smartly, Predis & more"
+        }
       ],
       "insights": [
         "87% of creative angles brands test fail — not because the product is bad, but because angle selection is based on gut feel, not competitive signal data.",
@@ -192,11 +329,50 @@
       "h": "From product URL to campaign-ready creatives, guided by signal — not guesswork.",
       "b": "I mapped the end-to-end journey for a performance marketer — from inputting a product to deploying validated creatives. The critical insight from journey mapping: the biggest drop-off wasn't in production, it was in the gap between creative output and performance feedback. Brands produced creatives, published them, waited 2 weeks, then started over. The platform needed to collapse that loop.",
       "phases": [
-        { "name": "Input",    "tasks": ["Upload product image or paste listing URL", "System auto-extracts attributes, audience context, category benchmarks"], "pain": "Manual briefing was inconsistent — different marketers described the same product in completely different ways" },
-        { "name": "Discover", "tasks": ["AI analyses top-performing creatives in your category", "Generates ranked angles mapped to your ICP", "Surfaces 12+ testable angles with predicted performance scores"], "pain": "Angle selection had always been subjective — marketers were uncomfortable trusting a ranked list they couldn't verify" },
-        { "name": "Generate", "tasks": ["AngleLab produces static, video, carousel, and story variants", "ListingLab creates Amazon/Shopify titles, bullets, A+ content", "VideoLab generates video ads with AI CMO and Creative Strategist agents"], "pain": "Output quality varied by product category — reflective surfaces and food photography were consistently harder" },
-        { "name": "Review",   "tasks": ["Team previews on platform mocks", "Brand consistency check against stored guidelines", "Approve, comment, request variants"], "pain": "No collaboration layer meant review happened over WhatsApp screenshots — context was always lost" },
-        { "name": "Deploy",   "tasks": ["Publish to Meta, Google, Amazon", "Track performance signals per angle", "System flags fatigue and surfaces next angle to test"], "pain": "Post-publish performance data never fed back into the creative process — every new brief started from zero" }
+        {
+          "name": "Input",
+          "tasks": [
+            "Upload product image or paste listing URL",
+            "System auto-extracts attributes, audience context, category benchmarks"
+          ],
+          "pain": "Manual briefing was inconsistent — different marketers described the same product in completely different ways"
+        },
+        {
+          "name": "Discover",
+          "tasks": [
+            "AI analyses top-performing creatives in your category",
+            "Generates ranked angles mapped to your ICP",
+            "Surfaces 12+ testable angles with predicted performance scores"
+          ],
+          "pain": "Angle selection had always been subjective — marketers were uncomfortable trusting a ranked list they couldn't verify"
+        },
+        {
+          "name": "Generate",
+          "tasks": [
+            "AngleLab produces static, video, carousel, and story variants",
+            "ListingLab creates Amazon/Shopify titles, bullets, A+ content",
+            "VideoLab generates video ads with AI CMO and Creative Strategist agents"
+          ],
+          "pain": "Output quality varied by product category — reflective surfaces and food photography were consistently harder"
+        },
+        {
+          "name": "Review",
+          "tasks": [
+            "Team previews on platform mocks",
+            "Brand consistency check against stored guidelines",
+            "Approve, comment, request variants"
+          ],
+          "pain": "No collaboration layer meant review happened over WhatsApp screenshots — context was always lost"
+        },
+        {
+          "name": "Deploy",
+          "tasks": [
+            "Publish to Meta, Google, Amazon",
+            "Track performance signals per angle",
+            "System flags fatigue and surfaces next angle to test"
+          ],
+          "pain": "Post-publish performance data never fed back into the creative process — every new brief started from zero"
+        }
       ]
     },
     "process": {
@@ -204,12 +380,30 @@
       "h": "5 sprints. Tested with live brand assets and real campaign data — not stock photos.",
       "b": "I ran 5 two-week design sprints, each producing a testable prototype. A non-negotiable rule: every usability test used participants' actual product images and real campaign data, not generic photos. This immediately surfaced the edge cases that matter — complex backgrounds, multi-product shots, reflective packaging, lifestyle images. Five rounds, 40 participants, 220 tasks logged. Two critical pivots emerged: the Angle Discovery interface required a transparent score explanation to build trust, and the listing editor needed a side-by-side 'before/after' view to make AI edits defensible to clients.",
       "artifacts": [
-        { "k": "IA & Module Architecture",  "v": "AngleLab / ListingLab / VideoLab — 3 distinct modules, 1 unified system" },
-        { "k": "Angle Discovery Interface", "v": "Ranked angles with signal source explanations — built for non-analyst trust" },
-        { "k": "AI Agent Workflow UI",      "v": "5 agents: AI CMO, Creative Strategist, VideoLab, Copywriting, Human Review" },
-        { "k": "Listing Editor",            "v": "Side-by-side before/after with SEO score, readability grade, CVR prediction" },
-        { "k": "Creative Collaboration",    "v": "In-platform review with threaded comments, approval states, version history" },
-        { "k": "Design System",             "v": "60+ components, dark + light modes, optimised for data-dense dashboards" }
+        {
+          "k": "IA & Module Architecture",
+          "v": "AngleLab / ListingLab / VideoLab — 3 distinct modules, 1 unified system"
+        },
+        {
+          "k": "Angle Discovery Interface",
+          "v": "Ranked angles with signal source explanations — built for non-analyst trust"
+        },
+        {
+          "k": "AI Agent Workflow UI",
+          "v": "5 agents: AI CMO, Creative Strategist, VideoLab, Copywriting, Human Review"
+        },
+        {
+          "k": "Listing Editor",
+          "v": "Side-by-side before/after with SEO score, readability grade, CVR prediction"
+        },
+        {
+          "k": "Creative Collaboration",
+          "v": "In-platform review with threaded comments, approval states, version history"
+        },
+        {
+          "k": "Design System",
+          "v": "60+ components, dark + light modes, optimised for data-dense dashboards"
+        }
       ]
     },
     "solution": {
@@ -225,21 +419,70 @@
       ]
     },
     "gallery": [
-      { "wide": true, "c1": "#6b1e5a", "c2": "#0f050d", "deg": "45deg", "cap": "AngleLab — signal-based angle discovery and creative generation", "img": "assets/photai-preview.jpg" },
-      { "c1": "#4a1540", "c2": "#0d050e", "deg": "90deg",  "cap": "Angle ranked view — ICP-mapped with signal source transparency" },
-      { "c1": "#7a2265", "c2": "#120510", "deg": "120deg", "cap": "ListingLab — AI Amazon listing: title, bullets, A+ in minutes" },
-      { "c1": "#551848", "c2": "#0e040c", "deg": "60deg",  "cap": "VideoLab — 5-agent AI pipeline with human QA layer" },
-      { "c1": "#3d1038", "c2": "#0a030d", "deg": "150deg", "cap": "Team collaboration — review, comment, approve in-platform" },
-      { "wide": true, "c1": "#2a0b28", "c2": "#060208", "deg": "30deg", "cap": "Signal loop — performance data feeds back into next angle cycle" }
+      {
+        "wide": true,
+        "c1": "#3a3a3a",
+        "c2": "#0a0a0a",
+        "deg": "45deg",
+        "cap": "AngleLab — signal-based angle discovery and creative generation",
+        "img": "assets/photai-preview.jpg"
+      },
+      {
+        "c1": "#333333",
+        "c2": "#0a0a0a",
+        "deg": "90deg",
+        "cap": "Angle ranked view — ICP-mapped with signal source transparency"
+      },
+      {
+        "c1": "#404040",
+        "c2": "#0d0d0d",
+        "deg": "120deg",
+        "cap": "ListingLab — AI Amazon listing: title, bullets, A+ in minutes"
+      },
+      {
+        "c1": "#383838",
+        "c2": "#0a0a0a",
+        "deg": "60deg",
+        "cap": "VideoLab — 5-agent AI pipeline with human QA layer"
+      },
+      {
+        "c1": "#2e2e2e",
+        "c2": "#080808",
+        "deg": "150deg",
+        "cap": "Team collaboration — review, comment, approve in-platform"
+      },
+      {
+        "wide": true,
+        "c1": "#242424",
+        "c2": "#050505",
+        "deg": "30deg",
+        "cap": "Signal loop — performance data feeds back into next angle cycle"
+      }
     ],
     "outcomes": {
       "kicker": "07 — Outcomes",
       "h": "+47% avg ROAS. 21M+ images. 2-week cycles collapsed to same-day.",
       "metrics": [
-        { "v": "+47%",  "k": "Average ROAS uplift",       "sub": "Across D2C brand accounts using AngleLab" },
-        { "v": "21M+",  "k": "Images generated",          "sub": "Across all customers since platform launch" },
-        { "v": "14–28", "k": "Days to signal",            "sub": "From campaign launch to validated winning angle" },
-        { "v": "5.72%", "k": "ROAS boost (Da URBAN)",     "sub": "Faster testing + better creatives, verified case study" }
+        {
+          "v": "+47%",
+          "k": "Average ROAS uplift",
+          "sub": "Across D2C brand accounts using AngleLab"
+        },
+        {
+          "v": "21M+",
+          "k": "Images generated",
+          "sub": "Across all customers since platform launch"
+        },
+        {
+          "v": "14–28",
+          "k": "Days to signal",
+          "sub": "From campaign launch to validated winning angle"
+        },
+        {
+          "v": "5.72%",
+          "k": "ROAS boost (Da URBAN)",
+          "sub": "Faster testing + better creatives, verified case study"
+        }
       ],
       "quote": {
         "q": "We went from 2-week creative cycles to same-day iteration. Our design workflow is dramatically faster and more efficient.",
@@ -253,311 +496,271 @@
     },
     "next": "bcl"
   },
-
   "bcl": {
     "num": "03",
-    "client": "Big Celebrity League",
-    "year": "2026",
-    "sector": "Sports · Entertainment · Fan Engagement",
-    "title": ["Cricket meets", "celebrity culture."],
-    "brief": "Designed the complete digital experience for India's first celebrity cricket league — a live platform serving 6 celebrity-owned teams, 90+ real-time statistics, dynamic leaderboards, fan prediction games, and an identity system for each team. The core challenge: one app serving hardcore cricket statisticians and casual celebrity fans simultaneously without alienating either.",
+    "client": "Big Cricket League",
+    "year": "2025",
+    "sector": "Games & Sports · T20 Cricket Tournament",
+    "title": [
+      "Designing the Official Digital",
+      "Ecosystem for a New Cricket League"
+    ],
+    "brief": "Designing an end-to-end mobile ecosystem for a new professional T20 cricket tournament — from live scores and fan communities to a paid Fan Ownership commerce layer.",
     "facts": [
-      { "k": "My Role",  "v": "Lead Product Designer (0→1)" },
-      { "k": "Team",     "v": "2 designers · 10 engineers · 1 PM" },
-      { "k": "Timeline", "v": "Jan 2026 — Jun 2026" },
-      { "k": "Platforms","v": "Mobile Web · Android · iOS" },
-      { "k": "Tools",    "v": "Figma, Maze, UserTesting, Amplitude" },
-      { "k": "Impact",   "v": "6 teams · 90+ live stats · 62% ops saved" }
+      {
+        "k": "My Role",
+        "v": "Product Designer"
+      },
+      {
+        "k": "Duration",
+        "v": "2025"
+      },
+      {
+        "k": "Team",
+        "v": "1 Product Manager · 2 Engineers"
+      },
+      {
+        "k": "Domain",
+        "v": "Games & Sports"
+      },
+      {
+        "k": "Platform",
+        "v": "Android & iOS"
+      }
     ],
     "cover": {
-      "c1": "#1a5c2e",
-      "c2": "#050f08",
-      "label": "Big Celebrity League — Where Cricket Meets Celebrity Culture",
+      "c1": "#404040",
+      "c2": "#0d0d0d",
+      "label": "Big Cricket League — Designing the Official Digital Ecosystem",
       "img": "assets/bcl-preview.jpg"
     },
-    "context": {
-      "kicker": "01 — Context",
-      "h": "India has 600M+ cricket fans and an equally intense celebrity culture. BCL was the first league to merge both.",
-      "b": "The Big Celebrity League is India's first-of-its-kind format: 6 cricket teams owned and represented by Bollywood actors, musicians, and social media stars, competing in a live structured tournament. The product challenge was unprecedented — designing a live cricket experience that served two audiences with almost opposite consumption patterns: hardcore cricket fans who demand ball-by-ball data density, and celebrity fans who follow for moments, drama, and their favourite star's face. Most platforms choose one. BCL had to serve both.",
-      "pills": ["600M+ cricket fans in India", "6 celebrity-owned teams", "Dual audience: stats + celebrity", "Mobile-first live experience"]
-    },
-    "research": {
-      "kicker": "02 — Research",
-      "h": "38 interviews. Two audiences with opposite mental models of what 'following cricket' means.",
-      "b": "I ran a 5-week research sprint: 38 in-depth interviews across 3 audience types (hardcore cricket fans, celebrity followers, and casual sports viewers), 6 live diary studies during a BCL pilot match tracking real-time in-app behaviour and emotional states, competitive analysis of 10 sports and entertainment apps, and a card-sorting exercise with 45 participants on stat priority and content preference.",
-      "bullets": [
-        { "k": "38 in-depth interviews",  "v": "Hardcore cricket fans, celebrity followers, casual viewers across 6 cities" },
-        { "k": "6 live diary studies",    "v": "Real-time emotional and behavioural tracking during BCL pilot match" },
-        { "k": "10 apps audited",         "v": "Cricbuzz, Dream11, Hotstar, Fancam, NBA, IPL app, Fancode & more" },
-        { "k": "45 card sorts",           "v": "Stat priority and content preference mapping with both audience types" }
-      ],
-      "insights": [
-        "Cricket fans treat stats as respect — omitting wagon wheels, economy rates, or partnership data signals that the app 'doesn't take cricket seriously.' Data density is emotional, not just informational.",
-        "Celebrity fans don't follow the sport — they follow the person. They want close-up moments, reactions, personality, and something shareable to Instagram within 10 seconds of it happening.",
-        "Score update latency is a trust signal: if scores don't update within 30 seconds, both audiences assume the app is broken and switch. Perceived real-time is non-negotiable.",
-        "Prediction and participation mechanics drove significantly longer session times for casual fans — they stayed not to watch, but to compete and be right."
-      ]
-    },
-    "personas": [
+    "sections": [
       {
-        "initial": "R",
-        "name": "Rahul Verma",
-        "role": "Hardcore Cricket Fan, 28, Delhi NCR",
-        "quote": "I need ball-by-ball, run rate, wagon wheel, partnership stats. If your app doesn't have all of that, I'll keep Cricbuzz open in the other tab.",
-        "goals": ["Ball-by-ball live accuracy with under 15s latency", "Full innings data: economy, strike rate, partnerships, wagon wheel", "Compare BCL player performance against IPL and domestic cricket stats"],
-        "pains": ["Celebrity apps historically treat stats as decoration, not data", "Score delays of even 60 seconds feel like the app has crashed", "No context for celebrity players — hard to evaluate performance without career baseline"]
+        "kicker": "Overview",
+        "body": "Big Cricket League (BCL) launched as a new professional T20 cricket tournament featuring international legends and emerging talent. The goal was to design an end-to-end mobile ecosystem that would become the primary digital destination for cricket fans around the tournament — live scores and commentary, team and player stats, standings, news, video content — and a deeper, paid affiliation layer called Fan Ownership, where a fan can buy into a team and unlock benefits and exclusive community access."
       },
       {
-        "initial": "N",
-        "name": "Neha Sharma",
-        "role": "Celebrity Fan & Entertainment Follower, 24, Mumbai",
-        "quote": "I'm here because my favourite actor is playing. I want to see him bat, see his team, follow his journey in the tournament. Not 7 tabs of cricket statistics.",
-        "goals": ["Team page dedicated to her favourite celebrity with content feed and match stats", "Shareable highlights — a video clip or moment card in under 5 seconds", "Tournament narrative — who's winning, what's the drama, what happened this week"],
-        "pains": ["Standard cricket interfaces are jargon-heavy and visually intimidating", "No celebrity-specific content — just generic match data", "Can't share moments natively — forced to screenshot and lose visual quality"]
+        "kicker": "Problem Statement",
+        "body": "Unlike IPL and other established cricket tournaments that have mature digital products, Big Cricket League had no official application to support fans before, during, or after matches. The absence of a centralized platform fragmented the entire fan journey. The key challenges were identified across the following areas:",
+        "items": [
+          {
+            "k": "Fragmented Fan Experience",
+            "v": "Cricket fans relied on multiple third-party platforms such as Cricbuzz, Google, YouTube, Instagram, and news websites to follow a single tournament."
+          },
+          {
+            "k": "Lack of a Centralized Information Hub",
+            "v": "Tournament-related information was scattered across different channels with no official source providing complete coverage."
+          },
+          {
+            "k": "Poor Fan Engagement Beyond Match Days",
+            "v": "User engagement was largely limited to live broadcasts. Once a match ended, there was little reason for fans to continue interacting with the league."
+          },
+          {
+            "k": "Missed Opportunities for Community Building",
+            "v": "The platform lacked features that encouraged fans to actively participate rather than passively consume content. There was no ecosystem for Fan ownership, Team communities, Fan loyalty."
+          }
+        ]
       },
       {
-        "initial": "K",
-        "name": "Karan Malhotra",
-        "role": "Casual Sports Fan & Social Predictor, 31, Pune",
-        "quote": "I don't know the players well but BCL feels like entertainment. If there's a prediction game I can win, I'll stay all match.",
-        "goals": ["Quick glance understanding of match state — who's winning, what's the score", "Prediction mechanic that makes watching feel participatory", "Share prediction performance and tournament leaderboard on WhatsApp groups"],
-        "pains": ["Standard cricket scorecards overwhelm him with data he can't contextualise", "No low-stakes entry point for someone who's interested but not obsessed", "No way to stay engaged between overs or between matches"]
+        "kicker": "Business Opportunity",
+        "body": "Rather than building another score-tracking app, the objective was to create a digital ecosystem capable of supporting the complete fan lifecycle. The platform needed to:",
+        "items": [
+          "Improve fan retention",
+          "Build a loyal digital community",
+          "Establish Big Cricket League's own digital identity",
+          "Give all franchises a consistent home inside one platform instead of fragmented team-level presences"
+        ]
+      },
+      {
+        "kicker": "Approach",
+        "body": "With no budget in this phase for direct fan interviews, the process leaned on three inputs instead of one:",
+        "items": [
+          {
+            "k": "Competitive audit",
+            "v": "Reviewed existing league apps like IPL, Cricbuzz, cricket score/stats aggregators and fantasy platforms to establish what a strong baseline experience looks like for live score, commentary and stats."
+          },
+          {
+            "k": "Domain-informed assumptions",
+            "v": "Used well-established patterns in how sports fans actually behave — checking score compulsively during play, reacting in the moment, wanting recognition for loyalty — as design inputs in place of direct interviews."
+          },
+          {
+            "k": "Stakeholder requirements",
+            "v": "The league's own commercial goals — sponsor visibility, and specifically the Fan Ownership commerce model — shaped scope directly and were translated into designed flows rather than emerging from user research."
+          }
+        ]
+      },
+      {
+        "kicker": "Product Requirements Document",
+        "body": "Based on insights gathered from user interviews, stakeholder discussions, competitive analysis, and product research, a comprehensive Product Requirements Document (PRD) was created by the Product Manager. The PRD served as the single source of truth, consolidating business objectives, user needs, feature requirements, functional specifications, success metrics, and project scope. This ensured alignment across product, design, and engineering teams before moving into the design phase."
+      },
+      {
+        "kicker": "Information Architecture",
+        "body": "The sitemap organises into eight pillars, all reachable from a deliberately minimal four-item bottom navigation (Home, Fan Club, Videos, More) that pushes secondary destinations into an overflow rather than trying to surface everything at once.",
+        "table": [
+          {
+            "k": "League Hub",
+            "v": "Matches, Teams, Squad, Points Table, Leaderboard, Venues, News, Photo & Video Gallery, Sponsors, Founder Wall"
+          },
+          {
+            "k": "Match Center",
+            "v": "Three distinct states — Before match (preview, prediction poll), Live (commentary, live scorecard), After match (result, full scorecard, awards) — plus Squads and Gallery per match"
+          },
+          {
+            "k": "Team Pages",
+            "v": "Overview, Squad, Matches, Fan Owners, Stats (batting/bowling leaderboards), Gallery, News, Sponsors"
+          },
+          {
+            "k": "Player Profiles",
+            "v": "Overview, Awards, Badges, Polls, Equity Awards, News"
+          },
+          {
+            "k": "Fan Club & Community",
+            "v": "Per-team fan club list, Polls, Contests (e.g. match-day selfie), Fan-Owner-exclusive wall"
+          },
+          {
+            "k": "Fan Ownership & Commerce",
+            "v": "Become a Fan Owner, Buy & Become (benefits, terms, pricing), payment success/failure states, ownership benefits & documents"
+          },
+          {
+            "k": "Content Hub",
+            "v": "Latest Videos, Top Moments, Buzz, News, Photo & Video Galleries"
+          },
+          {
+            "k": "Navigation",
+            "v": "4-item bottom bar — Home, Fan Club, Videos, More — keeping the primary nav simple despite deep content underneath"
+          }
+        ]
+      },
+      {
+        "kicker": "User Flow & Screens",
+        "image": "User flow and annotated screens — added once final visuals are ready"
+      },
+      {
+        "kicker": "Outcome",
+        "body": "Created a prototype for each feature & shared with the developers and stakeholders to review. Feedback given was that design was very intuitive and easy to use."
       }
     ],
-    "problem": {
-      "kicker": "03 — Problem Framing",
-      "h": "The architecture had to serve two mentally incompatible audiences without building two apps.",
-      "b": "The core tension: cricket fans wanted maximum data density by default; celebrity fans wanted maximum visual storytelling by default. A single middle-ground screen would satisfy neither. The design breakthrough came from separating the question of default state from the question of available depth. The default experience would be visually rich and emotionally driven — optimised for the majority casual audience. Statistical depth would be available one tap deeper, always — optimised for the minority hardcore audience who'd seek it out regardless.",
-      "statement": "How might we design a live cricket platform that makes hardcore fans feel like they have a statistician's toolkit, casual fans feel like they're watching reality TV, and celebrity fans feel like they're in the front row — all at the same time?"
-    },
-    "journey": {
-      "kicker": "04 — User Journey",
-      "h": "From match-day notification to post-match story share — 5 emotional states, 5 interface modes.",
-      "b": "I mapped the fan journey across the full arc of a live match day — pre-match anticipation, live match tension, milestone moments (sixes, wickets, partnerships), post-match debrief, and inter-match engagement between tournament fixtures. Each emotional state required a different interface mode and different content hierarchy. The journey made it clear: the app couldn't be a static scorecard — it had to shift personality as the match progressed.",
-      "phases": [
-        { "name": "Pre-Match",   "tasks": ["Check team lineup and injury updates", "Set match prediction before toss", "Browse celebrity team page and tournament standings"], "pain": "No anticipation mechanics — nothing to do before the first ball. Users opened the app and closed it immediately." },
-        { "name": "Live",        "tasks": ["Ball-by-ball score with sub-15s latency", "Celebrity player highlight feed alongside scoreboard", "Live chat and reactions with other fans"], "pain": "The two data streams (cricket stats + celebrity content) competed for the same screen space — early designs felt cluttered and unfocused." },
-        { "name": "Milestones",  "tasks": ["Auto-generated moment card on every 6, 4, wicket, and milestone", "Celebrity reaction capture and highlight clip", "Instant share to Instagram Story / WhatsApp"], "pain": "Moments passed before users could react. If the share flow took more than 3 taps, the moment was already irrelevant by the time it was shared." },
-        { "name": "Post-Match",  "tasks": ["Full scorecard with player-level stats", "MVP spotlight and performance breakdown", "Updated tournament standings and points table"], "pain": "Post-match data was scattered across 3 tabs. Users who wanted a complete picture had to navigate — and most dropped off before finding everything." },
-        { "name": "Inter-Match", "tasks": ["Check tournament standings and team news", "Complete prediction challenges for upcoming fixtures", "Browse celebrity team content between matches"], "pain": "Between matches, there was no reason to open the app. Retention between fixtures was the biggest unsolved gap." }
-      ]
-    },
-    "process": {
-      "kicker": "05 — Design Process",
-      "h": "6 scorecard iterations. Prototype-tested during a live match. One breakthrough pivot.",
-      "b": "The design process had one constraint that changed everything: we ran prototype tests during an actual BCL pilot match — with real users, real live data, and the genuine emotional stakes of a match in progress. This was irreplaceable. We discovered that cognitive load spikes dramatically during a live six or wicket moment — and any interface complexity at that point causes complete disengagement. We iterated the scorecard 6 times, the team page 4 times, and the moment-share flow 5 times. The key pivot: replacing a persistent navigation bar (which users ignored during play) with a gesture-based mode-switch that kept the live data screen completely uninterrupted.",
-      "artifacts": [
-        { "k": "IA: 3-Mode Architecture",  "v": "Live (stats-dense) / Fan (celeb-content-led) / Compete (prediction) — tested against 5-tab and 2-tab alternatives" },
-        { "k": "Progressive Scorecard",    "v": "Summary glance (match state, key wickets) → full innings detail → player career comparison" },
-        { "k": "6 Celebrity Team Identities", "v": "Custom colour systems, mascots, typographic treatments — each team visually distinct at a glance" },
-        { "k": "Live Moment Cards",         "v": "Auto-triggered on every 6, 4, wicket, milestone — with team branding, player photo, and stat snapshot" },
-        { "k": "Prediction Engine UX",      "v": "Pre-match winner, over-by-over runs, individual performance — points, streaks, tournament leaderboard" },
-        { "k": "One-Tap Story Share",       "v": "Moment card → personalised with team colour → directly to Instagram/WhatsApp in one action" }
-      ]
-    },
-    "solution": {
-      "kicker": "06 — Solution",
-      "h": "One platform. Three modes. Every type of fan feels like it was built for them.",
-      "b": "The final product is structured around three engagement modes that users move between naturally during a match. Live Mode delivers stat density on demand — progressive scorecard with full innings data, run rate, economy, wagon wheel, and ball-by-ball commentary. Fan Mode centres the celebrity team identity — team page, player highlights, tournament narrative, and fan community. Compete Mode turns watching into participating — prediction games, streak tracking, and a tournament-wide leaderboard. The moment-share system auto-generates branded cards for every significant event, shareable to any platform in a single tap.",
-      "highlights": [
-        "Progressive scorecard — glanceable match state at default view, expands to full ball-by-ball innings detail, economy, wagon wheel, and career comparison on demand.",
-        "6 celebrity team identities — each team has its own colour system, mascot, and dedicated content feed. Following a team feels like following a person.",
-        "Auto-triggered Moment Cards — a branded, shareable card is generated within 3 seconds of every six, four, wicket, or milestone. One tap to Instagram or WhatsApp.",
-        "Prediction Engine — ball-level and match-level predictions with a persistent tournament leaderboard. Streaks, badges, and ranking drive daily opens between matches.",
-        "Gesture-based mode switching — no persistent navigation bar cluttering the live screen. A single swipe shifts between Live, Fan, and Compete without breaking immersion."
-      ]
-    },
-    "gallery": [
-      { "wide": true, "c1": "#1a5c2e", "c2": "#050f08", "deg": "60deg", "cap": "Live mode — progressive scorecard with ball-by-ball and celebrity feed", "img": "assets/bcl-preview.jpg" },
-      { "c1": "#124020", "c2": "#040d07", "deg": "90deg",  "cap": "Celebrity team page — identity, content feed, tournament stats" },
-      { "c1": "#226b38", "c2": "#07110a", "deg": "120deg", "cap": "Moment Card — auto-generated, branded, one-tap shareable" },
-      { "c1": "#0e3018", "c2": "#030905", "deg": "45deg",  "cap": "Prediction engine — match + ball-level with leaderboard" },
-      { "c1": "#1e6632", "c2": "#060f0a", "deg": "150deg", "cap": "Tournament standings — 6 team identities, points table" },
-      { "wide": true, "c1": "#0a2010", "c2": "#020604", "deg": "30deg", "cap": "Full innings detail — wagon wheel, economy, career comparison" }
-    ],
-    "outcomes": {
-      "kicker": "07 — Outcomes",
-      "h": "6 teams. 90+ live stats. 62% ops cost saved. Fans stayed for the full 20 overs.",
-      "metrics": [
-        { "v": "6",    "k": "Celebrity teams designed",  "sub": "Full identity system: colour, mascot, typography per team" },
-        { "v": "90+",  "k": "Stats tracked live",        "sub": "Ball, innings, career, and tournament level data" },
-        { "v": "62%",  "k": "Ops cost reduction",        "sub": "Automated live data pipeline vs. manual scorecard process" },
-        { "v": "4.1★", "k": "App rating (Season 1)",     "sub": "Organic reviews from first tournament season" }
-      ],
-      "quote": {
-        "q": "As a hardcore cricket fan, I genuinely didn't expect to love a celebrity league app. But the live data depth is actually better than some mainstream cricket apps I use daily.",
-        "a": "Beta user, cricket fan, Delhi — Season 1 feedback"
-      }
-    },
-    "reflection": {
-      "kicker": "08 — Reflection",
-      "h": "When two audiences conflict, test — don't debate. Data will tell you who to prioritise.",
-      "b": "The defining decision: default to data density or visual storytelling? My instinct was visual — most users are casual. The A/B test on the pilot group said data-dense views had 34% longer session times across all user types, including casual fans. The data-dense default won. The insight: casual fans don't need simpler interfaces — they need better progressive disclosure. Lead with what engaged users want, and make the simple path obvious for everyone else. I'd also tackle inter-match retention much earlier next time — the biggest engagement gap was the 6-day silence between fixtures, and we had no designed solution for it."
-    },
     "next": "pritam"
   },
-
   "pritam": {
     "num": "04",
     "client": "Pritam Restaurant",
-    "year": "2023",
-    "sector": "F&B · Heritage Brand · Hospitality",
-    "title": ["80 years of", "legacy, reimagined."],
-    "brief": "Led the end-to-end digital redesign of Pritam Restaurant — Mumbai's first Punjabi eatery, established in 1947 and credited with introducing Butter Chicken to the city. Designed a storytelling-first website and reservation system that preserved the restaurant's slow-cooking philosophy and 76-year reputation while opening it to a new generation of diners — without a single compromise on authenticity.",
+    "year": "2024",
+    "sector": "F&B · Heritage Brand · Storytelling Platform",
+    "title": [
+      "Designing a Storytelling Platform",
+      "for an 80-Year Legacy Restaurant"
+    ],
+    "brief": "An immersive digital experience for one of Mumbai's most iconic restaurants — where every section tells a meaningful part of Pritam's 80-year journey, since 1942.",
     "facts": [
-      { "k": "My Role",   "v": "Product & Brand Designer" },
-      { "k": "Team",      "v": "1 designer · 3 engineers · 1 content writer" },
-      { "k": "Timeline",  "v": "Jan 2023 — Jun 2023" },
-      { "k": "Platforms", "v": "Web (Responsive) · Android App" },
-      { "k": "Tools",     "v": "Figma, Webflow, Hotjar, Google Analytics" },
-      { "k": "Impact",    "v": "+57% online reservations · 92% satisfaction" }
+      {
+        "k": "My Role",
+        "v": "Senior UI UX Designer"
+      },
+      {
+        "k": "Duration",
+        "v": "6 Weeks"
+      },
+      {
+        "k": "Client",
+        "v": "Abhiraj Kohli"
+      },
+      {
+        "k": "Domain",
+        "v": "F&B · Heritage Brand"
+      }
     ],
     "cover": {
-      "c1": "#6b1e1e",
-      "c2": "#0f0505",
-      "label": "Pritam Restaurant — Est. 1947, Reimagined",
+      "c1": "#383838",
+      "c2": "#0a0a0a",
+      "label": "Pritam Restaurant — Since 1942, Reimagined",
       "img": "assets/pritam-preview.jpg"
     },
-    "context": {
-      "kicker": "01 — Context",
-      "h": "Mumbai's oldest Punjabi kitchen had no website, no reservations system, and a 76-year story told to no one.",
-      "b": "Pritam Restaurant opened in Chembur, Mumbai in 1947 — and by most accounts, brought Butter Chicken to the city for the first time. Three generations of the Kohli family had sustained it through reputation alone: no website, no online reservations, no digital presence. In 2023, Abhiraj Kohli — the third-generation owner — came to us with a deceptively simple brief: 'Help people find us and book a table. But don't make it feel like we changed.' The real challenge was more nuanced. Pritam's legacy was its identity. If the digital experience felt modern, clean, or generic, it would signal something false. If it felt too archival, it wouldn't convert a first-time visitor who'd never heard of the place. The design had to earn trust from two completely opposite audiences simultaneously.",
-      "pills": ["Est. 1947", "Mumbai's first Punjabi eatery", "Butter Chicken origin", "Slow-cooking philosophy"]
-    },
-    "research": {
-      "kicker": "02 — Research",
-      "h": "28 conversations. Two audiences with opposite fears — both united by the food.",
-      "b": "I ran a 3-week discovery phase: 28 interviews split between long-term regulars (some with 20+ years of visits) and younger, first-time visitors. I also conducted a full-service observation day at the restaurant, analysed 300+ Google, Zomato, and TripAdvisor reviews for sentiment patterns, and audited 14 heritage restaurant digital presences across India, the UK, and the US to find global benchmarks. The starkest finding: both audiences had a fear — and both fears were legitimate.",
-      "bullets": [
-        { "k": "28 in-depth interviews",    "v": "16 long-term regulars (10+ year visitors) + 12 younger first-time or prospective visitors" },
-        { "k": "300+ reviews analysed",     "v": "Google Business, Zomato, TripAdvisor — thematic coding for praise, friction, and unmet expectations" },
-        { "k": "14 heritage benchmarks",    "v": "Restaurant digital experiences from India, UK, US — identifying what preserves and what dilutes identity" },
-        { "k": "1 full observation day",    "v": "Observed peak service: walk-in flow, ordering rituals, how regulars interacted with staff vs. new visitors" }
-      ],
-      "insights": [
-        "Long-term regulars' #1 fear: 'modernising' would signal price hikes, changed recipes, or loss of the honest, no-frills character that made Pritam what it is. The word 'redesign' was a threat.",
-        "First-time visitors discovered Pritam through word of mouth, but without an online booking option, they switched to restaurants that could be booked on Zomato. Pritam lost them at the decision moment.",
-        "The Butter Chicken origin story — that Pritam is credited with bringing Butter Chicken to Mumbai — was known internally but communicated nowhere. It was the single most emotionally powerful piece of content the brand had, and it was invisible.",
-        "Menu discovery was the top pre-visit need: 71% of younger visitors wanted to browse the menu before committing to a visit, and not finding one was a conversion-killer."
-      ]
-    },
-    "personas": [
+    "sections": [
       {
-        "initial": "V",
-        "name": "Vijay Bhatt",
-        "role": "Retired professional, 62, a Pritam regular since 1981",
-        "quote": "I've been coming here for 40 years. The dal makhani recipe hasn't changed once. I hope the website doesn't make it look like it has.",
-        "goals": ["Check today's specials without calling", "Book a table for family milestones", "Show younger relatives 'where I grew up eating'"],
-        "pains": ["Fears modernisation signals something changed", "Not digitally confident — complex forms are a barrier", "Worried the 'character' gets designed away"]
+        "kicker": "Overview",
+        "body": "Pritam Restaurant has been one of Mumbai's most iconic dining destinations since 1942, and the restaurant credited with introducing butter chicken to Mumbai. Over four generations, it built a genuine Bollywood-era legacy: Raj Kapoor inaugurated its first outlet in 1975, and many actors including Sunil Dutt, Dilip Kumar, Dharmendra and Sunil Gavaskar visited. The business now also runs Pritam Da Dhaba, a related but distinct concept with an original outlet in Dadar and a newer one in Juhu aimed at a younger audience.",
+        "body2": "Instead of designing a conventional restaurant website, the goal was to create an immersive digital experience where every section tells a meaningful part of Pritam's journey."
       },
       {
-        "initial": "A",
-        "name": "Ananya Mehta",
-        "role": "Food content creator, 27, Mumbai-based",
-        "quote": "My colleague said Pritam invented Butter Chicken in Mumbai. I looked it up — found nothing. I went somewhere I could book instead.",
-        "goals": ["Browse full menu with photos before visiting", "Book a table instantly online", "Understand the story — heritage sells to my audience"],
-        "pains": ["No digital presence = no trust for new visitors", "Can't book = chooses a competitor who can", "No photos of food or ambience to assess"]
+        "kicker": "Problem Statement",
+        "items": [
+          "New visitors had no way to discover its history.",
+          "International audiences couldn't understand its cultural significance.",
+          "Customers couldn't explore its legacy before visiting.",
+          "The brand had no digital platform to preserve and communicate stories accumulated over generations."
+        ]
       },
       {
-        "initial": "A",
-        "name": "Abhiraj Kohli",
-        "role": "3rd generation owner, Pritam Restaurant",
-        "quote": "My grandfather slow-cooked this into what it is. My job is to make sure the next generation finds it — without losing what made it worth finding.",
-        "goals": ["Bring younger diners through the door", "Eliminate overbooking via a proper reservation system", "Tell the 76-year story with the pride it deserves"],
-        "pains": ["Fears a 'generic' website will misrepresent 76 years of character", "Paper reservation book causes double-bookings and missed tables", "No mechanism to capture contacts for events or special occasions"]
+        "kicker": "Solutions",
+        "items": [
+          "Legacy storytelling",
+          "Visual gallery",
+          "Experience the menu"
+        ]
+      },
+      {
+        "kicker": "Process",
+        "items": [
+          "Identified the problem",
+          "Found out solutions",
+          "Documented the important things to showcase",
+          "Started with moodboarding, wireframes, and design system",
+          "Figma designs and prototype",
+          "Developer handoff"
+        ]
+      },
+      {
+        "kicker": "Section-wise Breakdown",
+        "image": "Section-by-section breakdown — added once final visuals are ready"
+      },
+      {
+        "kicker": "Outcome",
+        "body": "The final product is not simply a restaurant website. It is a digital museum, a brand archive, and a storytelling platform that allows visitors to experience more than eighty years of culinary heritage before they ever step inside the restaurant.",
+        "body2": "By structuring the experience around stories rather than pages, the website transforms Pritam's history into an engaging digital journey while creating a scalable foundation for future growth, locations, and brand storytelling."
       }
     ],
-    "problem": {
-      "kicker": "03 — Problem Framing",
-      "h": "Reframed from 'build a website' to 'make 76 years of character feel alive, not archived'.",
-      "b": "The easy brief was: build a restaurant website with a menu and a booking form. Research completely reframed it. The real challenge was a dual-trust problem. New visitors needed to trust that a walk-in would be worth it — they needed the story, the food photography, the social proof. Long-term regulars needed to trust that nothing had changed — that the website was a window into the same Pritam, not a replacement for it. These two trust needs pulled in opposite directions aesthetically. The wrong design would alienate one audience. The right design had to speak to both.",
-      "statement": "How might we build a digital presence for Pritam that makes first-time visitors excited to discover a 76-year institution — and makes long-term regulars proud rather than worried — without the design contradicting the restaurant's slow-cooking, no-frills soul?"
-    },
-    "journey": {
-      "kicker": "04 — User Journey",
-      "h": "From Zomato search to reserved table — without losing a single visitor to a competitor.",
-      "b": "I mapped the discovery-to-visit journey for both a new visitor and a returning regular. The most critical insight: the journeys diverged completely at discovery and evaluation, but converged at the reservation step. The implication for design was structural: the hero and story sections had to be built for conversion of first-time visitors (who needed to trust the place was real and special), while the reservation flow needed to be designed with the regulars' digital confidence level as the floor — simple, forgiving, and immediately confirmable.",
-      "phases": [
-        { "name": "Discover",  "tasks": ["Google 'best Punjabi restaurant Mumbai'", "Friend recommendation", "Zomato browse"],     "pain": "No website, no Zomato listing optimised — lost to competitors on first Google page" },
-        { "name": "Evaluate",  "tasks": ["Look up menu", "Check food photos", "Read reviews"],                                     "pain": "No menu online, no food photography — 71% of new visitors needed both before committing" },
-        { "name": "Trust",     "tasks": ["Heritage story", "Media coverage", "76 years of reviews"],                               "pain": "Butter Chicken origin story — Pritam's single biggest differentiator — was communicated nowhere" },
-        { "name": "Reserve",   "tasks": ["Find booking option", "Select date, time, party size", "Receive confirmation"],          "pain": "Phone-only booking — new visitors hung up; regulars often found the line busy" },
-        { "name": "Visit",     "tasks": ["Arrive", "Order from a menu they recognise", "Share on social"],                        "pain": "No post-visit digital touchpoint — no review prompt, no loyalty mechanism, no way to reconnect" }
-      ]
-    },
-    "process": {
-      "kicker": "05 — Design Process",
-      "h": "Three visual directions. Tested at the restaurant, between service periods, on regulars' phones.",
-      "b": "The research constraint was unusual and clarifying: I tested high-fidelity prototypes with actual long-term regulars at Pritam — over chai, between the lunch and dinner service rush. This meant designs had to work on older Android devices, in warm dim restaurant lighting, with users who were not digitally confident. I tested 3 visual directions (heritage-forward, contemporary-minimal, hybrid), 2 navigation structures, and 4 iterations of the reservation flow. The heritage-forward direction won comprehensively — not just for older regulars, but for younger visitors too, who responded to the authenticity as a point of differentiation.",
-      "artifacts": [
-        { "k": "Visual Identity System", "v": "Heritage design language — deep reds, aged patina textures, hand-drawn recipe-card typography, archival family photography" },
-        { "k": "Menu Architecture",      "v": "Photo-led, category-first menu — every signature dish photographed with portions, price, and heritage context note" },
-        { "k": "Legacy Story System",    "v": "76-year decade-by-decade timeline — founding, the Butter Chicken moment, generational handovers, media milestones" },
-        { "k": "Reservation Flow",       "v": "4-step booking — date, party size, contact, WhatsApp confirmation. No account creation. Works on any device." },
-        { "k": "Mobile-First Architecture","v": "83% of discovery traffic was mobile — designed entirely mobile-up, desktop as secondary" },
-        { "k": "SEO & Content Strategy", "v": "'Butter Chicken origin' and 'Mumbai's first Punjabi restaurant' as anchor content — targeting heritage and food interest search" }
-      ]
-    },
-    "solution": {
-      "kicker": "06 — Solution",
-      "h": "Heritage surfaced. Story told. Table booked in 4 steps.",
-      "b": "The final design was built on three pillars working simultaneously. Storytelling first: the hero opened with the Butter Chicken origin claim, supported by decade-by-decade visual history, family photography, and media mentions — giving first-time visitors immediate context for why this restaurant was different. Menu discovery second: a full photo-led menu with clear portions, legacy notes on signature dishes, and category filters for dietary needs. Reservation third: a 4-step booking flow requiring only name, date, party size, and phone — confirmation via WhatsApp, no account, no friction. The visual language used archival warmth throughout — the deep reds of a Punjabi kitchen, the weight of hand-set type, the imperfection of aged textures — without ever feeling like a costume.",
-      "highlights": [
-        "Butter Chicken origin as hero content — led with Pritam's claim to fame, the single most differentiating story the brand had.",
-        "76-year heritage timeline — decade-by-decade visual history with family photographs, media coverage, and generational milestones.",
-        "Photo-led menu — every signature dish photographed with portion size, legacy context, and price clearly visible.",
-        "4-step reservation flow — name, date, party, WhatsApp confirm. No account required. Completion in under 90 seconds.",
-        "Heritage design system — deep reds, aged patina, recipe-card typography — warm and specific, not generic restaurant aesthetic."
-      ]
-    },
-    "gallery": [
-      { "wide": true, "c1": "#6b1e1e", "c2": "#0f0505", "deg": "45deg", "cap": "Homepage hero — Butter Chicken origin claim, heritage-first visual language", "img": "assets/pritam-preview.jpg" },
-      { "c1": "#4a1515", "c2": "#0d0404", "deg": "90deg",  "cap": "Legacy timeline — 76 years, decade by decade with family photography" },
-      { "c1": "#7a2222", "c2": "#120606", "deg": "120deg", "cap": "Menu — photo-led, with portions and heritage context per dish" },
-      { "c1": "#551818", "c2": "#0e0505", "deg": "60deg",  "cap": "Reservation flow — 4 steps, WhatsApp confirm, no account required" },
-      { "c1": "#3d1010", "c2": "#0a0303", "deg": "150deg", "cap": "Mobile — story-first, thumb-friendly — designed for 83% mobile traffic" },
-      { "wide": true, "c1": "#2a0808", "c2": "#060202", "deg": "30deg",  "cap": "Design system — heritage warmth, modern clarity, zero generic restaurant aesthetic" }
-    ],
-    "outcomes": {
-      "kicker": "07 — Outcomes",
-      "h": "+57% reservations. 92% satisfaction. A 76-year story finally told.",
-      "metrics": [
-        { "v": "+57%",  "k": "Online reservations",  "sub": "3 months post-launch vs. phone booking baseline, same period prior year" },
-        { "v": "92%",   "k": "Satisfaction score",   "sub": "Post-visit survey, new (first-time) visitors — net new audience acquired digitally" },
-        { "v": "4.7★",  "k": "Google rating",        "sub": "Post-launch with review prompts built into the post-visit WhatsApp flow" },
-        { "v": "#1",    "k": "Search result",         "sub": "'Butter Chicken origin Mumbai' — organic, within 8 weeks of content strategy launch" }
-      ],
-      "quote": {
-        "q": "Our regulars send the website to their children and say, 'this is where I grew up eating.' And new people are booking online every single day now. Abhiraj got exactly what he asked for.",
-        "a": "Abhiraj Kohli, 3rd generation owner, Pritam Restaurant"
-      }
-    },
-    "reflection": {
-      "kicker": "08 — Reflection",
-      "h": "The best brand design doesn't reinvent — it reveals what was always there.",
-      "b": "Every time I was tempted to push the design toward cleaner, more minimal, more 'elevated' — the regulars pushed back. Not with words, but with their reactions: a pause before responding, a slight frown at a layout that felt too designed. They knew when something didn't feel like Pritam. The restraint that won wasn't a compromise — it was the discipline to treat the 76-year story as the entire design brief, and to treat every design decision as a question: does this serve the story, or is it about me? I'd carry that question into every heritage brand engagement after this."
-    },
     "next": "pulpy-vpn"
   },
-
   "pulpy-vpn": {
     "num": "05",
     "client": "Pulpy VPN",
     "year": "2023",
     "sector": "Privacy · Consumer App · SaaS",
-    "title": ["Privacy, finally", "feels effortless."],
+    "title": [
+      "Privacy, finally",
+      "feels effortless."
+    ],
     "brief": "Designed Pulpy VPN end-to-end from zero — a consumer privacy app for non-technical users in India and Southeast Asia. Solved the biggest unsolved problem in the VPN category: most people know they should use one and never do, because every VPN on the market was designed for IT professionals. Shipped an 88-second onboarding, a one-tap connection state designed to feel actively protective, and a paywall strategy that delivered 3.2× trial-to-paid conversion — reaching 100K+ downloads and a 4.2★ Play Store rating within 6 months.",
     "facts": [
-      { "k": "My Role",   "v": "Lead Product Designer (0 → 1)" },
-      { "k": "Team",      "v": "1 designer · 6 engineers · 1 PM" },
-      { "k": "Timeline",  "v": "Feb 2023 — Oct 2023" },
-      { "k": "Platforms", "v": "Android · iOS" },
-      { "k": "Tools",     "v": "Figma, Maze, Mixpanel, Lottie, UserTesting" },
-      { "k": "Impact",    "v": "100K+ downloads · 4.2★ Play Store · 88s onboarding" }
+      {
+        "k": "My Role",
+        "v": "Lead Product Designer (0 → 1)"
+      },
+      {
+        "k": "Team",
+        "v": "1 designer · 6 engineers · 1 PM"
+      },
+      {
+        "k": "Timeline",
+        "v": "Feb 2023 — Oct 2023"
+      },
+      {
+        "k": "Platforms",
+        "v": "Android · iOS"
+      },
+      {
+        "k": "Tools",
+        "v": "Figma, Maze, Mixpanel, Lottie, UserTesting"
+      },
+      {
+        "k": "Impact",
+        "v": "100K+ downloads · 4.2★ Play Store · 88s onboarding"
+      }
     ],
     "cover": {
-      "c1": "#6b3d0e",
-      "c2": "#0f0a03",
+      "c1": "#464646",
+      "c2": "#101010",
       "label": "Pulpy VPN — Privacy, Finally Effortless",
       "img": "assets/pulpyvpn-preview.jpg"
     },
@@ -565,17 +768,34 @@
       "kicker": "01 — Context",
       "h": "31% of internet users want a VPN. Fewer than 5% use one. The product category was designed for the wrong person.",
       "b": "The global VPN market was growing fast, but adoption in India and Southeast Asia was disproportionately low despite high demand for streaming access and growing public WiFi safety awareness. The reason wasn't price — it was product. Every major VPN (NordVPN, ExpressVPN, Surfshark) was built for a technically confident user: protocol pickers, DNS leak test dashboards, kill switch toggles, and onboarding flows that required understanding what a VPN server actually does. The typical user in our target market — college students, freelancers, working parents — had tried one, felt confused, and uninstalled. Pulpy VPN's founding insight was sharp: the market that most needed a VPN was the exact market every VPN had designed itself away from. The brief was to build the first privacy app that a person with zero technical knowledge could use confidently in under 90 seconds.",
-      "pills": ["India + Southeast Asia", "Android + iOS", "Non-technical first-time users", "Consumer privacy market"]
+      "pills": [
+        "India + Southeast Asia",
+        "Android + iOS",
+        "Non-technical first-time users",
+        "Consumer privacy market"
+      ]
     },
     "research": {
       "kicker": "02 — Research",
       "h": "40 people who'd tried a VPN and quit. The reason was always the same word: 'protocol'.",
       "b": "I led a 4-week research sprint combining qualitative depth with quantitative pattern analysis. I ran 40 interviews across two cohorts — abandonment cases (people who downloaded and uninstalled within a week) and retention cases (current VPN users who stuck with their app). I supplemented this with a moderated usability audit of 6 leading VPN apps across 20 non-technical participants, and a large-scale review analysis of 600+ app store reviews across NordVPN, ExpressVPN, and Surfshark in India and the Philippines. The gap between the two cohorts wasn't technical ability — it was emotional experience at the moment of connection.",
       "bullets": [
-        { "k": "40 structured interviews",  "v": "28 abandonment cases (uninstalled within 7 days) + 12 long-term retention users — across India, Philippines, Indonesia" },
-        { "k": "Moderated usability audit", "v": "6 leading VPN apps tested with 20 non-technical participants — tracking confusion points, drop-off moments, emotional state" },
-        { "k": "600+ reviews analysed",     "v": "NordVPN, ExpressVPN, Surfshark — India + Southeast Asia App Store reviews coded for friction, anxiety, and praise themes" },
-        { "k": "Competitor teardown",       "v": "Information architecture and onboarding flow maps for 8 VPN apps — identifying the 14 decision points that caused abandonment" }
+        {
+          "k": "40 structured interviews",
+          "v": "28 abandonment cases (uninstalled within 7 days) + 12 long-term retention users — across India, Philippines, Indonesia"
+        },
+        {
+          "k": "Moderated usability audit",
+          "v": "6 leading VPN apps tested with 20 non-technical participants — tracking confusion points, drop-off moments, emotional state"
+        },
+        {
+          "k": "600+ reviews analysed",
+          "v": "NordVPN, ExpressVPN, Surfshark — India + Southeast Asia App Store reviews coded for friction, anxiety, and praise themes"
+        },
+        {
+          "k": "Competitor teardown",
+          "v": "Information architecture and onboarding flow maps for 8 VPN apps — identifying the 14 decision points that caused abandonment"
+        }
       ],
       "insights": [
         "The word 'protocol' — appearing in the first screen of every major VPN — caused 78% of non-technical users to disengage entirely. They didn't know what it meant, feared selecting the wrong option, and closed the app.",
@@ -590,24 +810,48 @@
         "name": "Priya Venkat",
         "role": "Engineering student, 21, Bangalore — frequent campus and café WiFi user",
         "quote": "I downloaded NordVPN because my friend said I need it. There was a screen asking which protocol to use. I uninstalled it.",
-        "goals": ["Stay safe on campus and café WiFi", "Access geo-restricted content", "A simple on/off — nothing more"],
-        "pains": ["Technical screens feel like a test she might fail", "Doesn't understand 'kill switch', 'DNS leak', 'protocol' — won't guess", "Fears accidentally doing something that breaks her internet"]
+        "goals": [
+          "Stay safe on campus and café WiFi",
+          "Access geo-restricted content",
+          "A simple on/off — nothing more"
+        ],
+        "pains": [
+          "Technical screens feel like a test she might fail",
+          "Doesn't understand 'kill switch', 'DNS leak', 'protocol' — won't guess",
+          "Fears accidentally doing something that breaks her internet"
+        ]
       },
       {
         "initial": "D",
         "name": "Deshawn Reyes",
         "role": "Freelance designer, 29, Manila — works remotely across coffee shops and co-working spaces",
         "quote": "I need a VPN when I'm on client calls from cafés. I just want something I can turn on in 5 seconds and trust it's working.",
-        "goals": ["Protect client data on public networks without thinking", "Reliable mid-call — no drops, no reconnects", "One subscription that covers his phone and laptop"],
-        "pains": ["Current VPN causes noticeable slowdowns", "Silent disconnects during calls with no warning", "Monthly billing UI feels opaque — doesn't know what he's paying for"]
+        "goals": [
+          "Protect client data on public networks without thinking",
+          "Reliable mid-call — no drops, no reconnects",
+          "One subscription that covers his phone and laptop"
+        ],
+        "pains": [
+          "Current VPN causes noticeable slowdowns",
+          "Silent disconnects during calls with no warning",
+          "Monthly billing UI feels opaque — doesn't know what he's paying for"
+        ]
       },
       {
         "initial": "M",
         "name": "Meena Sharma",
         "role": "Working parent, 44, Delhi — non-technical, concerned about family's online safety",
         "quote": "My son said download a VPN. I downloaded one. There was too much to read. I deleted it.",
-        "goals": ["Understand that it's working and protecting her family", "Simple enough to use without asking for help", "Extend protection to her kids' phones without complexity"],
-        "pains": ["Every VPN screen is full of jargon she doesn't recognise", "No visual confirmation that protection is active", "Fears accidentally changing a setting that breaks something important"]
+        "goals": [
+          "Understand that it's working and protecting her family",
+          "Simple enough to use without asking for help",
+          "Extend protection to her kids' phones without complexity"
+        ],
+        "pains": [
+          "Every VPN screen is full of jargon she doesn't recognise",
+          "No visual confirmation that protection is active",
+          "Fears accidentally changing a setting that breaks something important"
+        ]
       }
     ],
     "problem": {
@@ -621,11 +865,51 @@
       "h": "App store to protected — in under 90 seconds, with zero technical decisions.",
       "b": "I mapped the full journey from app store discovery through to paid subscription renewal. The critical insight from journey mapping: there were 14 decision points in a standard VPN onboarding flow, and every single one was a potential drop-off. My design constraint was explicit from week 1 — eliminate every required decision that wasn't name, goal (why they wanted a VPN), and the single connect tap. Everything else had to be a smart default. The paywall placement was a separate journey design challenge: end-of-trial paywalls tested poorly (felt like a deadline, triggered anxiety and churn), while mid-use paywalls placed immediately after a meaningful success moment tested 3.2× better.",
       "phases": [
-        { "name": "Discover",  "tasks": ["Play Store search", "Friend recommendation", "Social ad"],                                   "pain": "Category is crowded — Pulpy had no brand recognition vs. NordVPN. Discovery copy had to lead with 'simple', not 'secure'" },
-        { "name": "Onboard",   "tasks": ["Set your name", "Tell us why you want a VPN", "Tap connect"],                               "pain": "Original 7-step onboarding had protocol selection on screen 2 — 61% of users dropped here in early testing" },
-        { "name": "Connect",   "tasks": ["One-tap to protected", "'Protecting you' animation", "Connected state with reassurance UI"], "pain": "Static 'Connected' label produced high anxiety — users weren't sure if it was working" },
-        { "name": "Use",       "tasks": ["Auto-reconnect on network change", "Background protection indicator", "Usage dashboard"],    "pain": "Silent reconnects with no notification generated the highest-volume support ticket: 'Is my VPN still on?'" },
-        { "name": "Convert",   "tasks": ["Mid-use paywall at a success moment", "Plan selection", "Payment + confirmation"],          "pain": "End-of-trial paywall tested as arbitrary and punitive — users who'd had a positive experience still churned at 68%" }
+        {
+          "name": "Discover",
+          "tasks": [
+            "Play Store search",
+            "Friend recommendation",
+            "Social ad"
+          ],
+          "pain": "Category is crowded — Pulpy had no brand recognition vs. NordVPN. Discovery copy had to lead with 'simple', not 'secure'"
+        },
+        {
+          "name": "Onboard",
+          "tasks": [
+            "Set your name",
+            "Tell us why you want a VPN",
+            "Tap connect"
+          ],
+          "pain": "Original 7-step onboarding had protocol selection on screen 2 — 61% of users dropped here in early testing"
+        },
+        {
+          "name": "Connect",
+          "tasks": [
+            "One-tap to protected",
+            "'Protecting you' animation",
+            "Connected state with reassurance UI"
+          ],
+          "pain": "Static 'Connected' label produced high anxiety — users weren't sure if it was working"
+        },
+        {
+          "name": "Use",
+          "tasks": [
+            "Auto-reconnect on network change",
+            "Background protection indicator",
+            "Usage dashboard"
+          ],
+          "pain": "Silent reconnects with no notification generated the highest-volume support ticket: 'Is my VPN still on?'"
+        },
+        {
+          "name": "Convert",
+          "tasks": [
+            "Mid-use paywall at a success moment",
+            "Plan selection",
+            "Payment + confirmation"
+          ],
+          "pain": "End-of-trial paywall tested as arbitrary and punitive — users who'd had a positive experience still churned at 68%"
+        }
       ]
     },
     "process": {
@@ -633,12 +917,30 @@
       "h": "Hard constraint: under 120 seconds. 6 onboarding tests. 8 connection animations. Shipped at 88s.",
       "b": "I set a measurable design constraint in the first week: onboarding must reach the 'protected' state in under 120 seconds, measured by task completion time in Maze with non-technical participants. Every design decision was evaluated against this constraint. I ran 6 rounds of onboarding testing (15 participants per round), tracked time-on-task, completion rate, and a self-reported confidence score after the connected state. Round 1 was 4 minutes 12 seconds. Round 5 was 88 seconds. The biggest single gain came from removing server selection entirely in round 2 — smart auto-selection based on the user's stated goal cut 90 seconds alone. The connection animation was the highest-ROI design artefact in the entire project — 8 iterations tested, with the version that communicated 'active scanning + protection forming' producing the highest confidence scores across all user types.",
       "artifacts": [
-        { "k": "Onboarding Flow (v6)",       "v": "Reduced from 7 screens to 3: name → goal → connect. 6 testing rounds. Shipped at 88 seconds, 94% completion rate." },
-        { "k": "Connection Animation (v8)",  "v": "Lottie animation: 'protection activating' visual with shield-forming + scanning arc. Single highest-impact design decision tested." },
-        { "k": "Smart Server Engine",        "v": "Goal-based auto-selection (Streaming → lowest-latency international / Safety → nearest high-trust server). Removes the hardest user decision." },
-        { "k": "Mid-use Paywall System",     "v": "4 paywall placement tests — after first successful streaming session, after 5-day streak, at trial end, and immediately post-connect. Mid-use won at 3.2× vs. trial-end." },
-        { "k": "Confidence Dashboard",       "v": "'You are protected' persistent UI — live indicator, data encrypted counter, reconnect log, network name. Designed for anxiety reduction." },
-        { "k": "Progressive Power Mode",     "v": "Protocol, server region, DNS settings — accessible 3 taps deep. Never shown unless actively sought. Power users satisfied; new users unaffected." }
+        {
+          "k": "Onboarding Flow (v6)",
+          "v": "Reduced from 7 screens to 3: name → goal → connect. 6 testing rounds. Shipped at 88 seconds, 94% completion rate."
+        },
+        {
+          "k": "Connection Animation (v8)",
+          "v": "Lottie animation: 'protection activating' visual with shield-forming + scanning arc. Single highest-impact design decision tested."
+        },
+        {
+          "k": "Smart Server Engine",
+          "v": "Goal-based auto-selection (Streaming → lowest-latency international / Safety → nearest high-trust server). Removes the hardest user decision."
+        },
+        {
+          "k": "Mid-use Paywall System",
+          "v": "4 paywall placement tests — after first successful streaming session, after 5-day streak, at trial end, and immediately post-connect. Mid-use won at 3.2× vs. trial-end."
+        },
+        {
+          "k": "Confidence Dashboard",
+          "v": "'You are protected' persistent UI — live indicator, data encrypted counter, reconnect log, network name. Designed for anxiety reduction."
+        },
+        {
+          "k": "Progressive Power Mode",
+          "v": "Protocol, server region, DNS settings — accessible 3 taps deep. Never shown unless actively sought. Power users satisfied; new users unaffected."
+        }
       ]
     },
     "solution": {
@@ -654,21 +956,70 @@
       ]
     },
     "gallery": [
-      { "wide": true, "c1": "#6b3d0e", "c2": "#0f0a03", "deg": "45deg", "cap": "Onboarding — 3 screens, 88 seconds, zero technical decisions", "img": "assets/pulpyvpn-preview.jpg" },
-      { "c1": "#4a2a08", "c2": "#0d0902", "deg": "90deg",  "cap": "Connection animation — 'protecting you' shield-forming state" },
-      { "c1": "#7a4510", "c2": "#120b04", "deg": "120deg", "cap": "Smart server — goal-based auto-selection, no protocol picker" },
-      { "c1": "#552e08", "c2": "#0e0903", "deg": "60deg",  "cap": "Confidence dashboard — live protection status, encrypted data counter" },
-      { "c1": "#3d2006", "c2": "#0a0702", "deg": "150deg", "cap": "Mid-use paywall — placed after first streaming success, not on a timer" },
-      { "wide": true, "c1": "#2a1504", "c2": "#060401", "deg": "30deg",  "cap": "Power mode — protocol settings hidden 3 taps deep, never default" }
+      {
+        "wide": true,
+        "c1": "#3a3a3a",
+        "c2": "#0a0a0a",
+        "deg": "45deg",
+        "cap": "Onboarding — 3 screens, 88 seconds, zero technical decisions",
+        "img": "assets/pulpyvpn-preview.jpg"
+      },
+      {
+        "c1": "#333333",
+        "c2": "#0a0a0a",
+        "deg": "90deg",
+        "cap": "Connection animation — 'protecting you' shield-forming state"
+      },
+      {
+        "c1": "#404040",
+        "c2": "#0d0d0d",
+        "deg": "120deg",
+        "cap": "Smart server — goal-based auto-selection, no protocol picker"
+      },
+      {
+        "c1": "#383838",
+        "c2": "#0a0a0a",
+        "deg": "60deg",
+        "cap": "Confidence dashboard — live protection status, encrypted data counter"
+      },
+      {
+        "c1": "#2e2e2e",
+        "c2": "#080808",
+        "deg": "150deg",
+        "cap": "Mid-use paywall — placed after first streaming success, not on a timer"
+      },
+      {
+        "wide": true,
+        "c1": "#242424",
+        "c2": "#050505",
+        "deg": "30deg",
+        "cap": "Power mode — protocol settings hidden 3 taps deep, never default"
+      }
     ],
     "outcomes": {
       "kicker": "07 — Outcomes",
       "h": "100K downloads. 88-second onboarding. 4.2★ Play Store. 3.2× conversion.",
       "metrics": [
-        { "v": "100K+", "k": "Downloads",              "sub": "First 6 months post-launch, India + Southeast Asia" },
-        { "v": "88s",   "k": "Avg. onboarding time",   "sub": "App open → first protected state. Across all tested device tiers." },
-        { "v": "3.2×",  "k": "Trial-to-paid conversion","sub": "Mid-use paywall vs. original end-of-trial placement in A/B test" },
-        { "v": "4.2★",  "k": "Play Store rating",      "sub": "Organic reviews — highest-rated review theme: 'simple to use'" }
+        {
+          "v": "100K+",
+          "k": "Downloads",
+          "sub": "First 6 months post-launch, India + Southeast Asia"
+        },
+        {
+          "v": "88s",
+          "k": "Avg. onboarding time",
+          "sub": "App open → first protected state. Across all tested device tiers."
+        },
+        {
+          "v": "3.2×",
+          "k": "Trial-to-paid conversion",
+          "sub": "Mid-use paywall vs. original end-of-trial placement in A/B test"
+        },
+        {
+          "v": "4.2★",
+          "k": "Play Store rating",
+          "sub": "Organic reviews — highest-rated review theme: 'simple to use'"
+        }
       ],
       "quote": {
         "q": "I've tried two other VPNs and deleted both. This one — I turned it on and it told me I was protected. I didn't have to do anything else. That's the one I'm paying for.",

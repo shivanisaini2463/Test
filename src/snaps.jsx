@@ -44,7 +44,7 @@ function Snapshots() {
       <div className="container">
         <div className="section-head reveal">
           <div>
-            <span className="eyebrow">03 — Snapshots</span>
+            <span className="eyebrow">04 — Snapshots</span>
             <h2>More work. <span className="serif">Less explanation.</span></h2>
           </div>
           <div className="right">

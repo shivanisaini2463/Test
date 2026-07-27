@@ -1,5 +1,46 @@
 // Shared nav + footer + shared utilities used across all pages
 
+const SOCIALS = [
+  { id: "linkedin", label: "LinkedIn", href: "https://www.linkedin.com/in/shivanisainidesigner/" },
+  { id: "dribbble", label: "Dribbble", href: "https://dribbble.com/shivanisaini_designer" },
+  { id: "behance",  label: "Behance",  href: "https://www.behance.net/shivanisaini1#" },
+];
+
+function SocialIcon({ id }) {
+  if (id === "linkedin") {
+    return (
+      <svg viewBox="0 0 24 24" fill="none">
+        <rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" strokeWidth="1.6"/>
+        <path d="M7.5 10.5V17" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
+        <circle cx="7.5" cy="7.3" r="1.1" fill="currentColor"/>
+        <path d="M11 17V10.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
+        <path d="M11 13c0-2.2 4-2.2 4 0v4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
+      </svg>
+    );
+  }
+  if (id === "dribbble") {
+    return (
+      <svg viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="8.5" stroke="currentColor" strokeWidth="1.6"/>
+        <path d="M4.3 9c4.3 1.5 10 1.7 15.4.6M3.6 14.6c4.8-1 9.7.4 12.6 5M14.3 4c2.2 3 3.6 8.4 3.1 14.3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+      </svg>
+    );
+  }
+  return <span className="social-glyph">Be</span>;
+}
+
+function SocialLinks({ className }) {
+  return (
+    <div className={"social-links " + (className || "")}>
+      {SOCIALS.map(s => (
+        <a key={s.id} href={s.href} target="_blank" rel="noreferrer" aria-label={s.label} data-cursor="open" className="social-link">
+          <SocialIcon id={s.id} />
+        </a>
+      ))}
+    </div>
+  );
+}
+
 function Nav({ current }) {
   const [open, setOpen] = React.useState(false);
   // Close menu on route-link click
@@ -21,14 +62,16 @@ function Nav({ current }) {
             <a href="about.html" className={current==='about'?'active':''}>About</a>
             <a href="contact.html" className={current==='contact'?'active':''}>Contact</a>
           </div>
-          <a href="assets/shivani-saini-resume.pdf" className="cta nav-cta-desktop" data-cursor="download" download>
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M10 14 L14 10 M8 12 L6 14 A3 3 0 0 0 10 18 L12 16 M12 8 L14 6 A3 3 0 0 1 18 10 L16 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            Download Resume
-          </a>
-          {/* Hamburger — mobile only */}
-          <button className={"nav-burger " + (open ? "open" : "")} onClick={() => setOpen(o => !o)} aria-label="Toggle menu">
-            <span /><span /><span />
-          </button>
+          <div className="nav-actions">
+            <a href="assets/shivani-saini-resume.pdf" className="cta nav-cta-desktop" data-cursor="download" download>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 3V15M12 15L8 11M12 15L16 11M5 19H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              Resume
+            </a>
+            {/* Hamburger — mobile only */}
+            <button className={"nav-burger " + (open ? "open" : "")} onClick={() => setOpen(o => !o)} aria-label="Toggle menu">
+              <span /><span /><span />
+            </button>
+          </div>
         </div>
       </nav>
 
@@ -39,8 +82,8 @@ function Nav({ current }) {
           <a href="about.html" className={current==='about'?'active':''} onClick={close}>About</a>
           <a href="contact.html" className={current==='contact'?'active':''} onClick={close}>Contact</a>
           <a href="assets/shivani-saini-resume.pdf" className="mobile-nav-cta" download onClick={close}>
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M10 14 L14 10 M8 12 L6 14 A3 3 0 0 0 10 18 L12 16 M12 8 L14 6 A3 3 0 0 1 18 10 L16 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            Download Resume
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 3V15M12 15L8 11M12 15L16 11M5 19H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            Resume
           </a>
         </div>
       </div>
@@ -53,23 +96,21 @@ function Footer() {
     <footer className="footer noise-bg" id="contact" data-screen-label="Footer">
       <div className="container">
         <div className="footer-cta">
-          <span className="eyebrow">Let's talk</span>
-          <h2>Have something<br/>worth <span className="serif">making</span>?</h2>
-          <a href="mailto:shivani.sainidesigner@gmail.com" className="link-big" data-cursor="email">
+          <h2>Thanks for stopping by,<br/>let's <span className="serif">chat</span>!</h2>
+          <a href="mailto:shivanisaini2463@gmail.com" className="link-big" data-cursor="email">
             <span style={{width:10,height:10,borderRadius:"50%",background:"var(--ok)",boxShadow:"0 0 12px var(--ok)"}} />
-            shivani.sainidesigner@gmail.com
+            shivanisaini2463@gmail.com
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17 L17 7 M9 7 H17 V15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </a>
         </div>
         <div className="footer-bottom">
-          <div>© 2026 Shivani Saini. Crafted in India.</div>
-          <div className="socials">
-            <a href="https://www.behance.net/shivanisaini1#" target="_blank" rel="noreferrer" data-cursor="open">Behance</a>
-            <a href="https://dribbble.com/shivanisaini_designer" target="_blank" rel="noreferrer" data-cursor="open">Dribbble</a>
-            <a href="https://www.linkedin.com/in/shivanisainidesigner/" target="_blank" rel="noreferrer" data-cursor="open">LinkedIn</a>
+          <div className="footer-credit">Designed &amp; developed using Figma and Claude Code.</div>
+          <div className="footer-madewith">
+            Made with <span>💛</span> &amp; <span>🍵</span>
           </div>
-          <div style={{fontFamily:"JetBrains Mono, monospace", fontSize:11, letterSpacing:"0.1em"}}>
-            LAT 28.6139° · LON 77.2090°
+          <div className="footer-connect">
+            <span className="footer-connect-label">Let's connect</span>
+            <SocialLinks />
           </div>
         </div>
       </div>
@@ -108,3 +149,4 @@ window.Nav = Nav;
 window.Footer = Footer;
 window.PageShell = PageShell;
 window.useReveal = useReveal;
+window.SocialLinks = SocialLinks;

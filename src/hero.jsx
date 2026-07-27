@@ -1,6 +1,5 @@
-// Hero background — "Lineage"
-// Classy, modern, interactive: flowing silk-like curves drawn as Bezier ribbons
-// that respond to the cursor with gentle bulges. Editorial feel, no chaos.
+// Hero background — "Vortex"
+// Silky monochrome smoke streamlines swirling into a soft vortex, warped by the cursor.
 
 const HELLOS = [
   "Hello",         // English
@@ -28,7 +27,7 @@ function HelloTicker() {
   );
 }
 
-function HeroSilk() {
+function HeroVortex() {
   const canvasRef = React.useRef(null);
 
   React.useEffect(() => {
@@ -53,110 +52,85 @@ function HeroSilk() {
     };
     const onLeave = () => { mouse.active = false; };
 
-    const RIBBONS = 22;
-    const SEGMENTS = 22;
-    const ribbons = [];
-    for (let i = 0; i < RIBBONS; i++) {
-      const t = i / (RIBBONS - 1);
-      ribbons.push({
-        y: t,
-        phase: Math.random() * Math.PI * 2,
-        speed: 0.12 + Math.random() * 0.16,
-        amp: 14 + Math.random() * 22,
-        wave: 1.2 + Math.random() * 1.6,
-        hue: i % 3,
+    const STREAMS = 30;
+    const STEPS = 46;
+    const streams = [];
+    for (let i = 0; i < STREAMS; i++) {
+      streams.push({
+        angle0: (i / STREAMS) * Math.PI * 2 + Math.random() * 0.3,
+        rSpread: 0.7 + Math.random() * 0.3,
+        speed: 0.5 + Math.random() * 0.4,
+        dir: i % 2 === 0 ? 1 : -1,
+        widthMul: 0.5 + Math.random() * 1.1,
       });
     }
 
-    const palette = [
-      "rgba(182, 166, 255, ",
-      "rgba(124, 92, 255, ",
-      "rgba(255, 255, 255, ",
-    ];
+    const pal = { stroke: "255, 255, 255" };
 
     const draw = () => {
       const t = (performance.now() - t0) / 1000;
 
       if (mouse.active) {
-        mouse.x = mouse.x === -9999 ? mouse.tx : mouse.x + (mouse.tx - mouse.x) * 0.08;
-        mouse.y = mouse.y === -9999 ? mouse.ty : mouse.y + (mouse.ty - mouse.y) * 0.08;
+        mouse.x = mouse.x === -9999 ? mouse.tx : mouse.x + (mouse.tx - mouse.x) * 0.06;
+        mouse.y = mouse.y === -9999 ? mouse.ty : mouse.y + (mouse.ty - mouse.y) * 0.06;
       }
 
       ctx.clearRect(0, 0, w, h);
-      const wash = ctx.createLinearGradient(0, 0, w, h);
-      wash.addColorStop(0, "rgba(12, 10, 22, 0)");
-      wash.addColorStop(1, "rgba(20, 14, 40, 0.35)");
-      ctx.fillStyle = wash;
-      ctx.fillRect(0, 0, w, h);
 
-      if (mouse.active) {
-        const rg = ctx.createRadialGradient(mouse.x, mouse.y, 0, mouse.x, mouse.y, 460);
-        rg.addColorStop(0, "rgba(182, 166, 255, 0.10)");
-        rg.addColorStop(0.6, "rgba(124, 92, 255, 0.02)");
-        rg.addColorStop(1, "rgba(124, 92, 255, 0)");
-        ctx.fillStyle = rg;
-        ctx.fillRect(0, 0, w, h);
-      }
+      const baseCx = w * 0.5, baseCy = h * 0.44;
+      const pullX = mouse.active ? (mouse.x - baseCx) * 0.15 : 0;
+      const pullY = mouse.active ? (mouse.y - baseCy) * 0.15 : 0;
+      const cx = baseCx + pullX, cy = baseCy + pullY;
+      const squash = 0.62;
+      const maxR = Math.min(w, h) * 0.6;
 
       ctx.globalCompositeOperation = "lighter";
 
-      for (let r = 0; r < ribbons.length; r++) {
-        const rb = ribbons[r];
-        const baseY = rb.y * h;
-        const pts = [];
-        for (let s = 0; s <= SEGMENTS; s++) {
-          const fx = s / SEGMENTS;
-          const x = fx * w;
-          const phase = rb.phase + t * rb.speed + fx * rb.wave * Math.PI;
-          let y = baseY + Math.sin(phase) * rb.amp;
-          y += Math.sin(phase * 2.3 + t * 0.4) * rb.amp * 0.25;
+      for (const s of streams) {
+        const rot = t * 0.055 * s.speed * s.dir + s.angle0;
+        let x = cx + Math.cos(rot) * maxR * s.rSpread;
+        let y = cy + Math.sin(rot) * maxR * s.rSpread * squash;
+        const pts = [{ x, y }];
+
+        for (let k = 0; k < STEPS; k++) {
+          const dx = x - cx, dy = (y - cy) / squash;
+          const r = Math.sqrt(dx * dx + dy * dy) || 1;
+          const baseAngle = Math.atan2(dy, dx);
+          const swirl = baseAngle + s.dir * (Math.PI / 2) + s.dir * (2.4 / (r * 0.012 + 1));
+          const stepLen = 5.4;
+          x += Math.cos(swirl) * stepLen;
+          y += Math.sin(swirl) * stepLen * squash;
 
           if (mouse.active) {
-            const dx = x - mouse.x;
-            const dy = baseY - mouse.y;
-            const d2 = dx * dx + dy * dy;
-            const radius = 280;
-            const falloff = Math.exp(-d2 / (radius * radius));
-            y += (mouse.y - baseY) * falloff * 0.55;
+            const mdx = x - mouse.x, mdy = y - mouse.y;
+            const mr = Math.sqrt(mdx * mdx + mdy * mdy);
+            if (mr < 260) {
+              const kick = (1 - mr / 260) * 9;
+              const ang = Math.atan2(mdy, mdx) + Math.PI / 2;
+              x += Math.cos(ang) * kick * 0.4;
+              y += Math.sin(ang) * kick * 0.4;
+            }
           }
-
           pts.push({ x, y });
         }
 
-        const alpha = 0.10 + (r % 3 === 1 ? 0.06 : 0);
-        ctx.strokeStyle = palette[rb.hue] + alpha + ")";
-        ctx.lineWidth = r % 7 === 0 ? 1.6 : 0.8;
+        const n = pts.length - 1;
+        const grad = ctx.createLinearGradient(pts[0].x, pts[0].y, pts[n].x, pts[n].y);
+        const base = 0.2 * s.widthMul;
+        grad.addColorStop(0, `rgba(${pal.stroke}, 0)`);
+        grad.addColorStop(0.18, `rgba(${pal.stroke}, ${base * 0.7})`);
+        grad.addColorStop(0.5, `rgba(${pal.stroke}, ${base})`);
+        grad.addColorStop(0.85, `rgba(${pal.stroke}, ${base * 0.5})`);
+        grad.addColorStop(1, `rgba(${pal.stroke}, 0)`);
+        ctx.strokeStyle = grad;
+        ctx.lineWidth = 1.4 * s.widthMul;
         ctx.lineCap = "round";
         ctx.beginPath();
         ctx.moveTo(pts[0].x, pts[0].y);
-        for (let i = 0; i < pts.length - 1; i++) {
-          const cx = (pts[i].x + pts[i + 1].x) / 2;
-          const cy = (pts[i].y + pts[i + 1].y) / 2;
-          ctx.quadraticCurveTo(pts[i].x, pts[i].y, cx, cy);
+        for (let k = 1; k < n; k++) {
+          const mx = (pts[k].x + pts[k + 1].x) / 2, my = (pts[k].y + pts[k + 1].y) / 2;
+          ctx.quadraticCurveTo(pts[k].x, pts[k].y, mx, my);
         }
-        ctx.lineTo(pts[pts.length - 1].x, pts[pts.length - 1].y);
-        ctx.stroke();
-
-        if (r % 3 === 1) {
-          ctx.strokeStyle = "rgba(255,255,255,0.04)";
-          ctx.lineWidth = 0.6;
-          ctx.stroke();
-        }
-      }
-
-      const filaments = 5;
-      for (let i = 0; i < filaments; i++) {
-        const fx = (i + 0.5) / filaments;
-        const x = fx * w + Math.sin(t * 0.3 + i) * 24;
-        const grad = ctx.createLinearGradient(x, 0, x, h);
-        grad.addColorStop(0, "rgba(182,166,255,0)");
-        grad.addColorStop(0.5, "rgba(182,166,255,0.05)");
-        grad.addColorStop(1, "rgba(182,166,255,0)");
-        ctx.strokeStyle = grad;
-        ctx.lineWidth = 0.6;
-        ctx.beginPath();
-        ctx.moveTo(x, 0);
-        ctx.lineTo(x, h);
         ctx.stroke();
       }
 
@@ -176,7 +150,7 @@ function HeroSilk() {
     };
   }, []);
 
-  return <canvas ref={canvasRef} className="hero-canvas" aria-hidden="true" />;
+  return <canvas ref={canvasRef} className="hero-canvas hero-vortex-canvas" aria-hidden="true" />;
 }
 
 // Quieter glyph field — less busy, more editorial
@@ -200,8 +174,6 @@ function GlyphField() {
   }, []);
 
   const items = [
-    { ch: "✦", x: "90%", y: "16%", d: 1.4, size: 44 },
-    { ch: "—", x: "6%",  y: "78%", d: 0.8, size: 80 },
     { ch: "•", x: "92%", y: "72%", d: 1.6, size: 24 },
   ];
 
@@ -215,11 +187,35 @@ function GlyphField() {
   );
 }
 
+function HeroVideoBg() {
+  return (
+    <video
+      className="hero-canvas hero-bg-video"
+      autoPlay muted loop playsInline preload="auto"
+      aria-hidden="true"
+    >
+      <source src="assets/hero-bg-smoke.mp4" type="video/mp4" />
+    </video>
+  );
+}
+
+function HeroBg() {
+  const [useVideo, setUseVideo] = React.useState(() => !window.matchMedia("(max-width: 720px)").matches);
+  React.useEffect(() => {
+    const mq = window.matchMedia("(max-width: 720px)");
+    const update = () => setUseVideo(!mq.matches);
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
+  return useVideo ? <HeroVideoBg /> : <HeroVortex />;
+}
+
 function Hero() {
-  const headline = ["Designing", "calm", "systems", "for", "loud", "problems."];
+  const headline = ["I'm", "Shivani", "Saini"];
   return (
     <section className="hero" id="top" data-screen-label="01 Hero">
-      <HeroSilk />
+      <HeroBg />
+      <div className="hero-scrim" aria-hidden="true" />
       <GlyphField />
 
       <div className="container hero-inner">
@@ -232,17 +228,21 @@ function Hero() {
             <React.Fragment key={i}>
               <span className="word">
                 <span style={{ animationDelay: `${0.08 + i * 0.09}s` }}>
-                  {w === "calm" ? <em className="serif">{w}</em> : w}
+                  {i > 0 ? <em className="serif">{w}</em> : w}
                 </span>
               </span>
               {i < headline.length - 1 && " "}
             </React.Fragment>
           ))}
         </h1>
+        <p className="hero-sub">
+          Senior Product Designer with hands-on experience of <strong>7 years</strong> creating impactful digital products from start to finish.
+        </p>
         <div className="hero-meta">
-          <div className="item"><b>Role</b><span>Senior Product Designer</span></div>
-          <div className="item"><b>Based</b><span>Delhi, India</span></div>
-          <div className="item"><b>Experience</b><span>6.5+ years</span></div>
+          <div className="item">
+            <b>Reach out on</b>
+            <SocialLinks className="hero-socials" />
+          </div>
         </div>
       </div>
 

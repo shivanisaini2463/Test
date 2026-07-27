@@ -11,9 +11,8 @@ function CaseHero({ c }) {
     }}>
       <div className="bg-blur" style={{ background: `radial-gradient(circle, ${c.cover?.c1}44, transparent 70%)` }} />
       <div className="container">
-        <span className="eyebrow">Case Study — {c.num}</span>
-        <div className="meta-row" style={{marginTop:24}}>
-          <span>{c.client}</span><span>{c.year}</span><span>{c.sector}</span>
+        <div className="meta-row">
+          <span>{c.client}</span>{!c.phases && <span>{c.year}</span>}<span>{c.sector}</span>
         </div>
         <h1>
           {c.title[0]} <span className="serif">{c.title[1]}</span>
@@ -46,6 +45,195 @@ function Cover({ cover }) {
         <div className="label">{cover.label}</div>
       </div>
     </div>
+  );
+}
+
+/* ---------- Phase-based case study layout (used when c.phases is present) ---------- */
+
+function OverviewSection({ overview }) {
+  if (!overview) return null;
+  return (
+    <section className="cd-section">
+      <div className="container cd-grid">
+        <div className="cd-left">
+          <CaseKicker>Overview</CaseKicker>
+        </div>
+        <div className="cd-right">
+          <p className="cd-overview-statement">{overview}</p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ProblemStatementSection({ p }) {
+  if (!p) return null;
+  return (
+    <section className="cd-section cd-alt">
+      <div className="container cd-grid">
+        <div className="cd-left">
+          <CaseKicker>Problem Statement</CaseKicker>
+        </div>
+        <div className="cd-right">
+          <p className="cd-p">{p.intro}</p>
+          <div className="cd-artifacts">
+            {p.challenges.map((c, i) => (
+              <div className="cd-artifact" key={i}>
+                <div className="cd-challenge-k">{c.k}</div>
+                <div className="cd-challenge-v">{c.v}</div>
+              </div>
+            ))}
+          </div>
+          {p.closing && <p className="cd-p" style={{marginTop: 32, marginBottom: 0}}>{p.closing}</p>}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function BusinessGoalsSection({ businessGoals }) {
+  if (!businessGoals) return null;
+  return (
+    <section className="cd-section">
+      <div className="container cd-grid">
+        <div className="cd-left"><CaseKicker>Business Goals</CaseKicker></div>
+        <div className="cd-right">
+          <p className="cd-p" style={{marginBottom: 0}}>{businessGoals}</p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function MyRoleSection({ myRoleDetail }) {
+  if (!myRoleDetail) return null;
+  return (
+    <section className="cd-section cd-alt">
+      <div className="container cd-grid">
+        <div className="cd-left"><CaseKicker>My Role</CaseKicker></div>
+        <div className="cd-right">
+          <ul className="cd-summary-list">
+            {myRoleDetail.map((r, i) => <li key={i}>{r}</li>)}
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function TargetAudienceSection({ targetAudience }) {
+  if (!targetAudience) return null;
+  return (
+    <section className="cd-section">
+      <div className="container cd-grid">
+        <div className="cd-left"><CaseKicker>Target Audience</CaseKicker></div>
+        <div className="cd-right">
+          <div className="cd-pills">
+            {targetAudience.map((a, i) => <span className="cd-pill" key={i}>{a}</span>)}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function PhaseImagePlaceholder({ label }) {
+  return (
+    <div className="cd-phase-image">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+        <rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" strokeWidth="1.6"/>
+        <circle cx="8.5" cy="9.5" r="1.5" stroke="currentColor" strokeWidth="1.6"/>
+        <path d="M21 15l-5.5-5.5a1.5 1.5 0 0 0-2.12 0L5 18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+      <span>Screenshot placeholder — {label}</span>
+    </div>
+  );
+}
+
+function PhaseSection({ phase, index, reveal }) {
+  const num = String(index + 1).padStart(2, "0");
+  const alt = index % 2 === 1;
+  return (
+    <section className={"cd-section cd-phase-section" + (alt ? " cd-alt" : "")}>
+      <div className="container cd-grid">
+        <div className="cd-left">
+          <div className="cd-phase-marker">
+            <span className="cd-phase-marker-label">Phase</span>
+            <span className="cd-phase-marker-num">{num}</span>
+          </div>
+        </div>
+        <div className="cd-right">
+          <h3 className="cd-h">{phase.name}</h3>
+
+          <div className="cd-phase-cols">
+            <div className="cd-phase-col">
+              <div className="cd-phase-col-label pain">Triggering Points</div>
+              <ul className="cd-phase-list trigger">
+                {phase.triggers.map((t, i) => <li key={i}>{t}</li>)}
+              </ul>
+            </div>
+            <div className="cd-phase-col">
+              <div className="cd-phase-col-label">Research &amp; Process</div>
+              <ul className="cd-phase-list">
+                {phase.research.map((t, i) => <li key={i}>{t}</li>)}
+              </ul>
+            </div>
+            <div className="cd-phase-col">
+              <div className="cd-phase-col-label gain">Key Decisions</div>
+              <ul className="cd-phase-list decision">
+                {phase.decisions.map((t, i) => <li key={i}>{t}</li>)}
+              </ul>
+            </div>
+          </div>
+
+          <div className="cd-phase-outcomes">
+            {phase.outcomes.map((o, i) => (
+              <div className="cd-phase-outcome" key={i}>
+                <b>{o.v}</b>
+                <span>{o.k}</span>
+              </div>
+            ))}
+          </div>
+
+          <PhaseImagePlaceholder label={`Phase ${num} — ${phase.name}`} />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ---------- Generic flexible section — used for simpler, non-phase case studies ---------- */
+function GenericSection({ kicker, body, body2, items, table, image, alt }) {
+  return (
+    <section className={"cd-section" + (alt ? " cd-alt" : "")}>
+      <div className="container cd-grid">
+        <div className="cd-left"><CaseKicker>{kicker}</CaseKicker></div>
+        <div className="cd-right">
+          {body && <p className="cd-p">{body}</p>}
+          {items && (
+            <ul className="cd-summary-list" style={{marginTop: body ? 8 : 0, marginBottom: body2 || image ? 32 : 0}}>
+              {items.map((it, i) => (
+                <li key={i}>
+                  {typeof it === "string" ? it : <><strong style={{color: "var(--text)"}}>{it.k}: </strong>{it.v}</>}
+                </li>
+              ))}
+            </ul>
+          )}
+          {table && (
+            <div className="cd-datagrid" style={{margin: "8px 0 0"}}>
+              {table.map((row, i) => (
+                <div className="cd-datacell" key={i}>
+                  <div className="cd-datak">{row.k}</div>
+                  <div className="cd-datav">{row.v}</div>
+                </div>
+              ))}
+            </div>
+          )}
+          {body2 && <p className="cd-p" style={{marginTop: 24, marginBottom: 0}}>{body2}</p>}
+          {image && <PhaseImagePlaceholder label={image} />}
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -333,6 +521,34 @@ function NextCase({ c }) {
 function CaseDetail({ slug }) {
   const c = CASE_DETAILS[slug];
   if (!c) return <div style={{padding:200, textAlign:"center"}}>Case not found.</div>;
+
+  if (c.phases) {
+    return (
+      <>
+        <CaseHero c={c} />
+        <Cover cover={c.cover} />
+        <OverviewSection overview={c.overview} />
+        <ProblemStatementSection p={c.problemStatement} />
+        <BusinessGoalsSection businessGoals={c.businessGoals} />
+        <MyRoleSection myRoleDetail={c.myRoleDetail} />
+        <TargetAudienceSection targetAudience={c.targetAudience} />
+        {c.phases.map((phase, i) => <PhaseSection phase={phase} index={i} key={i} />)}
+        <NextCase c={c} />
+      </>
+    );
+  }
+
+  if (c.sections) {
+    return (
+      <>
+        <CaseHero c={c} />
+        <Cover cover={c.cover} />
+        {c.sections.map((s, i) => <GenericSection {...s} alt={i % 2 === 1} key={i} />)}
+        <NextCase c={c} />
+      </>
+    );
+  }
+
   return (
     <>
       <CaseHero c={c} />

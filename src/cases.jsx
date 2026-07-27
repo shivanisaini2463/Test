@@ -9,16 +9,16 @@ const CASES = [
     client: "Redrob LLM",
     year: "2025-26",
     sector: "B2B & B2C",
-    title: ["One platform to", "know everything."],
+    title: ["From Search Tool to", "AI Talent Intelligence Platform"],
     titleHighlight: 1,
-    description: "AI-powered workspace for people search, company enrichment, resume ranking, and contact intelligence — built for teams that need answers fast.",
+    description: "Transforming a Recruiter Search Platform into an AI-Powered Professional Workspace",
     impact: [
       { k: "Platform modules", v: "1 for All" },
       { k: "Research time saved", v: "71%" },
       { k: "Profiles indexed", v: "1M+" },
     ],
-    visual: { c1: "#3a1e6b", c2: "#09060f", accent: "#b6a6ff" },  /* Purple */
-    live: "https://redrob.example.com",
+    visual: { c1: "#3a3a3a", c2: "#0a0a0a", accent: "#e5e5e5" },  /* Mono — grey */
+    live: "https://www.redrob.ai/",
   },
   {
     num: "02",
@@ -28,15 +28,15 @@ const CASES = [
     client: "Phot AI",
     year: "2024-25",
     sector: "AI · Creative Tools with Studio",
-    title: ["Creatives that", "convert at scale."],
+    title: ["Designing the Future of", "AI-Powered Creative Workflows"],
     titleHighlight: 1,
-    description: "Full product design for an AI creative studio — from photo editing to ad generation — helping D2C brands produce performance creatives 10× faster.",
+    description: "Simplified complex AI image-generation and editing workflows into an intuitive creative platform, enabling users to generate, edit, and iterate professional-quality visuals with minimal effort.",
     impact: [
       { k: "Faster creative output", v: "10×" },
       { k: "Assets generated / mo", v: "500K+" },
       { k: "Saved Cost", v: "62%" },
     ],
-    visual: { c1: "#6b1e5a", c2: "#0f050d", accent: "#ff9ee0" },  /* Pink */
+    visual: { c1: "#333333", c2: "#0a0a0a", accent: "#d8d8d8" },  /* Mono — grey */
     live: "https://photai.example.com",
   },
   {
@@ -47,15 +47,15 @@ const CASES = [
     client: "Big Celebrity League",
     year: "2026",
     sector: "Sports · Entertainment",
-    title: ["Cricket meets", "celebrity culture."],
+    title: ["Building the Digital Home", "for a New Cricket League"],
     titleHighlight: 1,
-    description: "End-to-end design of a live cricket platform with scores, leaderboards, and fan engagement — built for India's love of celebrities and cricket.",
+    description: "Designed the official digital ecosystem for Big Cricket League, bringing together live matches, teams, players, fan engagement, and rich storytelling to create a unified experience for millions of cricket enthusiasts.",
     impact: [
       { k: "Celebrity teams", v: "6" },
       { k: "Leaderboard Stats", v: "90+" },
       { k: "Time saving", v: "62%" },
     ],
-    visual: { c1: "#1a5c2e", c2: "#050f08", accent: "#6effa0" },  /* Green */
+    visual: { c1: "#404040", c2: "#0d0d0d", accent: "#ececec" },  /* Mono — grey */
     live: "https://bcl.example.com",
   },
   {
@@ -66,15 +66,15 @@ const CASES = [
     client: "Pritam Restaurant",
     year: "2024",
     sector: "F&B · Heritage Brand",
-    title: ["80 years of", "legacy, reimagined."],
+    title: ["80 Years of Heritage,", "Reimagined Digitally."],
     titleHighlight: 1,
-    description: "Translated a Mumbai institution est. 1947 into a modern digital presence — covering reservations, digital menus, and brand storytelling without losing heritage.",
+    description: "Designed the first official digital presence for one of Mumbai's most iconic restaurants by transforming decades of culinary heritage, history, and storytelling into an immersive brand experience without losing its authenticity.",
     impact: [
       { k: "Online reservations", v: "+57%" },
       { k: "Brand heritage", v: "Est. 1947" },
       { k: "Satisfaction score", v: "92%" },
     ],
-    visual: { c1: "#6b1e1e", c2: "#0f0505", accent: "#ff9a9a" },  /* Red */
+    visual: { c1: "#383838", c2: "#0a0a0a", accent: "#dcdcdc" },  /* Mono — grey */
     live: "https://pritam.example.com",
   },
   {
@@ -85,15 +85,15 @@ const CASES = [
     client: "Pulpy VPN",
     year: "2023",
     sector: "Privacy · Consumer App",
-    title: ["Privacy, finally", "feels effortless."],
+    title: ["Making digital privacy", "feel simple."],
     titleHighlight: 1,
-    description: "Consumer VPN app designed from scratch — 90-second onboarding, higher trial-to-paid conversion, and security that feels effortless for everyday users.",
+    description: "Built a consumer VPN experience that removes complexity from online security through intuitive onboarding, clear interactions, and a seamless everyday experience.",
     impact: [
       { k: "Downloads", v: "100K+" },
       { k: "Avg. onboarding", v: "88s" },
       { k: "Play store rating", v: "4.2" },
     ],
-    visual: { c1: "#6b3d0e", c2: "#0f0a03", accent: "#ffb347" },  /* Orange */
+    visual: { c1: "#464646", c2: "#101010", accent: "#f0f0f0" },  /* Mono — grey */
     live: "https://pulpyvpn.example.com",
   },
 ];
@@ -202,113 +202,110 @@ function CaseVisual({ c, active }) {
   );
 }
 
-function CaseSlider() {
-  const [idx, setIdx] = React.useState(0);
-  const len = CASES.length;
-  const touchStart = React.useRef(null);
+// Scroll-driven motion for a case row: one-time staggered reveal (via `.in-view`)
+// plus a continuous parallax drift on the visual while the row is near the viewport.
+function useCaseRowMotion() {
+  const rowRef = React.useRef(null);
+  const visualRef = React.useRef(null);
+  const [inView, setInView] = React.useState(false);
 
   React.useEffect(() => {
-    const t = setTimeout(() => setIdx(i => (i + 1) % len), 7000);
-    return () => clearTimeout(t);
-  }, [idx, len]);
+    const el = rowRef.current;
+    if (!el) return;
+    const io = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) setInView(true);
+    }, { threshold: 0.2 });
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
 
-  const go = (n) => setIdx(n);
-  const next = () => setIdx((i) => (i + 1) % len);
-  const prev = () => setIdx((i) => (i - 1 + len) % len);
+  React.useEffect(() => {
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const narrow = window.matchMedia("(max-width: 900px)").matches;
+    if (reduce || narrow) return;
+    const row = rowRef.current, vis = visualRef.current;
+    if (!row || !vis) return;
+    let raf = null;
+    const tick = () => {
+      const rect = row.getBoundingClientRect();
+      const vh = window.innerHeight;
+      const center = rect.top + rect.height / 2 - vh / 2;
+      const progress = Math.max(-1, Math.min(1, center / (vh * 0.75)));
+      vis.style.transform = `translateY(${progress * -30}px)`;
+      raf = requestAnimationFrame(tick);
+    };
+    const io = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        if (!raf) raf = requestAnimationFrame(tick);
+      } else if (raf) {
+        cancelAnimationFrame(raf);
+        raf = null;
+        vis.style.transform = "";
+      }
+    }, { rootMargin: "250px 0px" });
+    io.observe(row);
+    return () => { io.disconnect(); if (raf) cancelAnimationFrame(raf); };
+  }, []);
 
-  const onTouchStart = (e) => { touchStart.current = e.touches[0].clientX; };
-  const onTouchEnd = (e) => {
-    if (touchStart.current == null) return;
-    const d = e.changedTouches[0].clientX - touchStart.current;
-    if (d < -40) next();
-    else if (d > 40) prev();
-    touchStart.current = null;
-  };
+  return { rowRef, visualRef, inView };
+}
 
-  const c = CASES[idx];
-
+function CaseRow({ c, index }) {
+  const reverse = index % 2 === 1;
+  const { rowRef, visualRef, inView } = useCaseRowMotion();
   return (
-    <section className="case-slider-v2" id="cases" data-screen-label="02 Case Studies"
-      onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
+    <div ref={rowRef} className={"case-row " + (reverse ? "reverse " : "") + (inView ? "in-view" : "")}>
+      <div className="case-row-glow" style={{background:`radial-gradient(600px 420px at ${reverse ? "80%" : "20%"} 15%, var(--accent-glow), transparent 65%)`}} />
 
-      {/* Backdrop tint transitions */}
-      {CASES.map((cs, i) => (
-        <div key={i} className={"case-backdrop " + (idx === i ? "active" : "")}
-          style={{background:`radial-gradient(900px 600px at 80% 20%, ${cs.visual.c1}, transparent 60%)`}} />
-      ))}
+      <div className="case-info case-row-info">
+        <div className="meta">
+          <span>{c.client}</span><span>{c.year}</span><span>{c.sector}</span>
+        </div>
+        <h3>
+          {c.title.map((line, li) => (
+            <span className="line" key={li}>
+              {li === c.titleHighlight
+                ? <em className="serif" style={{ fontWeight: 600 }}>{line}</em>
+                : line}
+            </span>
+          ))}
+        </h3>
+        <p>{c.description}</p>
 
-      <div className="container case-head">
-        <span className="eyebrow">02 — Selected Work</span>
-        <h2 className="case-h2">Five stories, <span className="serif">6 years</span> in the making.</h2>
+        <div className="impact">
+          {c.impact.map((m, i) => (
+            <div key={i} className="impact-stat">
+              <b>{m.v}</b><span>{m.k}</span>
+            </div>
+          ))}
+        </div>
+
+        <div className="ctas" style={{marginTop:32}}>
+          <a href={"case-" + c.slug + ".html"} className="btn primary" data-cursor="open">
+            View case study
+            <svg className="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M7 17 L17 7 M9 7 H17 V15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          </a>
+          <a href={c.live} target="_blank" rel="noreferrer" className="btn ghost" data-cursor="open">
+            Explore Live
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M14 4 H20 V10 M20 4 L10 14 M5 6 V19 H18 V13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          </a>
+        </div>
       </div>
 
-      <div className="container case-stage">
-        <div className="big-num-wrap">
-          <span key={idx + "-num"} className="big-num anim">{c.num}</span>
+      <div className="case-row-visual" ref={visualRef}>
+        <div className="case-visual-wrap">
+          <CaseVisual c={c} active={true} />
         </div>
+      </div>
+    </div>
+  );
+}
 
-        <div className="case-grid" key={idx}>
-          <div className="case-info">
-            <div className="meta">
-              <span>{c.client}</span><span>{c.year}</span><span>{c.sector}</span>
-            </div>
-            <h3>
-              {c.title.map((line, li) => (
-                <span className="line" key={li}>
-                  <span style={{ animationDelay: (0.05 + li * 0.12) + "s" }}>
-                    {li === c.titleHighlight
-                      ? <em className="serif" style={{ fontStyle: "italic", color: c.visual.accent }}>{line}</em>
-                      : line}
-                  </span>
-                </span>
-              ))}
-            </h3>
-            <p>{c.description}</p>
-
-            <div className="impact">
-              {c.impact.map((m, i) => (
-                <div key={i} className="impact-stat" style={{animationDelay: (0.3 + i*0.1) + "s"}}>
-                  <b>{m.v}</b><span>{m.k}</span>
-                </div>
-              ))}
-            </div>
-
-            <div className="ctas" style={{marginTop:32}}>
-              <a href={"case-" + c.slug + ".html"} className="btn primary" data-cursor="open">
-                View case study
-                <svg className="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M7 17 L17 7 M9 7 H17 V15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-              </a>
-              <a href={c.live} target="_blank" rel="noreferrer" className="btn ghost" data-cursor="open">
-                Explore Live
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M14 4 H20 V10 M20 4 L10 14 M5 6 V19 H18 V13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-              </a>
-            </div>
-          </div>
-
-          <div className="case-visual-wrap">
-            <CaseVisual c={c} active={true} key={"v-"+idx} />
-          </div>
-        </div>
-
-        <div className="case-footer-row">
-          <div className="case-thumbs">
-            {CASES.map((cs, i) => (
-              <button key={i} className={idx === i ? "active" : ""} onClick={() => go(i)} aria-label={"Case " + cs.num} />
-            ))}
-          </div>
-          <div className="case-controls">
-            <div className="counter">
-              <span className="curr">{String(idx + 1).padStart(2, "0")}</span>
-              <span> / {String(len).padStart(2, "0")}</span>
-            </div>
-            <button onClick={prev} aria-label="Previous" data-cursor="prev">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M15 6 L9 12 L15 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            </button>
-            <button onClick={next} aria-label="Next" data-cursor="next">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 6 L15 12 L9 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            </button>
-          </div>
-        </div>
+function CaseSlider() {
+  return (
+    <section className="case-slider-v2" id="cases" data-screen-label="02 Case Studies">
+      <div className="container case-list">
+        {CASES.map((c, i) => <CaseRow c={c} index={i} key={c.slug} />)}
       </div>
     </section>
   );

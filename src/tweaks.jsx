@@ -1,5 +1,5 @@
 const ACCENTS = [
-  { key: "violet", hex: "#7c5cff", hex2: "#b6a6ff", glow: "rgba(124,92,255,0.35)" },
+  { key: "mono",   hex: "#ffffff", hex2: "#ffffff", glow: "rgba(255,255,255,0.14)" },
   { key: "lime",   hex: "#b6ff3c", hex2: "#d6ff8a", glow: "rgba(182,255,60,0.3)" },
   { key: "ember",  hex: "#ff5a36", hex2: "#ffa387", glow: "rgba(255,90,54,0.3)" },
   { key: "aqua",   hex: "#00d3a7", hex2: "#7affde", glow: "rgba(0,211,167,0.3)" },
@@ -7,14 +7,20 @@ const ACCENTS = [
 ];
 
 const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
-  "accent": "violet",
+  "accent": "mono",
   "cursor": "blended",
   "grain": true
 }/*EDITMODE-END*/;
 
 function applyAccent(key) {
-  const a = ACCENTS.find(x => x.key === key) || ACCENTS[0];
   const r = document.documentElement.style;
+  if (key === "mono") {
+    r.removeProperty("--accent");
+    r.removeProperty("--accent-2");
+    r.removeProperty("--accent-glow");
+    return;
+  }
+  const a = ACCENTS.find(x => x.key === key) || ACCENTS[0];
   r.setProperty("--accent", a.hex);
   r.setProperty("--accent-2", a.hex2);
   r.setProperty("--accent-glow", a.glow);
