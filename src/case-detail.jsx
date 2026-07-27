@@ -203,7 +203,7 @@ function PhaseSection({ phase, index, reveal }) {
 }
 
 /* ---------- Generic flexible section — used for simpler, non-phase case studies ---------- */
-function GenericSection({ kicker, body, body2, items, table, image, breakdown, alt }) {
+function GenericSection({ kicker, body, body2, items, table, image, imgFit, breakdown, alt }) {
   return (
     <section className={"cd-section" + (alt ? " cd-alt" : "")}>
       <div className="container cd-grid">
@@ -236,7 +236,7 @@ function GenericSection({ kicker, body, body2, items, table, image, breakdown, a
                   <h3 className="cd-h">{b.title}</h3>
                   <p className="cd-p">{b.subtext}</p>
                   {b.img
-                    ? <img src={b.img} alt={b.title} className="cd-phase-image cd-phase-photo" />
+                    ? <img src={b.img} alt={b.title} className={"cd-phase-image cd-phase-photo" + (b.imgFit ? " cd-phase-photo-fit" : "")} />
                     : <PhaseImagePlaceholder label={b.title} />}
                 </div>
               ))}
@@ -245,7 +245,7 @@ function GenericSection({ kicker, body, body2, items, table, image, breakdown, a
           {body2 && <p className="cd-p" style={{marginTop: 24, marginBottom: 0}}>{body2}</p>}
           {image && (
             image.startsWith("assets/")
-              ? <img src={image} alt={kicker} className="cd-phase-image cd-phase-photo" />
+              ? <img src={image} alt={kicker} className={"cd-phase-image cd-phase-photo" + (imgFit ? " cd-phase-photo-fit" : "")} />
               : <PhaseImagePlaceholder label={image} />
           )}
         </div>

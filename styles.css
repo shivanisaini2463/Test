@@ -2087,6 +2087,11 @@ body.cursor-custom .cursor { display: block; }
   width: 100%;
 }
 
+.cd-phase-photo-fit {
+  aspect-ratio: 2/1;
+  object-fit: contain;
+}
+
 .cd-breakdown-list { display: flex; flex-direction: column; gap: 56px; }
 .cd-breakdown-item .cd-h { font-size: clamp(22px, 2.6vw, 32px); margin-bottom: 10px; }
 .cd-breakdown-item .cd-p { margin-bottom: 0; }

@@ -291,209 +291,112 @@
       "label": "Phot AI — Creative-Led Growth Platform",
       "img": "assets/photai-preview.jpg"
     },
-    "context": null,
-    "research": {
-      "kicker": "02 — Research",
-      "h": "Before defining the experience, I wanted to understand how creators currently approached AI-assisted design and where their workflows were breaking down.",
-      "b": "Research included -",
-      "bullets": [
-        {
-          "k": "26 in-depth interviews",
-          "v": "Founders, performance marketers, creative leads, e-com operators"
-        },
-        {
-          "k": "10 shadowing sessions",
-          "v": "Tracked full creative cycle: brief → shoot → edit → publish → iterate"
-        },
-        {
-          "k": "14 tools audited",
-          "v": "Canva, Adobe Firefly, Midjourney, DALL·E, Pencil, Smartly, Predis & more"
-        }
-      ],
-      "insights": [
-        "55% of creative angles brands test fail — not because the product is bad, but because angle selection is based on gut feel, not competitive signal data.",
-        "Creative fatigue is the #1 silent ROAS killer: CTR drops 47% on average within 2 weeks, but most brands only notice when ROAS has already declined 32%.",
-        "Performance marketers — not designers — are the primary users. The interface had to work for someone who can't distinguish a hex code from a font weight.",
-        "Listing quality on Amazon/Shopify was bleeding conversion silently: 1:1 listings-to-format ratio, unoptimised titles, and A+ content taking 5+ hours per SKU to produce manually."
-      ]
-    },
-    "personas": [],
-    "problem": {
-      "kicker": "03 — Problem Statement",
-      "h": "Creators and businesses spend significant time switching between multiple AI tools to complete a single creative task.'.",
-      "b": "This fragmented workflow increases production time, introduces unnecessary complexity, and makes AI adoption difficult for non-designers.",
-      "statement": "Create impactful creatives in less time"
-    },
-    "journey": {
-      "kicker": "04 — User Journey",
-      "h": "From product URL to campaign-ready creatives, guided by signal — not guesswork.",
-      "b": "I mapped the end-to-end journey for a performance marketer — from inputting a product to deploying validated creatives. The critical insight from journey mapping: the biggest drop-off wasn't in production, it was in the gap between creative output and performance feedback. Brands produced creatives, published them, waited 2 weeks, then started over. The platform needed to collapse that loop.",
-      "phases": [
-        {
-          "name": "Input",
-          "tasks": [
-            "Upload product image or paste listing URL",
-            "System auto-extracts attributes, audience context, category benchmarks"
-          ],
-          "pain": "Manual briefing was inconsistent — different marketers described the same product in completely different ways"
-        },
-        {
-          "name": "Discover",
-          "tasks": [
-            "AI analyses top-performing creatives in your category",
-            "Generates ranked angles mapped to your ICP",
-            "Surfaces 12+ testable angles with predicted performance scores"
-          ],
-          "pain": "Angle selection had always been subjective — marketers were uncomfortable trusting a ranked list they couldn't verify"
-        },
-        {
-          "name": "Generate",
-          "tasks": [
-            "AngleLab produces static, video, carousel, and story variants",
-            "ListingLab creates Amazon/Shopify titles, bullets, A+ content",
-            "VideoLab generates video ads with AI CMO and Creative Strategist agents"
-          ],
-          "pain": "Output quality varied by product category — reflective surfaces and food photography were consistently harder"
-        },
-        {
-          "name": "Review",
-          "tasks": [
-            "Team previews on platform mocks",
-            "Brand consistency check against stored guidelines",
-            "Approve, comment, request variants"
-          ],
-          "pain": "No collaboration layer meant review happened over WhatsApp screenshots — context was always lost"
-        },
-        {
-          "name": "Deploy",
-          "tasks": [
-            "Publish to Meta, Google, Amazon",
-            "Track performance signals per angle",
-            "System flags fatigue and surfaces next angle to test"
-          ],
-          "pain": "Post-publish performance data never fed back into the creative process — every new brief started from zero"
-        }
-      ]
-    },
-    "process": {
-      "kicker": "05 — Design Process",
-      "h": "5 sprints. Tested with live brand assets and real campaign data — not stock photos.",
-      "b": "I ran 5 two-week design sprints, each producing a testable prototype. A non-negotiable rule: every usability test used participants' actual product images and real campaign data, not generic photos. This immediately surfaced the edge cases that matter — complex backgrounds, multi-product shots, reflective packaging, lifestyle images. Five rounds, 40 participants, 220 tasks logged. Two critical pivots emerged: the Angle Discovery interface required a transparent score explanation to build trust, and the listing editor needed a side-by-side 'before/after' view to make AI edits defensible to clients.",
-      "artifacts": [
-        {
-          "k": "IA & Module Architecture",
-          "v": "AngleLab / ListingLab / VideoLab — 3 distinct modules, 1 unified system"
-        },
-        {
-          "k": "Angle Discovery Interface",
-          "v": "Ranked angles with signal source explanations — built for non-analyst trust"
-        },
-        {
-          "k": "AI Agent Workflow UI",
-          "v": "5 agents: AI CMO, Creative Strategist, VideoLab, Copywriting, Human Review"
-        },
-        {
-          "k": "Listing Editor",
-          "v": "Side-by-side before/after with SEO score, readability grade, CVR prediction"
-        },
-        {
-          "k": "Creative Collaboration",
-          "v": "In-platform review with threaded comments, approval states, version history"
-        },
-        {
-          "k": "Design System",
-          "v": "60+ components, dark + light modes, optimised for data-dense dashboards"
-        }
-      ]
-    },
-    "solution": {
-      "kicker": "06 — Solution",
-      "h": "Three engines. One platform. Signal-driven creative from input to outcome.",
-      "b": "The shipped platform has three flagship modules. AngleLab: input a product, get 12+ ranked ad angles derived from real competitive signal — not guesses. ListingLab: AI-generated Amazon and Shopify listings (titles, bullets, A+ content) produced in minutes not days, with SEO optimisation and CVR scoring built in. VideoLab: AI-produced video ads powered by a 5-agent pipeline (AI CMO Agent, Creative Strategist, VideoLab Agent, AI Copywriting Agent, and Human Review for final QA). The platform also offers a fully-managed AI Agency tier for brands that want outcomes without touching the tools.",
-      "highlights": [
-        "AngleLab — AI analyses your category's top-performing creatives, generates 12+ ranked angles mapped to your ICP, and flags fatigue so you always have the next test ready.",
-        "ListingLab — Amazon and Shopify listings generated at scale: titles, bullets, A+ content, and 8+ product photos, cutting production from 5+ hours to minutes per SKU.",
-        "VideoLab — AI CMO Agent defines positioning, AI Creative Strategist writes hooks, VideoLab Agent produces visuals, AI Copywriting Agent writes the script, Human Review finalises quality.",
-        "Signal Closed Loop — performance data from live campaigns feeds back into Angle Discovery, making every cycle faster and more accurate than the last.",
-        "Dual delivery model — SaaS for teams who want control, fully-managed AI Agency for brands who want outcomes with no operational lift."
-      ]
-    },
-    "gallery": [
+    "sections": [
       {
-        "wide": true,
-        "c1": "#3a3a3a",
-        "c2": "#0a0a0a",
-        "deg": "45deg",
-        "cap": "AngleLab — signal-based angle discovery and creative generation",
-        "img": "assets/photai-preview.jpg"
+        "kicker": "Problem Statement",
+        "body": "Creators and businesses spend significant time switching between multiple AI tools to complete a single creative task. This fragmented workflow increases production time, introduces unnecessary complexity, and makes AI adoption difficult for non-designers.",
+        "body2": "How Might We — create impactful creatives in less time?"
       },
       {
-        "c1": "#333333",
-        "c2": "#0a0a0a",
-        "deg": "90deg",
-        "cap": "Angle ranked view — ICP-mapped with signal source transparency"
+        "kicker": "Solution",
+        "body": "Phot AI is one-stop automation hub which eliminates the need for switching between different websites/tools, streamlining the creative process and boosting productivity. It provides 30+ features where user can do multiple tasks at one place only like background replacer, avatar generator, banner creation, photo editing tools like photo enhancer, blur background, image restoration and many more.  It is AI-powered design ecosystem where users get high quality results generated through AI."
       },
       {
-        "c1": "#404040",
-        "c2": "#0d0d0d",
-        "deg": "120deg",
-        "cap": "ListingLab — AI Amazon listing: title, bullets, A+ in minutes"
+        "kicker": "Project Goal",
+        "body": "The goal was to design a unified AI-powered platform that enables users to create, edit, enhance, and export professional-quality visual assets from one workspace.The experience needed to: Reduce workflow fragmentation, increase trust in AI-generated results, improve creative efficiency, and support users with different levels of design expertise"
       },
       {
-        "c1": "#383838",
-        "c2": "#0a0a0a",
-        "deg": "60deg",
-        "cap": "VideoLab — 5-agent AI pipeline with human QA layer"
+        "kicker": "Design Process",
+        "body": "The project was divided into five phases:",
+        "image": "assets/DesignProcess.png"
       },
       {
-        "c1": "#2e2e2e",
-        "c2": "#080808",
-        "deg": "150deg",
-        "cap": "Team collaboration — review, comment, approve in-platform"
+        "kicker": "Research Strategy",
+        "body": "Before defining the experience, I wanted to understand how users currently interacted with AI creative tools and where their workflows were breaking down.The research focused on identifying behavioural patterns instead of validating assumptions. Research methods included:User Interviews, Competitive Analysis, Persona Creation"
       },
       {
-        "wide": true,
-        "c1": "#242424",
-        "c2": "#050505",
-        "deg": "30deg",
-        "cap": "Signal loop — performance data feeds back into next angle cycle"
+        "kicker": "Target Audience",
+        "items": [
+          "Small Business Owners - Need professional product visuals quickly without hiring designers.",
+          "Professional Designers - Require AI as a productivity tool rather than a replacement for creativity.",
+          "Everyday Users - Want simple editing tools for personal images without learning professional software."
+        ]
+      },
+      {
+        "kicker": "Key Research Questions",
+        "items": [
+          "How users currently create visual content",
+          "Which AI tools they combine during one workflow",
+          "Where they lose the most time",
+          "How much creative control users expect"
+        ]
+      },
+      {
+        "kicker": "Competitive Analysis",
+        "body": "I audited 14 tools spanning general creative AI (Canva, Adobe Firefly, Midjourney, DALL·E), ad-specific generators (Pencil, Smartly, Predis) and more, to understand where existing products stopped short. Most tools optimised for a single step in the workflow — generation, or editing, or publishing — but none closed the loop between what creative was produced and how it actually performed in market.",
+        "image": "assets/CompetitiveAnalysis.png",
+        "imgFit": true
+      },
+      {
+        "kicker": "User Personas",
+        "breakdown": [
+          {
+            "title": "Priya — Performance Marketer, D2C brand",
+            "subtext": "Runs paid creative testing at scale but can't code or design. Needs to trust a ranked angle without being able to verify it herself, and needs to defend creative decisions to founders using data, not taste.",
+            "img": "assets/UserPersona1.png",
+            "imgFit": true
+          },
+          {
+            "title": "Rohan — Founder, solo e-commerce operator",
+            "subtext": "Wears every hat — sourcing, marketing, listings — and has no time or budget for a design hire. Needs campaign-ready creative and Amazon-ready listings produced in minutes, not days.",
+            "img": "assets/UserPersona2.png",
+            "imgFit": true
+          }
+        ]
+      },
+      {
+        "kicker": "Empathy Mapping",
+        "body": "Mapping what users said, thought, and felt surfaced a consistent tension: marketers said they wanted 'more AI features,' but what they actually felt was anxiety about defending an AI decision they couldn't explain. The real gap wasn't capability — it was confidence. Every interface decision after this point was filtered through one question: does this make the AI's reasoning visible enough for a non-designer to trust and defend it?",
+        "image": "assets/EmpathyMapping.png",
+        "imgFit": true
+      },
+      {
+        "kicker": "Card Sorting",
+        "body": "Labeled cards into categories according to own understanding and sorting it wisely.",
+        "image": "assets/CardSorting.png",
+        "imgFit": true
+      },
+      {
+        "kicker": "User Journey",
+        "body": "I mapped the end-to-end journey for a performance marketer across five stages — Input, Discover, Generate, Review, Deploy — from uploading a product image to deploying validated creatives. The critical insight: the biggest drop-off wasn't in production, it was in the gap between creative output and performance feedback. Brands produced creatives, published them, waited two weeks, then started over from zero. The platform needed to collapse that loop by feeding live performance signal back into the next angle cycle.",
+        "image": "End-to-end journey map — Input → Discover → Generate → Review → Deploy"
+      },
+      {
+        "kicker": "Feature wise Breakdown",
+        "breakdown": [
+          {
+            "title": "AngleLab",
+            "subtext": "AI analyses your category's top-performing creatives, generates 12+ ranked angles mapped to your ICP, and flags fatigue so you always have the next test ready."
+          },
+          {
+            "title": "ListingLab",
+            "subtext": "Amazon and Shopify listings generated at scale — titles, bullets, A+ content, and 8+ product photos — cutting production from 5+ hours to minutes per SKU."
+          },
+          {
+            "title": "VideoLab",
+            "subtext": "AI CMO Agent defines positioning, AI Creative Strategist writes hooks, VideoLab Agent produces visuals, AI Copywriting Agent writes the script, Human Review finalises quality."
+          },
+          {
+            "title": "Signal Closed Loop",
+            "subtext": "Performance data from live campaigns feeds back into Angle Discovery, making every cycle faster and more accurate than the last."
+          }
+        ]
+      },
+      {
+        "kicker": "Key Learnings",
+        "body": "This project fundamentally changed how I think about designing AI-powered products. I realized that users aren't looking for more AI features — they're looking for confidence that the product will help them achieve their goals without adding complexity. The real design challenge wasn't exposing advanced capabilities, but making sophisticated technology feel approachable, transparent, and reliable."
       }
     ],
-    "outcomes": {
-      "kicker": "07 — Outcomes",
-      "h": "30+ AI-powered creative tools.",
-      "metrics": [
-        {
-          "v": "+47%",
-          "k": "Average ROAS uplift",
-          "sub": "Across D2C brand accounts using AngleLab"
-        },
-        {
-          "v": "21M+",
-          "k": "Images generated",
-          "sub": "Across all customers since platform launch"
-        },
-        {
-          "v": "60–70%",
-          "k": "Reduction in time-to-complete",
-          "sub": "Common creative workflows by combining into one"
-        },
-        {
-          "v": "5.72%",
-          "k": "ROAS boost (Da URBAN)",
-          "sub": "Faster testing + better creatives, verified case study"
-        }
-      ],
-      "quote": {
-        "q": "We went from 2-week creative cycles to same-day iteration. Our design workflow is dramatically faster and more efficient.",
-        "a": "Nikhil Jain, Founder, Behoma — Phot AI customer"
-      }
-    },
-    "reflection": {
-      "kicker": "08 — Key Learnings",
-      "h": "This project fundamentally changed how I think about designing AI-powered products.",
-      "b": "I realized that users aren't looking for more AI features—they're looking for confidence that the product will help them achieve their goals without adding complexity.The real design challenge wasn't exposing advanced capabilities, but making sophisticated technology feel approachable, transparent, and reliable."
-    },
     "next": "bcl"
   },
   "bcl": {
