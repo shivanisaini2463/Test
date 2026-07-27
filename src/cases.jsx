@@ -37,7 +37,7 @@ const CASES = [
       { k: "Saved Cost", v: "62%" },
     ],
     visual: { c1: "#333333", c2: "#0a0a0a", accent: "#d8d8d8" },  /* Mono — grey */
-    live: "https://photai.example.com",
+    live: "https://www.phot.ai/",
   },
   {
     num: "03",
@@ -56,7 +56,7 @@ const CASES = [
       { k: "Time saving", v: "62%" },
     ],
     visual: { c1: "#404040", c2: "#0d0d0d", accent: "#ececec" },  /* Mono — grey */
-    live: "https://bcl.example.com",
+    live: null,
   },
   {
     num: "04",
@@ -75,7 +75,7 @@ const CASES = [
       { k: "Satisfaction score", v: "92%" },
     ],
     visual: { c1: "#383838", c2: "#0a0a0a", accent: "#dcdcdc" },  /* Mono — grey */
-    live: "https://pritam.example.com",
+    live: "https://www.pritamrestaurant.com/",
   },
   {
     num: "05",
@@ -94,7 +94,7 @@ const CASES = [
       { k: "Play store rating", v: "4.2" },
     ],
     visual: { c1: "#464646", c2: "#101010", accent: "#f0f0f0" },  /* Mono — grey */
-    live: "https://pulpyvpn.example.com",
+    live: "https://in.appyhigh.com/products/pulpy-vpn?sku_id=38266226",
   },
 ];
 
@@ -285,10 +285,12 @@ function CaseRow({ c, index }) {
             View case study
             <svg className="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M7 17 L17 7 M9 7 H17 V15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </a>
-          <a href={c.live} target="_blank" rel="noreferrer" className="btn ghost" data-cursor="open">
-            Explore Live
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M14 4 H20 V10 M20 4 L10 14 M5 6 V19 H18 V13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-          </a>
+          {c.live && (
+            <a href={c.live} target="_blank" rel="noreferrer" className="btn ghost" data-cursor="open">
+              Explore Live
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M14 4 H20 V10 M20 4 L10 14 M5 6 V19 H18 V13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            </a>
+          )}
         </div>
       </div>
 

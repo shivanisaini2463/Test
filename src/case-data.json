@@ -255,10 +255,10 @@
     "year": "2024–25",
     "sector": "AI · Creative Growth Platform · D2C",
     "title": [
-      "Creatives that",
-      "convert at scale."
+      "AI-powered creative platform that unified 30+ fragmented image editing workflows into one intelligent workspace.",
+      ""
     ],
-    "brief": "Led end-to-end product design for Phot AI — a generative AI-powered creative growth platform built for D2C and e-commerce brands. Crafted three core modules: AngleLab for signal-driven ad ideation, ListingLab for AI-powered marketplace optimization, and VideoLab for high-performing video creatives, supported by a 5-agent AI architecture. The platform empowers users to ideate, iterate, and generate high-quality content seamlessly — with over 21+ million images created to date. By streamlining the creative workflow.",
+    "brief": "Phot AI enables creators, marketers, and businesses to generate, edit, enhance, and publish visual content using AI. As Product Designer, I led the end-to-end UX—from research and information architecture to interaction design and design system—to simplify complex AI workflows into a seamless creative experience.",
     "facts": [
       {
         "k": "My Role",
@@ -266,7 +266,7 @@
       },
       {
         "k": "Team",
-        "v": "3 designers · 12 engineers · 1 PM"
+        "v": "3 designers · 8 engineers · 1 PM"
       },
       {
         "k": "Timeline",
@@ -274,15 +274,15 @@
       },
       {
         "k": "Platforms",
-        "v": "Web App · SaaS + Managed Service"
+        "v": "Web App · SaaS"
       },
       {
         "k": "Tools",
-        "v": "Figma, MixPanel, Hotjar, Maze"
+        "v": "Figma, MixPanel, Google Analytics"
       },
       {
         "k": "Impact",
-        "v": "21M+ images · +47% avg ROAS uplift"
+        "v": "21M+ images generated"
       }
     ],
     "cover": {
@@ -294,8 +294,8 @@
     "context": null,
     "research": {
       "kicker": "02 — Research",
-      "h": "26 brands. The problem wasn't creative quality — it was creative intelligence.",
-      "b": "Over a 6-week discovery sprint, I ran 26 in-depth interviews across D2C founders, performance marketing managers, creative directors, and e-commerce operators; 10 workflow shadowing sessions tracking live creative production cycles end-to-end; and a competitive teardown of 14 tools. The dominant finding: brands weren't producing bad creatives. They were producing creatives without knowing which angles would actually work — and by the time they had signal, the ads were already fatigued.",
+      "h": "Before defining the experience, I wanted to understand how creators currently approached AI-assisted design and where their workflows were breaking down.",
+      "b": "Research included -",
       "bullets": [
         {
           "k": "26 in-depth interviews",
@@ -311,7 +311,7 @@
         }
       ],
       "insights": [
-        "87% of creative angles brands test fail — not because the product is bad, but because angle selection is based on gut feel, not competitive signal data.",
+        "55% of creative angles brands test fail — not because the product is bad, but because angle selection is based on gut feel, not competitive signal data.",
         "Creative fatigue is the #1 silent ROAS killer: CTR drops 47% on average within 2 weeks, but most brands only notice when ROAS has already declined 32%.",
         "Performance marketers — not designers — are the primary users. The interface had to work for someone who can't distinguish a hex code from a font weight.",
         "Listing quality on Amazon/Shopify was bleeding conversion silently: 1:1 listings-to-format ratio, unoptimised titles, and A+ content taking 5+ hours per SKU to produce manually."
@@ -319,10 +319,10 @@
     },
     "personas": [],
     "problem": {
-      "kicker": "03 — Problem Framing",
-      "h": "Reframed from 'AI photo editor' to 'creative intelligence engine that closes the signal loop'.",
-      "b": "The original brief: a faster AI image editor. Research reframed it completely. Brands didn't need prettier images — they needed smarter angle selection, faster creative iteration, and a closed loop between creative output and performance signal. The design challenge became: how do you make a complex intelligence system feel as simple as uploading a product photo? And how do you surface performance data in a way that a non-analyst can act on in under 60 seconds?",
-      "statement": "How might we design a creative growth platform that uses competitive signal and performance data to automatically generate, test, and surface winning ad angles — so D2C brands stop guessing and start compounding?"
+      "kicker": "03 — Problem Statement",
+      "h": "Creators and businesses spend significant time switching between multiple AI tools to complete a single creative task.'.",
+      "b": "This fragmented workflow increases production time, introduces unnecessary complexity, and makes AI adoption difficult for non-designers.",
+      "statement": "Create impactful creatives in less time"
     },
     "journey": {
       "kicker": "04 — User Journey",
@@ -461,7 +461,7 @@
     ],
     "outcomes": {
       "kicker": "07 — Outcomes",
-      "h": "+47% avg ROAS. 21M+ images. 2-week cycles collapsed to same-day.",
+      "h": "30+ AI-powered creative tools.",
       "metrics": [
         {
           "v": "+47%",
@@ -474,9 +474,9 @@
           "sub": "Across all customers since platform launch"
         },
         {
-          "v": "14–28",
-          "k": "Days to signal",
-          "sub": "From campaign launch to validated winning angle"
+          "v": "60–70%",
+          "k": "Reduction in time-to-complete",
+          "sub": "Common creative workflows by combining into one"
         },
         {
           "v": "5.72%",
@@ -490,9 +490,9 @@
       }
     },
     "reflection": {
-      "kicker": "08 — Reflection",
-      "h": "The hardest design problem wasn't the AI — it was making machine intelligence feel trustworthy.",
-      "b": "The biggest UX challenge on this project wasn't generating creatives — it was convincing performance marketers to trust an AI-ranked angle list over their own intuition. The pivot that unlocked adoption: every ranked angle now shows its signal source (competitor analysis, ICP match score, historical performance data). Once users could interrogate the reasoning, they stopped overriding the AI and started testing it. The learning I carry forward: on any AI product, explainability is not a nice-to-have — it is the trust mechanism that determines whether users adopt or abandon the intelligent recommendation. Build that layer first."
+      "kicker": "08 — Key Learnings",
+      "h": "This project fundamentally changed how I think about designing AI-powered products.",
+      "b": "I realized that users aren't looking for more AI features—they're looking for confidence that the product will help them achieve their goals without adding complexity.The real design challenge wasn't exposing advanced capabilities, but making sophisticated technology feel approachable, transparent, and reliable."
     },
     "next": "bcl"
   },
@@ -590,8 +590,8 @@
         ]
       },
       {
-        "kicker": "Product Requirements Document",
-        "body": "Based on insights gathered from user interviews, stakeholder discussions, competitive analysis, and product research, a comprehensive Product Requirements Document (PRD) was created by the Product Manager. The PRD served as the single source of truth, consolidating business objectives, user needs, feature requirements, functional specifications, success metrics, and project scope. This ensured alignment across product, design, and engineering teams before moving into the design phase."
+        "kicker": "PRD made",
+        "body": "Based on insights gathered from stakeholder discussions, competitive analysis, and product research, a comprehensive Product Requirements Document (PRD) was created by the Product Manager. The PRD served as the single source of truth, consolidating business objectives, user needs, feature requirements, functional specifications, success metrics, and project scope. This ensured alignment across product, design, and engineering teams before moving into the design phase."
       },
       {
         "kicker": "Information Architecture",
@@ -655,7 +655,7 @@
     "facts": [
       {
         "k": "My Role",
-        "v": "Senior UI UX Designer"
+        "v": "UI UX Designer"
       },
       {
         "k": "Duration",

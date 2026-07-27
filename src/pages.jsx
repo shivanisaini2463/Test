@@ -87,26 +87,6 @@ const WORK_CATS = [
 function WorkCategories() {
   const [cat, setCat] = React.useState("fnb");
   const projects = WORK_CATS.find(c => c.id === cat).projects;
-  const railRef = React.useRef(null);
-
-  React.useEffect(() => {
-    const el = railRef.current;
-    if (!el) return;
-    const onWheel = (e) => {
-      const rect = el.getBoundingClientRect();
-      const inView = rect.top < window.innerHeight * 0.4 && rect.bottom > window.innerHeight * 0.6;
-      if (!inView) return;
-      if (Math.abs(e.deltaY) < 5) return;
-      const max = el.scrollWidth - el.clientWidth;
-      const atStart = el.scrollLeft <= 0 && e.deltaY < 0;
-      const atEnd = el.scrollLeft >= max - 1 && e.deltaY > 0;
-      if (atStart || atEnd) return;
-      e.preventDefault();
-      el.scrollLeft += e.deltaY;
-    };
-    el.addEventListener("wheel", onWheel, { passive: false });
-    return () => el.removeEventListener("wheel", onWheel);
-  }, [cat]);
 
   return (
     <section style={{padding:"80px 0 140px", borderTop:"1px solid var(--border)"}}>
@@ -128,10 +108,9 @@ function WorkCategories() {
             </button>
           ))}
         </div>
-      </div>
 
-      <div className="cat-grid" key={cat} ref={railRef}>
-        <div className="cat-grid-inner">
+        <div className="cat-grid" key={cat}>
+          <div className="cat-grid-inner">
           {projects.map((p, i) => (
             <a key={i} href="https://dribbble.com/shivanisaini_designer" target="_blank" rel="noreferrer"
                className="cat-card" style={{animationDelay: (i*0.08)+"s"}} data-cursor="open">
@@ -152,6 +131,7 @@ function WorkCategories() {
               </div>
             </a>
           ))}
+          </div>
         </div>
       </div>
     </section>
@@ -193,6 +173,8 @@ function WorkIndex() {
           </p>
         </div>
       </section>
+
+      <WorkCategories />
 
       <section className="work-rail-section">
         <div className="container rail-head">
@@ -238,8 +220,6 @@ function WorkIndex() {
           </div>
         </div>
       </section>
-
-      <WorkCategories />
     </>
   );
 }

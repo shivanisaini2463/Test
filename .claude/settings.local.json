@@ -67,7 +67,11 @@
       "Bash(curl -s \"https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap\")",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"https://fonts.cdnfonts.com/css/overused-grotesk\")",
       "Bash(curl -s \"https://fonts.cdnfonts.com/css/overused-grotesk\")",
-      "Bash(grep -n \"^h1\\\\|^h2\\\\|^h3\\\\|^h1,\\\\|h1, h2\\\\|h1{\" styles.css)"
+      "Bash(grep -n \"^h1\\\\|^h2\\\\|^h3\\\\|^h1,\\\\|h1, h2\\\\|h1{\" styles.css)",
+      "Bash(ln -s /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/7ffc77c7-7819-4348-84a4-adb5f8c0bf64/scratchpad/node_modules /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/7bcaee74-f27a-46dd-8b8d-d4f8ceee6193/scratchpad/node_modules)",
+      "Bash(node /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/7bcaee74-f27a-46dd-8b8d-d4f8ceee6193/scratchpad/shot1.mjs)",
+      "Bash(pkill -f \"http.server 5184\")",
+      "Bash(pkill -f \"vite --port 5183\")"
     ]
   }
 }

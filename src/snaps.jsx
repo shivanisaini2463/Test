@@ -42,13 +42,10 @@ function Snapshots() {
   return (
     <section className="snapshots" id="snapshots" data-screen-label="03 Snapshots">
       <div className="container">
-        <div className="section-head reveal">
+        <div className="section-head snap-head reveal">
           <div>
-            <span className="eyebrow">04 — Snapshots</span>
             <h2>More work. <span className="serif">Less explanation.</span></h2>
-          </div>
-          <div className="right">
-            50+ projects spanning fintech, F&B, sports, SaaS, and consumer apps. No long reads — just the work.
+            <p className="snap-subtext">50+ projects spanning fintech, F&B, sports, SaaS, and consumer apps. No long reads — just the work.</p>
           </div>
         </div>
       </div>
