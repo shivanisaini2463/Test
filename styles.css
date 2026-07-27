@@ -2081,6 +2081,17 @@ body.cursor-custom .cursor { display: block; }
   max-width: 80%; text-align: center;
 }
 
+.cd-phase-photo {
+  border-style: solid;
+  object-fit: cover;
+  width: 100%;
+}
+
+.cd-breakdown-list { display: flex; flex-direction: column; gap: 56px; }
+.cd-breakdown-item .cd-h { font-size: clamp(22px, 2.6vw, 32px); margin-bottom: 10px; }
+.cd-breakdown-item .cd-p { margin-bottom: 0; }
+.cd-breakdown-item .cd-phase-image { margin-top: 24px; }
+
 /* ---------- Case detail — Next case section ---------- */
 .cd-next-section { padding: 0 0 80px; }
 

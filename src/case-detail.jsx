@@ -203,7 +203,7 @@ function PhaseSection({ phase, index, reveal }) {
 }
 
 /* ---------- Generic flexible section — used for simpler, non-phase case studies ---------- */
-function GenericSection({ kicker, body, body2, items, table, image, alt }) {
+function GenericSection({ kicker, body, body2, items, table, image, breakdown, alt }) {
   return (
     <section className={"cd-section" + (alt ? " cd-alt" : "")}>
       <div className="container cd-grid">
@@ -229,8 +229,25 @@ function GenericSection({ kicker, body, body2, items, table, image, alt }) {
               ))}
             </div>
           )}
+          {breakdown && (
+            <div className="cd-breakdown-list">
+              {breakdown.map((b, i) => (
+                <div className="cd-breakdown-item" key={i}>
+                  <h3 className="cd-h">{b.title}</h3>
+                  <p className="cd-p">{b.subtext}</p>
+                  {b.img
+                    ? <img src={b.img} alt={b.title} className="cd-phase-image cd-phase-photo" />
+                    : <PhaseImagePlaceholder label={b.title} />}
+                </div>
+              ))}
+            </div>
+          )}
           {body2 && <p className="cd-p" style={{marginTop: 24, marginBottom: 0}}>{body2}</p>}
-          {image && <PhaseImagePlaceholder label={image} />}
+          {image && (
+            image.startsWith("assets/")
+              ? <img src={image} alt={kicker} className="cd-phase-image cd-phase-photo" />
+              : <PhaseImagePlaceholder label={image} />
+          )}
         </div>
       </div>
     </section>

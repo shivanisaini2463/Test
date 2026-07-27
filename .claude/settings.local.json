@@ -71,7 +71,22 @@
       "Bash(ln -s /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/7ffc77c7-7819-4348-84a4-adb5f8c0bf64/scratchpad/node_modules /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/7bcaee74-f27a-46dd-8b8d-d4f8ceee6193/scratchpad/node_modules)",
       "Bash(node /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/7bcaee74-f27a-46dd-8b8d-d4f8ceee6193/scratchpad/shot1.mjs)",
       "Bash(pkill -f \"http.server 5184\")",
-      "Bash(pkill -f \"vite --port 5183\")"
+      "Bash(pkill -f \"vite --port 5183\")",
+      "Bash(node -e \"JSON.parse\\(require\\('fs'\\).readFileSync\\('src/case-data.json','utf8'\\)\\); console.log\\('json ok'\\)\")",
+      "Bash(npx esbuild *)",
+      "Bash(cp src/case-detail.jsx /tmp/case-detail.jsx)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4173/case-pritam)",
+      "Bash(chromium-cli --help)",
+      "Bash(node -e \"require.resolve\\('playwright'\\)\")",
+      "Bash(timeout 8 curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://registry.npmjs.org/playwright)",
+      "Bash(curl -s --max-time 8 -o /dev/null -w \"%{http_code}\\\\n\" https://registry.npmjs.org/playwright)",
+      "Bash(ls ~/Library/Caches/ms-playwright/ 2>/dev/null)",
+      "Read(//Users/redrob/Library/Caches/ms-playwright/**)",
+      "Bash(node shot2.js)",
+      "Bash(rm -rf /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/9dfe2fc4-9afe-4cd2-bf64-04514e7d61d8/scratchpad/node_modules /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/9dfe2fc4-9afe-4cd2-bf64-04514e7d61d8/scratchpad/package*.json)"
+    ],
+    "additionalDirectories": [
+      "/private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/9dfe2fc4-9afe-4cd2-bf64-04514e7d61d8/scratchpad/node_modules"
     ]
   }
 }
