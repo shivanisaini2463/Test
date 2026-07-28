@@ -379,25 +379,25 @@
         "breakdown": [
           {
             "title": "AI Art Generator",
-            "subtext": "AI analyses your category's top-performing creatives, generates 12+ ranked angles mapped to your ICP, and flags fatigue so you always have the next test ready.",
+            "subtext": "Turn simple text prompts into production-ready artwork in seconds. Explore multiple artistic styles, generate high-quality visuals, and accelerate creative exploration with AI-powered image generation.",
             "img": "assets/AiArtGenerator.png",
             "imgFit": true
           },
           {
             "title": "Dashboard",
-            "subtext": "Amazon and Shopify listings generated at scale — titles, bullets, A+ content, and 8+ product photos — cutting production from 5+ hours to minutes per SKU.",
+            "subtext": "A unified creative workspace for designing, editing, and managing visual assets. From templates and brand kits to AI-powered editing, every tool is organized into a streamlined workflow.",
             "img": "assets/Dashboard.png",
             "imgFull": true
           },
           {
             "title": "AI Background Replacer",
-            "subtext": "AI CMO Agent defines positioning, AI Creative Strategist writes hooks, VideoLab Agent produces visuals, AI Copywriting Agent writes the script, Human Review finalises quality.",
+            "subtext": "Remove and replace backgrounds with a single click using AI. Generate clean, professional product visuals and lifestyle imagery without complex editing or manual masking.",
             "img": "assets/AiBackgroundReplacer.png",
             "imgFull": true
           },
           {
             "title": "Phot AI Magic Studio",
-            "subtext": "Performance data from live campaigns feeds back into Angle Discovery, making every cycle faster and more accurate than the last.",
+            "subtext": "An all-in-one mobile editing studio combining AI-powered creation, image enhancement, color adjustments, brush tools, and effects into a seamless creative workflow from start to finish.",
             "img": "assets/MagicStudio.png",
             "imgFit": true
           }
