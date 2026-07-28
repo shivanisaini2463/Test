@@ -2095,6 +2095,13 @@ button.rail-card {
   object-fit: contain;
 }
 
+.cd-phase-photo-full {
+  aspect-ratio: auto;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+}
+
 /* ---------- Password-protected case study gate ---------- */
 .password-gate-overlay {
   position: fixed; inset: 0; z-index: 3000;
@@ -2178,6 +2185,16 @@ button.rail-card {
   width: 100%; height: 100%;
   object-fit: cover;
   object-position: top left;
+}
+.pv-svg-img-center {
+  object-position: center;
+}
+.pv-svg-img-contain {
+  object-fit: contain;
+  object-position: center;
+}
+.pv-frame-tint {
+  background: #b9c6f7 !important;
 }
 
 /* =====================================================

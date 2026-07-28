@@ -5,7 +5,7 @@ const CASES = [
     num: "01",
     slug: "redrob-llm",
     logo: "assets/logo-case-redrob.png",
-    preview: "assets/redrob-preview.jpg",
+    preview: "assets/RedrobAI.png",
     client: "Redrob LLM",
     year: "2025-26",
     sector: "B2B & B2C",
@@ -102,11 +102,11 @@ const CASES = [
 /* ── Redrob LLM custom visual ── */
 function RedrobVisual({ active }) {
   return (
-    <div className={"case-visual pv-frame " + (active ? "active" : "")}>
+    <div className={"case-visual pv-frame pv-frame-tint " + (active ? "active" : "")}>
       <img
-        src="assets/redrob-preview.jpg"
+        src="assets/RedrobAI.png"
         alt="Redrob LLM — AI Intelligence Workspace"
-        className="pv-svg-img"
+        className="pv-svg-img pv-svg-img-contain"
       />
     </div>
   );

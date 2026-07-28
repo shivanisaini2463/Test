@@ -195,7 +195,9 @@ function PhaseSection({ phase, index, reveal }) {
             ))}
           </div>
 
-          <PhaseImagePlaceholder label={`Phase ${num} — ${phase.name}`} />
+          {phase.img
+            ? <img src={phase.img} alt={`Phase ${num} — ${phase.name}`} className="cd-phase-image cd-phase-photo cd-phase-photo-full" />
+            : <PhaseImagePlaceholder label={`Phase ${num} — ${phase.name}`} />}
         </div>
       </div>
     </section>

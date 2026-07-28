@@ -87,7 +87,13 @@
       "Bash(node shot4.js)",
       "Bash(node gate.js)",
       "Bash(node cursor.js)",
-      "Bash(rm -rf /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/9dfe2fc4-9afe-4cd2-bf64-04514e7d61d8/scratchpad/node_modules /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/9dfe2fc4-9afe-4cd2-bf64-04514e7d61d8/scratchpad/package*.json /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/9dfe2fc4-9afe-4cd2-bf64-04514e7d61d8/scratchpad/cursor.js)"
+      "Bash(rm -rf /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/9dfe2fc4-9afe-4cd2-bf64-04514e7d61d8/scratchpad/node_modules /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/9dfe2fc4-9afe-4cd2-bf64-04514e7d61d8/scratchpad/package*.json /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/9dfe2fc4-9afe-4cd2-bf64-04514e7d61d8/scratchpad/cursor.js)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"http://localhost:4173/case-redrob-llm.html\")",
+      "Bash(curl -sv \"http://localhost:4173/case-redrob-llm.html\")",
+      "Bash(SP=/private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/20a4ce31-897a-4bcd-befa-dc2ae721047c/scratchpad; ls $SP; ls ~/Library/Caches/ms-playwright 2>/dev/null)",
+      "Bash(sips -g pixelWidth -g pixelHeight photai-preview.jpg RedrobAI.png)",
+      "Bash(node /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/20a4ce31-897a-4bcd-befa-dc2ae721047c/scratchpad/shot6.js /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/20a4ce31-897a-4bcd-befa-dc2ae721047c/scratchpad)"
     ],
     "additionalDirectories": [
       "/private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/9dfe2fc4-9afe-4cd2-bf64-04514e7d61d8/scratchpad/node_modules"

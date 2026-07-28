@@ -97,7 +97,8 @@
             "v": "Higher",
             "k": "Engagement with advanced filters"
           }
-        ]
+        ],
+        "img": "assets/People Search.png"
       },
       {
         "name": "Introducing Company Search",
@@ -128,7 +129,8 @@
             "v": "Higher",
             "k": "Retention by enabling end-to-end research within a single platform"
           }
-        ]
+        ],
+        "img": "assets/Company Search.png"
       },
       {
         "name": "Developer Hub — API Keys",
@@ -159,7 +161,8 @@
             "v": "19+",
             "k": "Enterprise deals unblocked"
           }
-        ]
+        ],
+        "img": "assets/Developer Hub.png"
       },
       {
         "name": "Redrob Chrome Extension",
@@ -184,7 +187,8 @@
             "v": "35%",
             "k": "Increase in prospects added to Redrob lists"
           }
-        ]
+        ],
+        "img": "assets/Chrome Extension.png"
       },
       {
         "name": "Reimagining Search with AI Query & Prompt Library",
@@ -215,7 +219,8 @@
             "v": "25%",
             "k": "Reduction in manual filter interactions for new users"
           }
-        ]
+        ],
+        "img": "assets/Prompt.png"
       },
       {
         "name": "Redrob AI — A Fully Conversational, LLM-Based Platform",
@@ -244,7 +249,8 @@
             "v": "35%",
             "k": "Increase in AI-assisted search adoption"
           }
-        ]
+        ],
+        "img": "assets/RedrobAI.png"
       }
     ],
     "next": "phot-ai"
