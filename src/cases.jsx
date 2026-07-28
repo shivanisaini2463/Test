@@ -130,9 +130,9 @@ function PhotAIVisual({ active }) {
   return (
     <div className={"case-visual pv-frame " + (active ? "active" : "")}>
       <img
-        src="assets/photai-preview.jpg"
+        src="assets/MainCOver.png"
         alt="Phot AI — AI Creative Studio"
-        className="pv-svg-img"
+        className="pv-svg-img pv-svg-img-contain"
       />
     </div>
   );

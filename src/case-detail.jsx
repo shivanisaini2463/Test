@@ -235,10 +235,10 @@ function GenericSection({ kicker, body, body2, items, table, image, imgFit, brea
             <div className="cd-breakdown-list">
               {breakdown.map((b, i) => (
                 <div className="cd-breakdown-item" key={i}>
-                  <h3 className="cd-h">{b.title}</h3>
-                  <p className="cd-p">{b.subtext}</p>
+                  {b.title && <h3 className="cd-h">{b.title}</h3>}
+                  {b.subtext && <p className="cd-p">{b.subtext}</p>}
                   {b.img
-                    ? <img src={b.img} alt={b.title} className={"cd-phase-image cd-phase-photo" + (b.imgFit ? " cd-phase-photo-fit" : "")} />
+                    ? <img src={b.img} alt={b.title} className={"cd-phase-image cd-phase-photo" + (b.imgFull ? " cd-phase-photo-full" : b.imgFit ? " cd-phase-photo-fit" : "")} />
                     : <PhaseImagePlaceholder label={b.title} />}
                 </div>
               ))}

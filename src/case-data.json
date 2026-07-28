@@ -347,14 +347,10 @@
         "kicker": "User Personas",
         "breakdown": [
           {
-            "title": "Priya — Performance Marketer, D2C brand",
-            "subtext": "Runs paid creative testing at scale but can't code or design. Needs to trust a ranked angle without being able to verify it herself, and needs to defend creative decisions to founders using data, not taste.",
             "img": "assets/UserPersona1.png",
             "imgFit": true
           },
           {
-            "title": "Rohan — Founder, solo e-commerce operator",
-            "subtext": "Wears every hat — sourcing, marketing, listings — and has no time or budget for a design hire. Needs campaign-ready creative and Amazon-ready listings produced in minutes, not days.",
             "img": "assets/UserPersona2.png",
             "imgFit": true
           }
@@ -373,28 +369,37 @@
         "imgFit": true
       },
       {
-        "kicker": "User Journey",
-        "body": "I mapped the end-to-end journey for a performance marketer across five stages — Input, Discover, Generate, Review, Deploy — from uploading a product image to deploying validated creatives. The critical insight: the biggest drop-off wasn't in production, it was in the gap between creative output and performance feedback. Brands produced creatives, published them, waited two weeks, then started over from zero. The platform needed to collapse that loop by feeding live performance signal back into the next angle cycle.",
-        "image": "End-to-end journey map — Input → Discover → Generate → Review → Deploy"
+        "kicker": "User Flow",
+        "body": "This user flow is of a tool named BG replacer which takes user from starting point through a set of steps till the final output.",
+        "image": "assets/User Flow.png",
+        "imgFit": true
       },
       {
         "kicker": "Feature wise Breakdown",
         "breakdown": [
           {
-            "title": "AngleLab",
-            "subtext": "AI analyses your category's top-performing creatives, generates 12+ ranked angles mapped to your ICP, and flags fatigue so you always have the next test ready."
+            "title": "AI Art Generator",
+            "subtext": "AI analyses your category's top-performing creatives, generates 12+ ranked angles mapped to your ICP, and flags fatigue so you always have the next test ready.",
+            "img": "assets/AiArtGenerator.png",
+            "imgFit": true
           },
           {
-            "title": "ListingLab",
-            "subtext": "Amazon and Shopify listings generated at scale — titles, bullets, A+ content, and 8+ product photos — cutting production from 5+ hours to minutes per SKU."
+            "title": "Dashboard",
+            "subtext": "Amazon and Shopify listings generated at scale — titles, bullets, A+ content, and 8+ product photos — cutting production from 5+ hours to minutes per SKU.",
+            "img": "assets/Dashboard.png",
+            "imgFull": true
           },
           {
-            "title": "VideoLab",
-            "subtext": "AI CMO Agent defines positioning, AI Creative Strategist writes hooks, VideoLab Agent produces visuals, AI Copywriting Agent writes the script, Human Review finalises quality."
+            "title": "AI Background Replacer",
+            "subtext": "AI CMO Agent defines positioning, AI Creative Strategist writes hooks, VideoLab Agent produces visuals, AI Copywriting Agent writes the script, Human Review finalises quality.",
+            "img": "assets/AiBackgroundReplacer.png",
+            "imgFull": true
           },
           {
-            "title": "Signal Closed Loop",
-            "subtext": "Performance data from live campaigns feeds back into Angle Discovery, making every cycle faster and more accurate than the last."
+            "title": "Phot AI Magic Studio",
+            "subtext": "Performance data from live campaigns feeds back into Angle Discovery, making every cycle faster and more accurate than the last.",
+            "img": "assets/MagicStudio.png",
+            "imgFit": true
           }
         ]
       },
