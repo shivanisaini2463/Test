@@ -94,7 +94,11 @@
       "Bash(SP=/private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/20a4ce31-897a-4bcd-befa-dc2ae721047c/scratchpad; ls $SP; ls ~/Library/Caches/ms-playwright 2>/dev/null)",
       "Bash(sips -g pixelWidth -g pixelHeight photai-preview.jpg RedrobAI.png)",
       "Bash(node /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/20a4ce31-897a-4bcd-befa-dc2ae721047c/scratchpad/shot6.js /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/20a4ce31-897a-4bcd-befa-dc2ae721047c/scratchpad)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:4173/case-phot-ai)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:4173/case-phot-ai)",
+      "Bash(python3 -c \"import json; json.load\\(open\\('src/case-data.json'\\)\\)\")",
+      "Bash(sips -g pixelWidth -g pixelHeight Home.png Mascots.png)",
+      "Bash(npx --yes playwright screenshot --wait-for-timeout=3000 --full-page http://localhost:4173/case-pulpy-vpn /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/7c7a3312-5b1d-4f18-8b7f-5e34d85a629c/scratchpad/pulpy-vpn2.png)",
+      "Bash(npx --yes playwright screenshot --wait-for-timeout=3000 --full-page http://localhost:4173/case-pulpy-vpn /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/7c7a3312-5b1d-4f18-8b7f-5e34d85a629c/scratchpad/pulpy-vpn3.png)"
     ],
     "additionalDirectories": [
       "/private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/9dfe2fc4-9afe-4cd2-bf64-04514e7d61d8/scratchpad/node_modules"

@@ -649,27 +649,27 @@
       "Privacy, finally",
       "feels effortless."
     ],
-    "brief": "Designed Pulpy VPN end-to-end from zero — a consumer privacy app for non-technical users in India and Southeast Asia. Solved the biggest unsolved problem in the VPN category: most people know they should use one and never do, because every VPN on the market was designed for IT professionals. Shipped an 88-second onboarding, a one-tap connection state designed to feel actively protective, and a paywall strategy that delivered 3.2× trial-to-paid conversion — reaching 100K+ downloads and a 4.2★ Play Store rating within 6 months.",
+    "brief": "Pulpy VPN is a mobile VPN application designed to make secure browsing feel approachable rather than technical. Unlike conventional VPN products that focus purely on functionality, the goal was to create a friendly experience using a mascot-driven visual language while maintaining usability across onboarding, subscriptions, connectivity states, and engagement touchpoints.",
     "facts": [
       {
         "k": "My Role",
-        "v": "Lead Product Designer (0 → 1)"
+        "v": "UI UX Designer (0 → 1)"
       },
       {
         "k": "Team",
-        "v": "1 designer · 6 engineers · 1 PM"
+        "v": "1 designer · 2 engineers · 1 PM"
       },
       {
         "k": "Timeline",
         "v": "Feb 2023 — Oct 2023"
       },
       {
-        "k": "Platforms",
-        "v": "Android · iOS"
+        "k": "Platform",
+        "v": "Android"
       },
       {
         "k": "Tools",
-        "v": "Figma, Maze, Mixpanel, Lottie, UserTesting"
+        "v": "Figma"
       },
       {
         "k": "Impact",
@@ -680,275 +680,120 @@
       "c1": "#464646",
       "c2": "#101010",
       "label": "Pulpy VPN — Privacy, Finally Effortless",
-      "img": "assets/pulpyvpn-preview.jpg"
+      "img": "assets/Home.png"
     },
-    "context": {
-      "kicker": "01 — Context",
-      "h": "31% of internet users want a VPN. Fewer than 5% use one. The product category was designed for the wrong person.",
-      "b": "The global VPN market was growing fast, but adoption in India and Southeast Asia was disproportionately low despite high demand for streaming access and growing public WiFi safety awareness. The reason wasn't price — it was product. Every major VPN (NordVPN, ExpressVPN, Surfshark) was built for a technically confident user: protocol pickers, DNS leak test dashboards, kill switch toggles, and onboarding flows that required understanding what a VPN server actually does. The typical user in our target market — college students, freelancers, working parents — had tried one, felt confused, and uninstalled. Pulpy VPN's founding insight was sharp: the market that most needed a VPN was the exact market every VPN had designed itself away from. The brief was to build the first privacy app that a person with zero technical knowledge could use confidently in under 90 seconds.",
-      "pills": [
-        "India + Southeast Asia",
-        "Android + iOS",
-        "Non-technical first-time users",
-        "Consumer privacy market"
-      ]
-    },
-    "research": {
-      "kicker": "02 — Research",
-      "h": "40 people who'd tried a VPN and quit. The reason was always the same word: 'protocol'.",
-      "b": "I led a 4-week research sprint combining qualitative depth with quantitative pattern analysis. I ran 40 interviews across two cohorts — abandonment cases (people who downloaded and uninstalled within a week) and retention cases (current VPN users who stuck with their app). I supplemented this with a moderated usability audit of 6 leading VPN apps across 20 non-technical participants, and a large-scale review analysis of 600+ app store reviews across NordVPN, ExpressVPN, and Surfshark in India and the Philippines. The gap between the two cohorts wasn't technical ability — it was emotional experience at the moment of connection.",
-      "bullets": [
-        {
-          "k": "40 structured interviews",
-          "v": "28 abandonment cases (uninstalled within 7 days) + 12 long-term retention users — across India, Philippines, Indonesia"
-        },
-        {
-          "k": "Moderated usability audit",
-          "v": "6 leading VPN apps tested with 20 non-technical participants — tracking confusion points, drop-off moments, emotional state"
-        },
-        {
-          "k": "600+ reviews analysed",
-          "v": "NordVPN, ExpressVPN, Surfshark — India + Southeast Asia App Store reviews coded for friction, anxiety, and praise themes"
-        },
-        {
-          "k": "Competitor teardown",
-          "v": "Information architecture and onboarding flow maps for 8 VPN apps — identifying the 14 decision points that caused abandonment"
-        }
-      ],
-      "insights": [
-        "The word 'protocol' — appearing in the first screen of every major VPN — caused 78% of non-technical users to disengage entirely. They didn't know what it meant, feared selecting the wrong option, and closed the app.",
-        "The connection state was the single highest-anxiety moment in the product: users couldn't tell if the VPN was actually working. A static 'Connected' label wasn't enough. They needed to feel protected, not informed.",
-        "Non-technical users had exactly 2 use cases for a VPN — public WiFi safety and geo-restricted streaming — and didn't identify with any of the 40+ use cases that most VPN marketing presented. The category was talking to itself.",
-        "Retention users shared one trait: a moment early in their experience where the product made them feel smart, not confused. The emotional transformation from 'I don't understand this' to 'I'm protected' was the product's most critical design moment."
-      ]
-    },
-    "personas": [
+    "sections": [
       {
-        "initial": "P",
-        "name": "Priya Venkat",
-        "role": "Engineering student, 21, Bangalore — frequent campus and café WiFi user",
-        "quote": "I downloaded NordVPN because my friend said I need it. There was a screen asking which protocol to use. I uninstalled it.",
-        "goals": [
-          "Stay safe on campus and café WiFi",
-          "Access geo-restricted content",
-          "A simple on/off — nothing more"
-        ],
-        "pains": [
-          "Technical screens feel like a test she might fail",
-          "Doesn't understand 'kill switch', 'DNS leak', 'protocol' — won't guess",
-          "Fears accidentally doing something that breaks her internet"
+        "kicker": "01 — Context",
+        "body": "VPN applications are generally perceived as technical products filled with server lists, networking terminology, and security jargon. The product team wanted Pulpy VPN to feel:",
+        "items": [
+          "Friendly",
+          "Easy for first-time users",
+          "Visually memorable",
+          "Consumer privacy market"
         ]
       },
       {
-        "initial": "D",
-        "name": "Deshawn Reyes",
-        "role": "Freelance designer, 29, Manila — works remotely across coffee shops and co-working spaces",
-        "quote": "I need a VPN when I'm on client calls from cafés. I just want something I can turn on in 5 seconds and trust it's working.",
-        "goals": [
-          "Protect client data on public networks without thinking",
-          "Reliable mid-call — no drops, no reconnects",
-          "One subscription that covers his phone and laptop"
-        ],
-        "pains": [
-          "Current VPN causes noticeable slowdowns",
-          "Silent disconnects during calls with no warning",
-          "Monthly billing UI feels opaque — doesn't know what he's paying for"
+        "kicker": "02 — My Role",
+        "body": "This project was primarily focused on UI execution and flow design.I worked closely with the Product Manager who defined product requirements and feature priorities. My responsibilities included:",
+        "items": [
+          "Translating requirements into wireframes",
+          "Designing complete mobile UI",
+          "Creating interaction flows,mascot illustrations and promotional cards",
+          "Preparing developer handoff in Figma"
         ]
       },
       {
-        "initial": "M",
-        "name": "Meena Sharma",
-        "role": "Working parent, 44, Delhi — non-technical, concerned about family's online safety",
-        "quote": "My son said download a VPN. I downloaded one. There was too much to read. I deleted it.",
-        "goals": [
-          "Understand that it's working and protecting her family",
-          "Simple enough to use without asking for help",
-          "Extend protection to her kids' phones without complexity"
-        ],
-        "pains": [
-          "Every VPN screen is full of jargon she doesn't recognise",
-          "No visual confirmation that protection is active",
-          "Fears accidentally changing a setting that breaks something important"
+        "kicker": "03 — Design Process",
+        "body": "The design process which I followed was very simple but fully focused on better user experience.",
+        "image": "assets/DesignProcess copy.png",
+        "imgFull": true
+      },
+      {
+        "kicker": "04 — Creating Mascot",
+        "body": "One of the most distinctive parts of the project was designing a mascot that could communicate different product states throughout the application.",
+        "image": "assets/Mascots.png",
+        "imgFull": true
+      },
+      {
+        "kicker": "05 — Feature Designs",
+        "body": "",
+        "breakdown": [
+          {
+            "title": "3-screen onboarding",
+            "subtext": "Designed a lightweight onboarding experience introducing key product capabilities. The objective was to communicate value quickly without overwhelming new users.",
+            "img": "assets/Onboarding.png",
+            "imgFull": true
+          },
+          {
+            "title": "Subscription Experience",
+            "subtext": "Designed the premium upgrade flow including: Pricing plans, membership confirmation, upgrade success, subscription cancellation. The layouts emphasized clear pricing, benefits, and strong visual hierarchy.",
+            "img": "assets/Subscription.png",
+            "imgFull": true
+          },
+          {
+            "title": "'Network & Error States",
+            "subtext": "Created illustrations and UI for different connectivity scenarios including: No Internet, retry states, connection failures. Instead of generic system messages, the mascot helped make these states more approachable while still communicating the issue clearly.",
+            "img": "assets/NoInternet.png",
+            "imgFull": true
+          },
+          {
+            "title": "Promotional Cards",
+            "subtext": "Designed reusable marketing cards for:Referral rewards, free data, subscription offers, and user engagement campaigns. These components were created for use across the application without requiring separate visual assets each time.",
+            "img": "assets/Promotion.png",
+            "imgFull": true
+          },
+          {
+            "title": "Email Templates",
+            "subtext": "Designed responsive email templates for: Login links, account communication and brand consistency. The templates followed the same visual language as the mobile application to provide a cohesive user experience across touchpoints. ",
+            "img": "assets/EmailTemplates.png",
+            "imgFull": true
+          }
+        ]
+      },
+      {
+        "kicker": "06 — Handoff",
+        "body": "After completing the visual design, assets were organized inside Figma for developer implementation.Deliverables included:",
+        "items": [
+          "Component-based screens",
+          "Export-ready illustrations",
+          "Developer specifications",
+          ""
+        ]
+      },
+      {
+        "kicker": "07 — Outcomes",
+        "body": "100K downloads. 88-second onboarding. 4.2★ Play Store. 3.2× conversion.",
+        "items": [
+          {
+            "k": "Downloads",
+            "v": "100K+ in the first 6 months post-launch, across India and Southeast Asia"
+          },
+          {
+            "k": "Avg. onboarding time",
+            "v": "88 seconds, app open → first protected state, across all tested device tiers"
+          },
+          {
+            "k": "Trial-to-paid conversion",
+            "v": "3.2× improvement with mid-use paywall vs. the original end-of-trial placement"
+          },
+          {
+            "k": "Play Store rating",
+            "v": "4.2★ from organic reviews — highest-rated theme: 'simple to use'"
+          }
+        ]
+      },
+      {
+        "kicker": "08 — Key Learning",
+        "body": "This project reinforced that visual design plays a significant role in shaping how users perceive technical products. Some key takeaways included:",
+        "items": [
+          "Using illustrations and mascots to make functional interfaces feel more approachable.",
+          "Designing reusable components that improve scalability and developer efficiency.",
+          "Collaborating closely with product managers and developers to move designs efficiently from concept to implementation.",
+          "Building a memorable product identity through consistent visual language."
         ]
       }
     ],
-    "problem": {
-      "kicker": "03 — Problem Framing",
-      "h": "Reframed from 'build a faster VPN' to 'design the first VPN that feels like safety, not IT.'",
-      "b": "The original brief from the founders was competitive: more server locations, faster speeds, better pricing than NordVPN. Research made clear that this was the wrong race to run. Speed and server count were table stakes — every major VPN had them. The real gap was emotional. The category treated confidence as something users had to bring to the product. Pulpy's job was to design confidence into the product itself — to make the feeling of being protected a primary design output, not a side effect of configuration. Every technical decision had to be made for the user, not by the user.",
-      "statement": "How might we design a VPN that makes a completely non-technical user feel genuinely safe and confident within 90 seconds — without a single technical decision, setting choice, or jargon word standing between them and protection?"
-    },
-    "journey": {
-      "kicker": "04 — User Journey",
-      "h": "App store to protected — in under 90 seconds, with zero technical decisions.",
-      "b": "I mapped the full journey from app store discovery through to paid subscription renewal. The critical insight from journey mapping: there were 14 decision points in a standard VPN onboarding flow, and every single one was a potential drop-off. My design constraint was explicit from week 1 — eliminate every required decision that wasn't name, goal (why they wanted a VPN), and the single connect tap. Everything else had to be a smart default. The paywall placement was a separate journey design challenge: end-of-trial paywalls tested poorly (felt like a deadline, triggered anxiety and churn), while mid-use paywalls placed immediately after a meaningful success moment tested 3.2× better.",
-      "phases": [
-        {
-          "name": "Discover",
-          "tasks": [
-            "Play Store search",
-            "Friend recommendation",
-            "Social ad"
-          ],
-          "pain": "Category is crowded — Pulpy had no brand recognition vs. NordVPN. Discovery copy had to lead with 'simple', not 'secure'"
-        },
-        {
-          "name": "Onboard",
-          "tasks": [
-            "Set your name",
-            "Tell us why you want a VPN",
-            "Tap connect"
-          ],
-          "pain": "Original 7-step onboarding had protocol selection on screen 2 — 61% of users dropped here in early testing"
-        },
-        {
-          "name": "Connect",
-          "tasks": [
-            "One-tap to protected",
-            "'Protecting you' animation",
-            "Connected state with reassurance UI"
-          ],
-          "pain": "Static 'Connected' label produced high anxiety — users weren't sure if it was working"
-        },
-        {
-          "name": "Use",
-          "tasks": [
-            "Auto-reconnect on network change",
-            "Background protection indicator",
-            "Usage dashboard"
-          ],
-          "pain": "Silent reconnects with no notification generated the highest-volume support ticket: 'Is my VPN still on?'"
-        },
-        {
-          "name": "Convert",
-          "tasks": [
-            "Mid-use paywall at a success moment",
-            "Plan selection",
-            "Payment + confirmation"
-          ],
-          "pain": "End-of-trial paywall tested as arbitrary and punitive — users who'd had a positive experience still churned at 68%"
-        }
-      ]
-    },
-    "process": {
-      "kicker": "05 — Design Process",
-      "h": "Hard constraint: under 120 seconds. 6 onboarding tests. 8 connection animations. Shipped at 88s.",
-      "b": "I set a measurable design constraint in the first week: onboarding must reach the 'protected' state in under 120 seconds, measured by task completion time in Maze with non-technical participants. Every design decision was evaluated against this constraint. I ran 6 rounds of onboarding testing (15 participants per round), tracked time-on-task, completion rate, and a self-reported confidence score after the connected state. Round 1 was 4 minutes 12 seconds. Round 5 was 88 seconds. The biggest single gain came from removing server selection entirely in round 2 — smart auto-selection based on the user's stated goal cut 90 seconds alone. The connection animation was the highest-ROI design artefact in the entire project — 8 iterations tested, with the version that communicated 'active scanning + protection forming' producing the highest confidence scores across all user types.",
-      "artifacts": [
-        {
-          "k": "Onboarding Flow (v6)",
-          "v": "Reduced from 7 screens to 3: name → goal → connect. 6 testing rounds. Shipped at 88 seconds, 94% completion rate."
-        },
-        {
-          "k": "Connection Animation (v8)",
-          "v": "Lottie animation: 'protection activating' visual with shield-forming + scanning arc. Single highest-impact design decision tested."
-        },
-        {
-          "k": "Smart Server Engine",
-          "v": "Goal-based auto-selection (Streaming → lowest-latency international / Safety → nearest high-trust server). Removes the hardest user decision."
-        },
-        {
-          "k": "Mid-use Paywall System",
-          "v": "4 paywall placement tests — after first successful streaming session, after 5-day streak, at trial end, and immediately post-connect. Mid-use won at 3.2× vs. trial-end."
-        },
-        {
-          "k": "Confidence Dashboard",
-          "v": "'You are protected' persistent UI — live indicator, data encrypted counter, reconnect log, network name. Designed for anxiety reduction."
-        },
-        {
-          "k": "Progressive Power Mode",
-          "v": "Protocol, server region, DNS settings — accessible 3 taps deep. Never shown unless actively sought. Power users satisfied; new users unaffected."
-        }
-      ]
-    },
-    "solution": {
-      "kicker": "06 — Solution",
-      "h": "One tap to protected. Confidence by design. Everything else stays out of the way.",
-      "b": "The final product was built on three non-negotiable design principles: zero required decisions (every technical choice — server, protocol, DNS — is made by the system, not the user), designed confidence (the connection state was treated as a primary emotional design brief — the animation, the persistent indicator, the 'You are protected' language were all intentional outputs), and progressive complexity (power settings exist and are complete, but are only accessed by users who actively seek them — never surfaced as default screens). Onboarding is 3 screens. The core interaction is one button. Every other screen is optional.",
-      "highlights": [
-        "3-screen onboarding: name → why you want a VPN → one-tap connect. Reaches 'protected' state in 88 seconds, no technical knowledge required.",
-        "Goal-based smart server: auto-selects optimal server based on Streaming or Safety goal — protocol, region, and DNS set automatically. Zero configuration.",
-        "'Protecting you' connection animation: 8 iterations of Lottie animation — shield forming, network scanning arc. Single highest-confidence score in all user testing.",
-        "Confidence dashboard: persistent 'You are protected' UI with live data encrypted counter, reconnect log, and network name. Designed specifically to eliminate the #1 support ticket.",
-        "Mid-use paywall: placed immediately after a meaningful success moment (first protected streaming session) — not on a countdown timer. 3.2× trial-to-paid conversion vs. trial-end placement."
-      ]
-    },
-    "gallery": [
-      {
-        "wide": true,
-        "c1": "#3a3a3a",
-        "c2": "#0a0a0a",
-        "deg": "45deg",
-        "cap": "Onboarding — 3 screens, 88 seconds, zero technical decisions",
-        "img": "assets/pulpyvpn-preview.jpg"
-      },
-      {
-        "c1": "#333333",
-        "c2": "#0a0a0a",
-        "deg": "90deg",
-        "cap": "Connection animation — 'protecting you' shield-forming state"
-      },
-      {
-        "c1": "#404040",
-        "c2": "#0d0d0d",
-        "deg": "120deg",
-        "cap": "Smart server — goal-based auto-selection, no protocol picker"
-      },
-      {
-        "c1": "#383838",
-        "c2": "#0a0a0a",
-        "deg": "60deg",
-        "cap": "Confidence dashboard — live protection status, encrypted data counter"
-      },
-      {
-        "c1": "#2e2e2e",
-        "c2": "#080808",
-        "deg": "150deg",
-        "cap": "Mid-use paywall — placed after first streaming success, not on a timer"
-      },
-      {
-        "wide": true,
-        "c1": "#242424",
-        "c2": "#050505",
-        "deg": "30deg",
-        "cap": "Power mode — protocol settings hidden 3 taps deep, never default"
-      }
-    ],
-    "outcomes": {
-      "kicker": "07 — Outcomes",
-      "h": "100K downloads. 88-second onboarding. 4.2★ Play Store. 3.2× conversion.",
-      "metrics": [
-        {
-          "v": "100K+",
-          "k": "Downloads",
-          "sub": "First 6 months post-launch, India + Southeast Asia"
-        },
-        {
-          "v": "88s",
-          "k": "Avg. onboarding time",
-          "sub": "App open → first protected state. Across all tested device tiers."
-        },
-        {
-          "v": "3.2×",
-          "k": "Trial-to-paid conversion",
-          "sub": "Mid-use paywall vs. original end-of-trial placement in A/B test"
-        },
-        {
-          "v": "4.2★",
-          "k": "Play Store rating",
-          "sub": "Organic reviews — highest-rated review theme: 'simple to use'"
-        }
-      ],
-      "quote": {
-        "q": "I've tried two other VPNs and deleted both. This one — I turned it on and it told me I was protected. I didn't have to do anything else. That's the one I'm paying for.",
-        "a": "Beta user, working parent, Pune — post-launch survey"
-      }
-    },
-    "reflection": {
-      "kicker": "08 — Reflection",
-      "h": "Confidence is a design deliverable. Not a feature — a designed emotional state.",
-      "b": "The most important thing I shipped on this project wasn't a screen — it was the connection animation. One Lottie file, 8 iterations, and it had more measurable impact on user retention than any feature we built. It proved something I'd believed but never had data for: on a consumer product where trust is the core value proposition, the user's emotional state at the critical moment is as important a design output as any functional screen. I now define 'emotional state design' as a formal deliverable on every consumer product I work on — what does the user feel at each key moment, and is it the intentional, correct feeling? The second learning: progressive disclosure isn't just an IA technique. On Pulpy, hiding complexity made the product feel safer — and safer products convert better. I'd apply that thinking much earlier on the next 0→1 consumer product."
-    },
     "next": "redrob-llm"
   }
 }
