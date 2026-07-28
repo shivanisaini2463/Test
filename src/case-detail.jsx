@@ -539,6 +539,16 @@ function CaseDetail({ slug }) {
   const c = CASE_DETAILS[slug];
   if (!c) return <div style={{padding:200, textAlign:"center"}}>Case not found.</div>;
 
+  const [unlocked, setUnlocked] = React.useState(() => isCaseUnlocked(slug));
+  if (CASE_LOCKS[slug] && !unlocked) {
+    return (
+      <>
+        <CaseHero c={c} />
+        <PasswordGate slug={slug} variant="page" onUnlock={() => setUnlocked(true)} />
+      </>
+    );
+  }
+
   if (c.phases) {
     return (
       <>

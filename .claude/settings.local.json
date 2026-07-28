@@ -84,7 +84,10 @@
       "Read(//Users/redrob/Library/Caches/ms-playwright/**)",
       "Bash(node shot2.js)",
       "Bash(rm -rf /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/9dfe2fc4-9afe-4cd2-bf64-04514e7d61d8/scratchpad/node_modules /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/9dfe2fc4-9afe-4cd2-bf64-04514e7d61d8/scratchpad/package*.json)",
-      "Bash(node shot4.js)"
+      "Bash(node shot4.js)",
+      "Bash(node gate.js)",
+      "Bash(node cursor.js)",
+      "Bash(rm -rf /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/9dfe2fc4-9afe-4cd2-bf64-04514e7d61d8/scratchpad/node_modules /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/9dfe2fc4-9afe-4cd2-bf64-04514e7d61d8/scratchpad/package*.json /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/9dfe2fc4-9afe-4cd2-bf64-04514e7d61d8/scratchpad/cursor.js)"
     ],
     "additionalDirectories": [
       "/private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/9dfe2fc4-9afe-4cd2-bf64-04514e7d61d8/scratchpad/node_modules"

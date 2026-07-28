@@ -145,8 +145,76 @@ function PageShell({ children, current }) {
   );
 }
 
+// Password-gated case studies — client-side friction gate, not real security
+const CASE_LOCKS = { bcl: "bcl26" };
+
+function isCaseUnlocked(slug) {
+  if (!CASE_LOCKS[slug]) return true;
+  return sessionStorage.getItem("unlocked-case-" + slug) === "1";
+}
+
+function unlockCase(slug, pwd) {
+  if (pwd === CASE_LOCKS[slug]) {
+    sessionStorage.setItem("unlocked-case-" + slug, "1");
+    return true;
+  }
+  return false;
+}
+
+function PasswordGate({ slug, variant, onUnlock, onClose }) {
+  const [pwd, setPwd] = React.useState("");
+  const [error, setError] = React.useState(false);
+
+  const submit = (e) => {
+    e.preventDefault();
+    if (unlockCase(slug, pwd)) {
+      setError(false);
+      onUnlock && onUnlock();
+    } else {
+      setError(true);
+    }
+  };
+
+  const box = (
+    <form className="password-gate-box" onSubmit={submit} onClick={(e) => e.stopPropagation()}>
+      <div className="password-gate-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="currentColor" strokeWidth="1.6"/><path d="M8 11V7a4 4 0 0 1 8 0v4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/></svg>
+      </div>
+      <div className="password-gate-title">This case study is password protected</div>
+      <div className="password-gate-sub">Enter the password to unlock it.</div>
+      <input
+        type="password"
+        className="password-gate-input"
+        placeholder="Password"
+        value={pwd}
+        onChange={(e) => { setPwd(e.target.value); setError(false); }}
+        autoFocus
+      />
+      {error && <div className="password-gate-error">Incorrect password — try again.</div>}
+      <div className="password-gate-actions">
+        <button type="submit" className="btn primary">Unlock</button>
+        {onClose && <button type="button" className="btn ghost" onClick={onClose}>Cancel</button>}
+      </div>
+    </form>
+  );
+
+  if (variant === "modal") {
+    return (
+      <div className="password-gate-overlay" onClick={onClose}>
+        {box}
+      </div>
+    );
+  }
+
+  return <div className="password-gate-page container">{box}</div>;
+}
+
 window.Nav = Nav;
 window.Footer = Footer;
 window.PageShell = PageShell;
 window.useReveal = useReveal;
 window.SocialLinks = SocialLinks;
+window.CASE_LOCKS = CASE_LOCKS;
+window.isCaseUnlocked = isCaseUnlocked;
+window.unlockCase = unlockCase;
+window.PasswordGate = PasswordGate;

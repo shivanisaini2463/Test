@@ -138,6 +138,64 @@ function WorkCategories() {
   );
 }
 
+function RailCard({ c }) {
+  const [showGate, setShowGate] = React.useState(false);
+
+  const card = (
+    <>
+      <div className="rail-visual" style={{background: `linear-gradient(135deg, ${c.visual.c1} 0%, #0a0a18 100%)`}}>
+        <div className="rail-index">{c.num}</div>
+        {c.preview
+          ? <img src={c.preview} alt={c.client} className="rail-preview-img" />
+          : <div className="rail-pat" />
+        }
+        <div className="rail-tags">
+          <span>{c.sector}</span>
+          <span>{c.year}</span>
+        </div>
+      </div>
+      <div className="rail-body">
+        <div className="rail-client">{c.client}</div>
+        <h3 className="rail-title">{c.title[0]} <em className="serif">{c.title[1]}</em></h3>
+        <p className="rail-desc">{c.description}</p>
+        <div className="rail-kpis">
+          {c.impact.map((m, ii) => (
+            <div key={ii}><b>{m.v}</b><span>{m.k}</span></div>
+          ))}
+        </div>
+        <div className="rail-go">
+          <span>{c.locked ? "Unlock Casestudy" : "View Casestudy"}</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17 L17 7 M9 7 H17 V15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+        </div>
+      </div>
+    </>
+  );
+
+  if (c.locked) {
+    return (
+      <>
+        <button type="button" className="rail-card" data-cursor="open" onClick={() => setShowGate(true)}>
+          {card}
+        </button>
+        {showGate && (
+          <PasswordGate
+            slug={c.slug}
+            variant="modal"
+            onClose={() => setShowGate(false)}
+            onUnlock={() => { window.location.href = "case-" + c.slug + ".html"; }}
+          />
+        )}
+      </>
+    );
+  }
+
+  return (
+    <a href={"case-" + c.slug + ".html"} className="rail-card" data-cursor="open">
+      {card}
+    </a>
+  );
+}
+
 function WorkIndex() {
   const containerRef = React.useRef(null);
 
@@ -188,35 +246,7 @@ function WorkIndex() {
 
         <div className="work-rail" ref={containerRef}>
           <div className="rail-inner">
-            {CASES.map((c) => (
-              <a key={c.slug} href={"case-" + c.slug + ".html"} className="rail-card" data-cursor="open">
-                <div className="rail-visual" style={{background: `linear-gradient(135deg, ${c.visual.c1} 0%, #0a0a18 100%)`}}>
-                  <div className="rail-index">{c.num}</div>
-                  {c.preview
-                    ? <img src={c.preview} alt={c.client} className="rail-preview-img" />
-                    : <div className="rail-pat" />
-                  }
-                  <div className="rail-tags">
-                    <span>{c.sector}</span>
-                    <span>{c.year}</span>
-                  </div>
-                </div>
-                <div className="rail-body">
-                  <div className="rail-client">{c.client}</div>
-                  <h3 className="rail-title">{c.title[0]} <em className="serif">{c.title[1]}</em></h3>
-                  <p className="rail-desc">{c.description}</p>
-                  <div className="rail-kpis">
-                    {c.impact.map((m, ii) => (
-                      <div key={ii}><b>{m.v}</b><span>{m.k}</span></div>
-                    ))}
-                  </div>
-                  <div className="rail-go">
-                    <span>View Casestudy</span>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17 L17 7 M9 7 H17 V15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                  </div>
-                </div>
-              </a>
-            ))}
+            {CASES.map((c) => <RailCard c={c} key={c.slug} />)}
           </div>
         </div>
       </section>

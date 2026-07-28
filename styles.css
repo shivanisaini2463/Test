@@ -1074,6 +1074,9 @@ body.cursor-custom .cursor { display: block; }
   transition: transform .5s var(--ease), border-color .5s var(--ease);
 }
 .rail-card:hover { transform: translateY(-6px); border-color: var(--border-strong); }
+button.rail-card {
+  font: inherit; color: inherit; text-align: left; cursor: pointer; padding: 0;
+}
 
 .rail-preview-img {
   position: absolute;
@@ -2090,6 +2093,67 @@ body.cursor-custom .cursor { display: block; }
 .cd-phase-photo-fit {
   aspect-ratio: 2/1;
   object-fit: contain;
+}
+
+/* ---------- Password-protected case study gate ---------- */
+.password-gate-overlay {
+  position: fixed; inset: 0; z-index: 3000;
+  background: rgba(0,0,0,0.72);
+  backdrop-filter: blur(6px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 24px;
+}
+
+.password-gate-page {
+  min-height: 60vh;
+  display: flex; align-items: center; justify-content: center;
+  padding-top: 80px; padding-bottom: 80px;
+}
+
+.password-gate-box {
+  width: 100%; max-width: 380px;
+  display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px;
+  padding: 40px 32px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, var(--panel-strong), var(--bg-2));
+}
+
+.password-gate-icon {
+  width: 44px; height: 44px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid var(--border-strong);
+  background: var(--panel);
+  color: var(--text-dim);
+  margin-bottom: 8px;
+}
+
+.password-gate-title {
+  font-family: "Overused Grotesk", Arial, sans-serif; font-size: 17px; font-weight: 600; color: var(--text);
+}
+
+.password-gate-sub {
+  font-size: 13px; color: var(--text-mute); margin-bottom: 14px;
+}
+
+.password-gate-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  background: var(--panel);
+  color: var(--text);
+  font-size: 14px;
+  outline: none;
+}
+.password-gate-input:focus { border-color: var(--accent); }
+
+.password-gate-error {
+  color: var(--danger); font-size: 12.5px; margin-top: 10px;
+}
+
+.password-gate-actions {
+  display: flex; gap: 10px; margin-top: 20px;
 }
 
 .cd-breakdown-list { display: flex; flex-direction: column; gap: 56px; }

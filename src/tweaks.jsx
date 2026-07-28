@@ -40,14 +40,25 @@ function CustomCursor() {
     if (!el) return;
     let x = window.innerWidth / 2, y = window.innerHeight / 2;
     let tx = x, ty = y;
+    let primed = false;
     let raf;
-    const loop = () => {
-      tx += (x - tx) * 0.22;
-      ty += (y - ty) * 0.22;
-      el.style.transform = `translate(${tx}px, ${ty}px)`;
+    let last = performance.now();
+    // Frame-rate-independent easing so the cursor tracks tightly and
+    // consistently regardless of the device's refresh rate.
+    const TAU = 0.035;
+    const loop = (now) => {
+      const dt = Math.min((now - last) / 1000, 0.1);
+      last = now;
+      const k = 1 - Math.exp(-dt / TAU);
+      tx += (x - tx) * k;
+      ty += (y - ty) * k;
+      el.style.transform = `translate3d(${tx}px, ${ty}px, 0)`;
       raf = requestAnimationFrame(loop);
     };
-    const onMove = (e) => { x = e.clientX; y = e.clientY; };
+    const onMove = (e) => {
+      x = e.clientX; y = e.clientY;
+      if (!primed) { tx = x; ty = y; primed = true; }
+    };
     const onOver = (e) => {
       const t = e.target.closest?.("[data-cursor], a, button");
       if (t) {
@@ -64,9 +75,9 @@ function CustomCursor() {
         if (labelRef.current) labelRef.current.style.display = "none";
       }
     };
-    loop();
-    window.addEventListener("mousemove", onMove);
-    window.addEventListener("mouseover", onOver);
+    raf = requestAnimationFrame(loop);
+    window.addEventListener("mousemove", onMove, { passive: true });
+    window.addEventListener("mouseover", onOver, { passive: true });
     return () => {
       cancelAnimationFrame(raf);
       window.removeEventListener("mousemove", onMove);
