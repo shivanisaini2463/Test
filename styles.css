@@ -868,7 +868,9 @@ section { position: relative; width: 100%; }
   mix-blend-mode: difference;
   display: none;
 }
-body.cursor-custom .cursor { display: block; }
+@media (pointer: fine) {
+  body.cursor-custom .cursor { display: block; }
+}
 .cursor .dot {
   width: 8px; height: 8px;
   background: #fff;

@@ -98,7 +98,16 @@
       "Bash(python3 -c \"import json; json.load\\(open\\('src/case-data.json'\\)\\)\")",
       "Bash(sips -g pixelWidth -g pixelHeight Home.png Mascots.png)",
       "Bash(npx --yes playwright screenshot --wait-for-timeout=3000 --full-page http://localhost:4173/case-pulpy-vpn /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/7c7a3312-5b1d-4f18-8b7f-5e34d85a629c/scratchpad/pulpy-vpn2.png)",
-      "Bash(npx --yes playwright screenshot --wait-for-timeout=3000 --full-page http://localhost:4173/case-pulpy-vpn /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/7c7a3312-5b1d-4f18-8b7f-5e34d85a629c/scratchpad/pulpy-vpn3.png)"
+      "Bash(npx --yes playwright screenshot --wait-for-timeout=3000 --full-page http://localhost:4173/case-pulpy-vpn /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/7c7a3312-5b1d-4f18-8b7f-5e34d85a629c/scratchpad/pulpy-vpn3.png)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:4173/)",
+      "Bash(npx --no-install playwright --version)",
+      "Bash(node /private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/55b3bb38-5f48-43fc-8d68-948be2dcf427/scratchpad/shot.mjs \"\" work.html about.html contact.html case-bcl.html)",
+      "Bash(disown)",
+      "Bash(timeout 20 bash -c 'until curl -sf http://localhost:4173/ >/dev/null; do sleep 1; done')",
+      "Read(//Users/redrob/.npm/_npx/e41f203b7505f1fb/**)",
+      "Bash(node -e ' *)",
+      "Bash(nohup npx --yes serve -l 4173 .)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:4173/styles.css)"
     ],
     "additionalDirectories": [
       "/private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/9dfe2fc4-9afe-4cd2-bf64-04514e7d61d8/scratchpad/node_modules"
