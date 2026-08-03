@@ -35,7 +35,7 @@
     },
     "overview": "Redrob began as a single-purpose people-search tool and evolved into a connected, AI-native prospecting platform — spanning People Search, Company Search, a self-serve Developer Hub, and Redrob AI, a fully conversational LLM interface.",
     "problemStatement": {
-      "intro": "The product had a single functioning feature — People Search — designed to help recruiters discover and enrich candidate profiles. This created four interconnected challenges:",
+      "intro": "The product had a single functioning feature — People Search — designed to help recruiters discover and enrich candidate profiles. This created three interconnected challenges:",
       "challenges": [
         {
           "k": "Usability challenge",

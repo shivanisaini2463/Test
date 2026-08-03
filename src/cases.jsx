@@ -18,7 +18,7 @@ const CASES = [
       { k: "Profiles indexed", v: "1M+" },
     ],
     visual: { c1: "#3a3a3a", c2: "#0a0a0a", accent: "#e5e5e5" },  /* Mono — grey */
-    live: "https://www.redrob.ai/",
+    live: "https://chats.redrob.ai/",
   },
   {
     num: "02",
