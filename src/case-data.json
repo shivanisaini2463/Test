@@ -103,8 +103,8 @@
       {
         "name": "Introducing Company Search",
         "triggers": [
-          "Users were frequently switching between Redrob, LinkedIn, company websites, and Google to gather organization-level insights before identifying the right people to contact.",
-          "This workflow increased research time and caused users to lose context while moving between multiple platforms."
+          "No easy way to discover Companies matching specific business criteria.",
+          "No unified view of Companies and People while moving between multiple platforms."
         ],
         "research": [
           "Benchmarked comparable workflows of Apollo and Lusha to understand established mental models.",
@@ -118,16 +118,16 @@
         ],
         "outcomes": [
           {
-            "v": "30%",
-            "k": "Increase in cross-feature adoption between Company Search and People Search"
+            "v": "71%",
+            "k": "Increase in Decision-Maker profile visits"
           },
           {
-            "v": "25–35%",
-            "k": "Faster identification of relevant decision-makers"
+            "v": "60%",
+            "k": "Faster prospect discovery through an integrated company-to-people workflow."
           },
           {
-            "v": "Higher",
-            "k": "Retention by enabling end-to-end research within a single platform"
+            "v": "50%",
+            "k": "Reduction in search abandonment by minimizing context switching"
           }
         ],
         "img": "assets/Company Search.png"
