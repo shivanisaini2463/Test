@@ -135,7 +135,7 @@
       {
         "name": "Developer Hub — API Keys",
         "triggers": [
-          "Enterprise and agency prospects were asking for programmatic access.",
+          "Enterprises wanted to integrate Redrob's people and company data directly into their internal CRMs, but there was no secure self-service way to access APIs.",
           "There was no dedicated experience for developers to generate and manage API keys, monitor usage and credits, track enrichment requests, or access documentation."
         ],
         "research": [
@@ -151,10 +151,10 @@
         "outcomes": [
           {
             "v": "45%",
-            "k": "Reduction in API onboarding time through self-service docs & guided setup"
+            "k": "Reduction in API onboarding time through docs & guided setup"
           },
           {
-            "v": "30%",
+            "v": "25%",
             "k": "Self-serve API activations"
           },
           {
