@@ -86,16 +86,16 @@
         ],
         "outcomes": [
           {
-            "v": "25–35%",
-            "k": "Faster time to first relevant profile"
+            "v": "80%",
+            "k": "Faster time to load results"
           },
           {
-            "v": "10–15%",
-            "k": "Feedback response rate"
+            "v": "70%",
+            "k": "Increase in Revenue by Paid Filters"
           },
           {
-            "v": "Higher",
-            "k": "Engagement with advanced filters"
+            "v": "60%",
+            "k": "Loading satisfaction "
           }
         ],
         "img": "assets/People Search.png"
