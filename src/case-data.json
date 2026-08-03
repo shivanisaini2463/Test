@@ -69,8 +69,8 @@
         "name": "Optimizing the Core Experience of People Search",
         "triggers": [
           "Limited filters reduced search precision.",
-          "The results interface lacked clear hierarchy.",
-          "There was no quick way to capture user feedback.",
+          "Time in getting results were very high.",
+          "No clear visual representation of loading activities .",
           "High-value business data was not monetized effectively."
         ],
         "research": [
