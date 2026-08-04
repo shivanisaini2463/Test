@@ -312,7 +312,7 @@ function Toolkit() {
               The tools in <span className="serif" style={{fontWeight:600}}>rotation</span>.
             </h2>
           </div>
-          <p style={{maxWidth:320, color:"var(--text-dim)", fontSize:14, lineHeight:1.5}}>
+          <p style={{maxWidth:320, color:"var(--text-dim)", fontSize:16, lineHeight:1.6}}>
             Twelve tools I reach for daily — three per discipline, chosen for depth not breadth.
           </p>
         </div>

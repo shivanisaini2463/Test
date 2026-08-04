@@ -1,7 +1,7 @@
 // Case-detail renderer — reads CASE_DETAILS from case-data.jsx
 
 function CaseKicker({ children }) {
-  return <div className="cd-kicker">{children}</div>;
+  return <h2 className="cd-kicker">{children}</h2>;
 }
 
 function CaseHero({ c }) {
@@ -11,16 +11,14 @@ function CaseHero({ c }) {
     }}>
       <div className="bg-blur" style={{ background: `radial-gradient(circle, ${c.cover?.c1}44, transparent 70%)` }} />
       <div className="container">
-        <div className="meta-row">
-          <span>{c.client}</span>{!c.phases && <span>{c.year}</span>}<span>{c.sector}</span>
-        </div>
+        <div className="case-eyebrow"><span>{c.tag || "Case Study:"}</span></div>
         <h1>
           {c.title[0]} <span className="serif">{c.title[1]}</span>
         </h1>
         <p className="brief">{c.brief}</p>
         <div className="case-facts">
           {c.facts.map((f, i) => (
-            <div className="f" key={i}><b>{f.k}</b><span>{f.v}</span></div>
+            <div className="f" key={i}><b>{f.k}:</b><span>{f.v}</span></div>
           ))}
         </div>
       </div>
@@ -128,9 +126,9 @@ function TargetAudienceSection({ targetAudience }) {
       <div className="container cd-grid">
         <div className="cd-left"><CaseKicker>Target Audience</CaseKicker></div>
         <div className="cd-right">
-          <div className="cd-pills">
-            {targetAudience.map((a, i) => <span className="cd-pill" key={i}>{a}</span>)}
-          </div>
+          <ul className="cd-bullet-list">
+            {targetAudience.map((a, i) => <li key={i}>{a}</li>)}
+          </ul>
         </div>
       </div>
     </section>
@@ -186,6 +184,10 @@ function PhaseSection({ phase, index, reveal }) {
             </div>
           </div>
 
+          {phase.img
+            ? <img src={phase.img} alt={`Phase ${num} — ${phase.name}`} className="cd-phase-image cd-phase-photo cd-phase-photo-full" />
+            : <PhaseImagePlaceholder label={`Phase ${num} — ${phase.name}`} />}
+
           <div className="cd-phase-outcomes">
             {phase.outcomes.map((o, i) => (
               <div className="cd-phase-outcome" key={i}>
@@ -194,10 +196,6 @@ function PhaseSection({ phase, index, reveal }) {
               </div>
             ))}
           </div>
-
-          {phase.img
-            ? <img src={phase.img} alt={`Phase ${num} — ${phase.name}`} className="cd-phase-image cd-phase-photo cd-phase-photo-full" />
-            : <PhaseImagePlaceholder label={`Phase ${num} — ${phase.name}`} />}
         </div>
       </div>
     </section>

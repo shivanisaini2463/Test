@@ -1,6 +1,7 @@
 {
   "redrob-llm": {
     "num": "01",
+    "tag": "AI + B2B",
     "client": "Redrob AI",
     "year": "2025 – Present",
     "sector": "B2B SaaS · AI Recruiting · LLM",
@@ -8,7 +9,7 @@
       "From Search Tool to",
       "AI Talent Intelligence Platform"
     ],
-    "brief": "Transforming a Recruiter Search Platform into an AI-Powered Professional Workspace.",
+    "brief": "Transforming a Search Platform into an AI-Powered Professional Workspace.",
     "facts": [
       {
         "k": "My Role",
@@ -33,9 +34,9 @@
       "label": "Redrob AI — From Search Tool to Talent Intelligence Platform",
       "img": "assets/redrob-preview.jpg"
     },
-    "overview": "Redrob began as a single-purpose people-search tool and evolved into a connected, AI-native prospecting platform — spanning People Search, Company Search, a self-serve Developer Hub, and Redrob AI, a fully conversational LLM interface.",
+    "overview": "Redrob began as a single-purpose people search tool where it compares all the data collected from its service providers and provide verified contacts on credit basis.",
     "problemStatement": {
-      "intro": "The product had a single functioning feature — People Search — designed to help recruiters discover and enrich candidate profiles. This created three interconnected challenges:",
+      "intro": "The product had a single functioning feature— People Search designed to help recruiters discover and enrich candidate profiles. This created three interconnected challenges:",
       "challenges": [
         {
           "k": "Usability challenge",
@@ -50,9 +51,9 @@
           "v": "The recruitment industry was rapidly shifting toward AI-assisted experiences, where users expected to express hiring intent in natural language instead of manual filters."
         }
       ],
-      "closing": "The challenge was to improve the core search experience, expand the product ecosystem with new capabilities, and increase feature adoption through better discoverability."
+      "closing": "The challenge was to improve the core search experience,expand the product ecosystem with new capabilities and increase feature adoption through better discoverability."
     },
-    "businessGoals": "The objective was to evolve Redrob from a feature-centric recruiter search tool into a scalable, AI-powered Talent Intelligence platform — and to strategically reposition Redrob for its next phase of growth.",
+    "businessGoals": "The objective is to penetrate Indian Market and evolve Redrob from a feature centric search tool into a scalable, AI-powered Talent Intelligence platform and to strategically reposition Redrob for its next phase of growth.",
     "myRoleDetail": [
       "Owned the UX strategy behind the platform evolution.",
       "Started with auditing the existing product, running feedback loops with users and internal sales teams.",
@@ -62,7 +63,7 @@
     "targetAudience": [
       "Staffing agencies",
       "Founders & small-team operators doing their own outbound prospecting",
-      "Recruiters sourcing candidate pools by role, skill and company"
+      "Recruiters sourcing candidates by role, skill and company"
     ],
     "phases": [
       {
