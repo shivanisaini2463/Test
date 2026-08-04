@@ -63,7 +63,7 @@ function Nav({ current }) {
             <a href="contact.html" className={current==='contact'?'active':''}>Contact</a>
           </div>
           <div className="nav-actions">
-            <a href="https://drive.google.com/file/d/1w-f3pujuuSCP8YM9i7Eykn4Uc5ahKfaq/view?usp=drive_link" className="cta nav-cta-desktop" data-cursor="download" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1CvDVZT7-e6MDUQLsX_QYW7AiQMjOZ8nL/view?usp=sharing" className="cta nav-cta-desktop" data-cursor="download" target="_blank" rel="noopener noreferrer">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 3V15M12 15L8 11M12 15L16 11M5 19H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
               Resume
             </a>
@@ -81,7 +81,7 @@ function Nav({ current }) {
           <a href="work.html" className={current==='work'?'active':''} onClick={close}>Work</a>
           <a href="about.html" className={current==='about'?'active':''} onClick={close}>About</a>
           <a href="contact.html" className={current==='contact'?'active':''} onClick={close}>Contact</a>
-          <a href="https://drive.google.com/file/d/1w-f3pujuuSCP8YM9i7Eykn4Uc5ahKfaq/view?usp=drive_link" className="mobile-nav-cta" target="_blank" rel="noopener noreferrer" onClick={close}>
+          <a href="https://drive.google.com/file/d/1CvDVZT7-e6MDUQLsX_QYW7AiQMjOZ8nL/view?usp=sharing" className="mobile-nav-cta" target="_blank" rel="noopener noreferrer" onClick={close}>
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M12 3V15M12 15L8 11M12 15L16 11M5 19H19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
             Resume
           </a>
