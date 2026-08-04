@@ -244,10 +244,10 @@ section { position: relative; width: 100%; }
 
 /* ---------- Hero ---------- */
 .hero {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex; align-items: center;
   overflow: hidden;
-  padding: 140px 0 180px;
+  padding: 120px 0 60px;
 }
 .hero {
   background: var(--bg);
@@ -300,7 +300,7 @@ section { position: relative; width: 100%; }
   line-height: 1.05;
   letter-spacing: -0.03em;
   font-weight: 700;
-  margin: 0 0 28px;
+  margin: 0 0 12px;
 }
 .hero h1 .serif {
   font-weight: 700;

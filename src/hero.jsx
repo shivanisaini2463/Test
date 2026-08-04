@@ -55,11 +55,6 @@ function Hero() {
           </div>
         </div>
       </div>
-
-      <div className="scroll-hint">
-        <span>scroll</span>
-        <span className="line" />
-      </div>
     </section>
   );
 }
