@@ -249,45 +249,11 @@ section { position: relative; width: 100%; }
   overflow: hidden;
   padding: 140px 0 180px;
 }
-.hero .grid-canvas { position: absolute; inset: 0; z-index: 0; }
-
-/* New: full-bleed flow-field canvas (no blobs behind) */
 .hero {
   background: var(--bg);
 }
-.hero-canvas {
-  position: absolute; inset: 0; z-index: 0;
-  width: 100%; height: 100%;
-  display: block;
-}
-.hero-vortex-canvas { filter: blur(2.5px); }
-.hero-bg-video {
-  object-fit: cover;
-  opacity: 0.6;
-  filter: grayscale(1);
-  transition: opacity .6s var(--ease);
-}
-.hero-scrim {
-  position: absolute; inset: 0; z-index: 1; pointer-events: none;
-  background: linear-gradient(180deg, var(--bg) 0%, transparent 22%, transparent 68%, var(--bg) 100%);
-}
 .hero .orb.a, .hero .orb.b { display: none; }
 
-.glyph-field {
-  position: absolute; inset: 0; z-index: 1;
-  pointer-events: none; overflow: hidden;
-}
-.glyph {
-  position: absolute;
-  color: var(--ink-ghost);
-  -webkit-text-stroke: 1px var(--veil-4);
-  font-weight: 400;
-  letter-spacing: -0.04em;
-  line-height: 1;
-  transition: transform .8s cubic-bezier(.2,.8,.2,1);
-  will-change: transform;
-  user-select: none;
-}
 .hero .orb, .about-hero .orb, .work-hero .orb, .contact-hero .orb, .case-detail-hero .orb {
   position: absolute;
   width: 720px; height: 720px;
@@ -334,7 +300,7 @@ section { position: relative; width: 100%; }
   line-height: 1.05;
   letter-spacing: -0.03em;
   font-weight: 700;
-  margin: 0 0 10px;
+  margin: 0 0 28px;
 }
 .hero h1 .serif {
   font-weight: 700;
@@ -354,9 +320,12 @@ section { position: relative; width: 100%; }
 @keyframes reveal { to { transform: translateY(0); } }
 
 .hero-sub {
-  font-size: clamp(18px, 1.5vw, 22px);
-  max-width: 640px; color: var(--text-dim);
-  line-height: 1.55;
+  font-size: clamp(16px, 1.3vw, 19px);
+  font-weight: 400;
+  max-width: 720px; color: var(--text-dim);
+  line-height: 1.65;
+  letter-spacing: -0.005em;
+  text-wrap: pretty;
   opacity: 0; animation: fade 1.2s var(--ease) 0.8s forwards;
 }
 .hero-sub strong { color: var(--text); font-weight: 700; }
