@@ -109,7 +109,11 @@
       "Bash(nohup npx --yes serve -l 4173 .)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:4173/styles.css)",
       "Bash(grep -n \"background-clip\\\\|bg-clip\\\\|\\\\.hero \\\\|\\\\.hero{\\\\|\\\\.hero,\\\\|hero-scrim\\\\|hero-canvas\\\\|hero-vortex\\\\|hero-bg-video\\\\|\\\\.hero::before\\\\|\\\\.hero::after\\\\|\\\\.hero \\\\{\" /Users/redrob/Desktop/Portfolio/Test/styles.css)",
-      "Bash(npx -y chromium-cli --help)"
+      "Bash(npx -y chromium-cli --help)",
+      "WebFetch(domain:docs.api.nvidia.com)",
+      "Bash(python3 -c \"import pypdf; print\\('pypdf ok'\\)\")",
+      "Bash(python3 -c \"import pdfplumber; print\\('pdfplumber ok'\\)\")",
+      "Bash(python3 -c \"import fitz; print\\('pymupdf ok'\\)\")"
     ],
     "additionalDirectories": [
       "/private/tmp/claude-501/-Users-redrob-Desktop-Portfolio-Test/9dfe2fc4-9afe-4cd2-bf64-04514e7d61d8/scratchpad/node_modules"

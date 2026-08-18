@@ -139,3 +139,8 @@ dist
 
 .vercel
 .env
+
+# Chatbot: personal source material + locally-generated knowledge store.
+# Production serves this from Vercel Blob, so it need not (and should not,
+# for privacy) live in the public repo.
+data/

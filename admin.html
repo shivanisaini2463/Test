@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Chatbot Memory · Admin</title>
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; max-width: 720px; margin: 0 auto; padding: 24px; line-height: 1.5; }
+    h1 { font-size: 20px; margin: 0 0 4px; }
+    p.sub { margin: 0 0 20px; opacity: .7; font-size: 14px; }
+    label { display: block; font-size: 13px; font-weight: 600; margin: 14px 0 4px; }
+    input, textarea { width: 100%; padding: 10px; border: 1px solid #8884; border-radius: 8px; font: inherit; background: transparent; color: inherit; }
+    textarea { min-height: 160px; resize: vertical; }
+    button { margin-top: 14px; padding: 10px 16px; border: 0; border-radius: 8px; background: #2563eb; color: #fff; font-weight: 600; cursor: pointer; }
+    button.ghost { background: transparent; color: inherit; border: 1px solid #8884; padding: 4px 10px; margin: 0; font-size: 12px; }
+    .row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 0; border-bottom: 1px solid #8882; font-size: 14px; }
+    .tag { font-size: 11px; padding: 2px 6px; border-radius: 6px; background: #8883; margin-left: 6px; }
+    #status { margin-top: 14px; font-size: 14px; min-height: 20px; }
+    .ok { color: #16a34a; } .err { color: #dc2626; }
+    section { border-top: 1px solid #8883; margin-top: 28px; padding-top: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Chatbot Memory</h1>
+  <p class="sub">Add or update what the portfolio chatbot knows. Changes are live immediately.</p>
+
+  <label>Admin password</label>
+  <input id="pw" type="password" placeholder="ADMIN_PASSWORD" autocomplete="current-password" />
+
+  <label>Source label <span style="opacity:.6;font-weight:400">(optional — reuse a label to overwrite it)</span></label>
+  <input id="source" placeholder="e.g. faq, availability, new-project-x" />
+
+  <label>Content</label>
+  <textarea id="text" placeholder="Paste anything you want the chatbot to know — a bio update, an FAQ answer, a new project summary…"></textarea>
+  <button id="add">Add to memory</button>
+  <div id="status"></div>
+
+  <section>
+    <label style="margin-top:8px">Current sources</label>
+    <div id="list"><p class="sub">Enter the password and load below.</p></div>
+    <button id="refresh" class="ghost">Load / refresh</button>
+  </section>
+
+  <script>
+    const $ = (id) => document.getElementById(id);
+    const status = (msg, cls = "") => { $("status").className = cls; $("status").textContent = msg; };
+    const pw = () => $("pw").value;
+
+    async function api(method, body) {
+      const res = await fetch("/api/ingest", {
+        method,
+        headers: { "Content-Type": "application/json", "x-admin-password": pw() },
+        body: body ? JSON.stringify(body) : undefined,
+      });
+      if (res.status === 401) throw new Error("Wrong password.");
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.error || ("Error " + res.status));
+      return data;
+    }
+
+    async function refresh() {
+      try {
+        const { sources, total } = await api("GET");
+        if (!sources.length) { $("list").innerHTML = '<p class="sub">No knowledge yet.</p>'; return; }
+        $("list").innerHTML = sources.map((s) => `
+          <div class="row">
+            <span>${s.source}<span class="tag">${s.origin}</span><span class="tag">${s.chunks} chunk(s)</span></span>
+            ${s.origin === "admin" ? `<button class="ghost" data-del="${encodeURIComponent(s.source)}">Delete</button>` : ""}
+          </div>`).join("");
+        status(`${total} chunk(s) across ${sources.length} source(s).`, "ok");
+      } catch (e) { status(e.message, "err"); }
+    }
+
+    $("add").onclick = async () => {
+      if (!$("text").value.trim()) return status("Add some content first.", "err");
+      status("Embedding and saving…");
+      try {
+        const r = await api("POST", { text: $("text").value, source: $("source").value });
+        status(`Saved “${r.source}” (${r.chunks} chunk(s)).`, "ok");
+        $("text").value = ""; $("source").value = "";
+        refresh();
+      } catch (e) { status(e.message, "err"); }
+    };
+
+    $("refresh").onclick = refresh;
+
+    $("list").addEventListener("click", async (e) => {
+      const src = e.target.getAttribute("data-del");
+      if (!src) return;
+      if (!confirm("Delete this source from the chatbot's memory?")) return;
+      try { await api("DELETE", { source: decodeURIComponent(src) }); refresh(); }
+      catch (err) { status(err.message, "err"); }
+    });
+  </script>
+</body>
+</html>

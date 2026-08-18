@@ -7,6 +7,18 @@
       "runtimeArgs": ["serve", ".", "--listen", "5173", "--no-clipboard"],
       "port": 5173,
       "autoPort": false
+    },
+    {
+      "name": "portfolio-chat",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev:demo"],
+      "port": 5050
+    },
+    {
+      "name": "portfolio-live",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev:api"],
+      "port": 5050
     }
   ]
 }

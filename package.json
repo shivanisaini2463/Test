@@ -6,9 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "ingest": "node scripts/ingest.mjs",
+    "test:retrieval": "node scripts/test-retrieval.mjs",
+    "dev:api": "node scripts/dev-server.mjs",
+    "dev:demo": "MOCK_EMBED=1 node scripts/dev-server.mjs"
   },
   "dependencies": {
+    "@vercel/blob": "^0.27.0",
+    "openai": "^4.104.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -16,6 +22,7 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.3",
+    "dotenv": "^16.4.7",
     "typescript": "~5.6.2",
     "vite": "^5.4.10"
   }
