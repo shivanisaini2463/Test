@@ -370,36 +370,84 @@ const RECOG = [
 
 const TESTIMONIALS = [
   {
-    q: "I've had the pleasure of working with Shivani on multiple projects, including Needy and Elite. She consistently demonstrates a strong understanding of user experience and design strategy. Shivani is not only highly creative and detail-oriented but also extremely reliable — always responsive, punctual, and committed to delivering high-quality work on time.",
-    n: "Mohit Chauhan",
-    d: "Developer",
-    init: "MC",
-    c1: "#1e1e1e", c2: "#1a1a1a",
+    q: "I managed the team Shivani worked on at Redrob, and she was one of those designers who makes an engineering leader's job easier — turning ambiguous, complex product requirements into clean, intuitive designs the team could actually build, without ever losing sight of the end user. Any team would be lucky to have her.",
+    n: "Victor Samson",
+    d: "Principal Engineering Lead at McKinley Rice",
+    init: "VS",
+    img: "assets/Victor.jpg",
+    c1: "#242424", c2: "#101010",
   },
   {
-    q: "Shivani single-handedly managed the entire design process for Fantom Play — from in-depth research and user flows to design ideation and seamless developer handoff. Her communication was clear, proactive, and always aligned with our goals. The level of detail, strategic thinking, and dedication she brought truly stood out.",
-    n: "Alok Nadkar",
-    d: "Director, Fantom Play",
-    init: "AN",
-    c1: "#1c1c1c", c2: "#242424",
-  },
-  {
-    q: "Shivani possesses a rare blend of creativity, precision, and deep understanding of user behavior. From the first wireframe to the final pixel, her work exudes aesthetic finesse and functional brilliance. She doesn't just design interfaces — she crafts experiences. I'm incredibly grateful for her contribution.",
-    n: "Ashish Aggarwal",
-    d: "Founder, Capginn",
-    init: "AA",
+    q: "I worked with Shivani on multiple design projects like Fantom Play and a few in the hospitality space. She helped us improve user flows, do focused research and plan our work in a better way, and made sure the team stayed organised and worked smoothly together. It's always good to have a team member like her who brings clarity and support to the table.",
+    n: "Tejal Temkar",
+    d: "Product Designer, Growth & Conversion Optimization",
+    init: "TT",
+    img: "assets/Tejal.jpg",
     c1: "#242424", c2: "#0d0d0d",
   },
   {
-    q: "Over the course of just 3–4 months, Shivani guided me through the entire design process — from foundational theory to real-world application. She has a remarkable ability to break down complex concepts into clear, actionable insights. Thanks to her guidance, I was able to land a role as a UI/UX Designer with confidence.",
-    n: "Mohnish Malbhage",
-    d: "Designer & Student",
-    init: "MM",
+    q: "I've had the pleasure of working with Shivani, and one of the qualities I appreciate most is her unwavering focus on the end user. Her ability to translate complex requirements into intuitive, user-friendly designs has made collaboration between design and engineering much smoother.",
+    n: "Divyansh Jaiswal",
+    d: "Backend Engineer, Senior SDE / Tech Lead",
+    init: "DJ",
+    img: "assets/Divyansh.jpg",
+    c1: "#222222", c2: "#141414",
+  },
+  {
+    q: "I had the pleasure of working with Shivani Saini across multiple cross-functional projects, where she consistently demonstrated the qualities of a strong Senior Product Designer. She collaborates effectively with product managers and engineering teams, communicates design decisions clearly, and takes ownership of delivering thoughtful, high-quality solutions.",
+    n: "Nishant Kumar",
+    d: "Sr. Backend Developer II, Project Lead",
+    init: "NK",
+    img: "assets/Nishant.jpg",
+    c1: "#1c1c1c", c2: "#2a2a2a",
+  },
+  {
+    q: "I had the opportunity to work with Shivani at Redrob, and it was a great experience collaborating with her. She consistently brought creativity, thoughtful problem-solving, and a strong user-first approach to every project. Whether working on new features or refining existing ones, she approaches every challenge with ownership and a positive attitude.",
+    n: "Aiyush Kumar",
+    d: "Backend Engineer @ Redrob",
+    init: "AK",
+    img: "assets/Aiyush.jpg",
     c1: "#2a2a2a", c2: "#151515",
+  },
+  {
+    q: "I had the privilege of reporting to Shivani, a thoughtful and skilled UX leader. Her guidance helped improve our user flows, research focus, and overall planning. Shivani's clear, practical feedback and organized approach made the team more efficient and aligned.",
+    n: "Rishabh Utekar",
+    d: "UX Designer @ TechStalwarts",
+    init: "RU",
+    img: "assets/Rishabh.jpg",
+    c1: "#1a1a1a", c2: "#262626",
+  },
+  {
+    q: "I've had the pleasure of working alongside Shivani Saini for almost 4 years at Appyhigh & Phot.AI and I can confidently say that she is one of the most talented and dedicated UI/UX professionals I've encountered. Shivani brings a rare blend of creativity, strategic thinking, and user empathy to every project.",
+    n: "Sumit Sharma",
+    d: "Lead Product Designer / Product Owner",
+    init: "SS",
+    img: "assets/Sumit.jpg",
+    c1: "#1e1e1e", c2: "#1a1a1a",
+  },
+  {
+    q: "I had the pleasure of working with Shivani at Redrob, and I truly enjoyed collaborating with her. She brings a thoughtful, user-centric approach to design and consistently finds creative ways to solve complex problems. What stands out most about Shivani is her ability to simplify challenging product requirements into intuitive, functional, and visually polished experiences.",
+    n: "Tuyam Tushar Medhi",
+    d: "Associate Software Developer",
+    init: "TM",
+    img: "assets/Tuyam.jpg",
+    c1: "#1c1c1c", c2: "#242424",
   },
 ];
 
+const LINKEDIN_RECOMMENDATIONS_URL = "https://www.linkedin.com/in/shivanisainidesigner/details/recommendations/?detailScreenTabIndex=0";
+
 function Testimonials({ eyebrow }) {
+  const trackRef = React.useRef(null);
+
+  const scrollByCard = (dir) => {
+    const track = trackRef.current;
+    if (!track) return;
+    const card = track.querySelector(".testim-card");
+    const step = card ? card.getBoundingClientRect().width + 20 : 320;
+    track.scrollBy({ left: dir * step, behavior: "smooth" });
+  };
+
   return (
     <section style={{padding:"100px 0", borderTop:"1px solid var(--border)"}}>
       <div className="container">
@@ -410,24 +458,40 @@ function Testimonials({ eyebrow }) {
               Heard from <span className="serif" style={{fontWeight:600}}>the rooms</span> I've been in.
             </h2>
           </div>
+          <a href={LINKEDIN_RECOMMENDATIONS_URL} target="_blank" rel="noreferrer" className="btn ghost" data-cursor="open">
+            View More
+            <svg className="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M7 17 L17 7 M9 7 H17 V15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          </a>
         </div>
-        <div className="testim-grid">
-          {TESTIMONIALS.map((t, i) => (
-            <figure className={"testim reveal" + (i === 0 ? " testim-featured" : "")} key={i} style={{animationDelay: (i*0.1)+"s"}}>
-              <span className="testim-quote-mark" aria-hidden="true">&ldquo;</span>
-              <blockquote>{t.q}</blockquote>
-              <figcaption>
-                <div className="avatar" style={{background:`linear-gradient(135deg, ${t.c1}, ${t.c2})`}}>
-                  <span>{t.init}</span>
-                </div>
-                <div className="who">
-                  <b>{t.n}</b>
-                  <span>{t.d}</span>
-                </div>
-              </figcaption>
-            </figure>
-          ))}
+      </div>
+
+      <div className="testim-rail-wrap">
+        <button type="button" className="testim-side-nav left" aria-label="Previous" onClick={() => scrollByCard(-1)}>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M15 6 L9 12 L15 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+        </button>
+
+        <div className="testim-rail" ref={trackRef}>
+          <div className="testim-track">
+            {TESTIMONIALS.map((t, i) => (
+              <figure className="testim-card reveal" key={i} style={{animationDelay: (i*0.1)+"s"}}>
+                <blockquote>{t.q}</blockquote>
+                <figcaption>
+                  <div className="testim-avatar" style={t.img ? undefined : {background:`linear-gradient(135deg, ${t.c1}, ${t.c2})`}}>
+                    {t.img ? <img src={t.img} alt={t.n} /> : <span>{t.init}</span>}
+                  </div>
+                  <div className="testim-who">
+                    <b className="testim-sig">{t.n}</b>
+                    <span className="testim-role">{t.d}</span>
+                  </div>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
         </div>
+
+        <button type="button" className="testim-side-nav right" aria-label="Next" onClick={() => scrollByCard(1)}>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 6 L15 12 L9 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+        </button>
       </div>
     </section>
   );

@@ -1610,51 +1610,69 @@ button.rail-card {
 .recog-row:hover .recog-arr { background: var(--accent); border-color: var(--accent); transform: rotate(-45deg); }
 
 /* ---------- Testimonials ---------- */
-.testim-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+.testim-rail-wrap {
+  position: relative;
 }
-@media (max-width: 900px) { .testim-grid { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 720px) { .testim-grid { grid-template-columns: 1fr; } }
-.testim {
+.testim-side-nav {
+  display: flex; align-items: center; justify-content: center;
+  position: absolute; top: 50%; transform: translateY(-50%);
+  z-index: 2;
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  background: var(--panel-strong);
+  backdrop-filter: blur(10px);
+  color: var(--text-dim);
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s var(--ease), background .3s var(--ease), border-color .3s var(--ease), color .3s var(--ease);
+}
+.testim-rail-wrap:hover .testim-side-nav { opacity: 1; pointer-events: auto; }
+.testim-side-nav:hover { background: var(--accent); border-color: var(--accent); color: var(--invert-text); }
+.testim-side-nav.left { left: 32px; }
+.testim-side-nav.right { right: 32px; }
+@media (min-width: 1440px) {
+  .testim-side-nav.left { left: max(32px, calc((100vw - var(--maxw)) / 2 + 32px)); }
+  .testim-side-nav.right { right: max(32px, calc((100vw - var(--maxw)) / 2 + 32px)); }
+}
+@media (max-width: 720px) { .testim-side-nav { display: none; } }
+
+.testim-rail {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 0 0 8px;
+}
+.testim-rail::-webkit-scrollbar { display: none; }
+.testim-track {
+  display: flex; gap: 20px;
+  padding: 0 4px;
+  width: max-content;
+}
+@media (max-width: 720px) { .testim-track { padding: 0 20px; gap: 16px; } }
+
+.testim-card {
+  scroll-snap-align: start;
+  flex: none;
+  width: clamp(260px, 26vw, 330px);
   padding: 32px;
   border-radius: var(--radius-lg);
   border: 1px solid var(--border);
   background: var(--panel);
   margin: 0;
-  display: flex; flex-direction: column; gap: 20px;
+  display: flex; flex-direction: column; gap: 22px;
   position: relative;
   transition: border-color .3s var(--ease), transform .3s var(--ease);
 }
-.testim:hover { border-color: var(--border-strong); transform: translateY(-2px); }
-.testim-quote-mark {
-  font-weight: 700;
-  font-size: 56px; line-height: 0.6; color: var(--accent-2); opacity: 0.7;
-}
-.testim blockquote {
-  margin: 0;
-  font-family: "Overused Grotesk", Arial, sans-serif;
-  font-size: 17px; line-height: 1.55;
-  color: var(--text); letter-spacing: -0.01em;
-  flex: 1;
-}
-.testim figcaption {
-  display: flex; align-items: center; gap: 14px;
-  padding-top: 20px; border-top: 1px solid var(--border);
-}
+.testim-card:hover { border-color: var(--border-strong); transform: translateY(-4px); }
+.testim-card:first-child { background: var(--panel-strong); }
 
-/* Featured testimonial: spans the full row, larger and horizontal on desktop */
-.testim-featured {
-  grid-column: 1 / -1;
-  background: var(--panel-strong);
-}
-@media (min-width: 721px) {
-  .testim-featured { flex-direction: row; align-items: center; gap: 40px; padding: 44px 48px; }
-  .testim-featured .testim-quote-mark { font-size: 72px; flex: none; align-self: flex-start; }
-  .testim-featured blockquote { font-size: 24px; line-height: 1.4; letter-spacing: -0.015em; }
-  .testim-featured figcaption { flex-direction: column; align-items: flex-start; gap: 10px; padding-top: 0; border-top: none; border-left: 1px solid var(--border); padding-left: 32px; flex: none; width: 200px; }
-}
-.testim figcaption .avatar {
-  width: 44px; height: 44px; border-radius: 50%;
+.testim-avatar {
+  width: 48px; height: 48px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   flex: none;
   border: 1px solid rgba(255,255,255,0.15);
@@ -1662,19 +1680,44 @@ button.rail-card {
   position: relative;
   overflow: hidden;
 }
-.testim figcaption .avatar::after {
+.testim-avatar::after {
   content: ""; position: absolute; inset: 0;
   background-image: radial-gradient(circle at 30% 25%, rgba(255,255,255,0.35), transparent 50%);
 }
-.testim figcaption .avatar span {
+.testim-avatar span {
   font-family: "Overused Grotesk", Arial, sans-serif;
-  font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.85);
+  font-size: 15px; font-weight: 600; color: rgba(255,255,255,0.85);
   letter-spacing: -0.01em;
   z-index: 1;
 }
-.testim figcaption .who { display: flex; flex-direction: column; gap: 2px; }
-.testim figcaption .who b { font-size: 14px; font-weight: 500; }
-.testim figcaption .who span { font-size: 12px; color: var(--text-dim); }
+.testim-avatar img {
+  width: 100%; height: 100%; object-fit: cover;
+  position: relative; z-index: 1;
+}
+.testim-card blockquote {
+  margin: 0;
+  font-family: "Overused Grotesk", Arial, sans-serif;
+  font-size: 16px; line-height: 1.55;
+  color: var(--text-dim); letter-spacing: -0.01em;
+  flex: 1;
+}
+.testim-card figcaption {
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
+  padding-top: 20px; border-top: 1px solid var(--border);
+  text-align: center;
+}
+.testim-who { display: flex; flex-direction: column; align-items: center; gap: 2px; min-width: 0; }
+.testim-sig {
+  font-family: "Overused Grotesk", Arial, sans-serif;
+  font-size: 17px; font-weight: 500; color: var(--text);
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.testim-role {
+  font-size: 12px; color: var(--text-mute);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
 
 
 /* ---------- Case detail — rich UX-process sections ---------- */
