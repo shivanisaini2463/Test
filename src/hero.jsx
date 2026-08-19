@@ -46,7 +46,7 @@ function Hero() {
           ))}
         </h1>
         <p className="hero-sub">
-          As a Senior Product Designer with 7 years of experience, I lead product evolution from discovery to delivery, combining product thinking, AI-first workflows, UX strategy and team leadership to transform complex ideas into trusted, scalable digital experiences. AI isn't just a productivity tool in my process—it's how I research faster, validate smarter and design with greater confidence.
+          <strong>Senior AI-Native</strong> Product Designer, <strong>7+</strong> years of experience, turning complex workflows into simple, <strong>scalable</strong> products—combining <strong>AI-first</strong> product thinking, code-level prototyping, user research, testing and design leadership. Designed and shipped <strong>50+</strong> digital products across AI, Enterprise SaaS, FinTech, EdTech, SportsTech, Hospitality, Entertainment and Consumer domains. <strong>Led</strong> and <strong>mentored</strong> design teams, accelerated design delivery by <strong>75%</strong> and built <strong>scalable design systems</strong> from scratch.
         </p>
         <div className="hero-meta">
           <div className="item">
