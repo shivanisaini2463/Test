@@ -32,7 +32,7 @@
       "c1": "#3a3a3a",
       "c2": "#0a0a0a",
       "label": "Redrob AI — From Search Tool to Talent Intelligence Platform",
-      "img": "assets/redrob-preview.jpg"
+      "img": "assets/redrob-preview.webp"
     },
     "overview": "Redrob began as a single-purpose people search tool where it compares all the data collected from its service providers and provide verified contacts on credit basis.",
     "problemStatement": {
@@ -99,7 +99,7 @@
             "k": "Loading satisfaction "
           }
         ],
-        "img": "assets/People Search.png"
+        "img": "assets/People Search.webp"
       },
       {
         "name": "Introducing Company Search",
@@ -131,7 +131,7 @@
             "k": "Reduction in search abandonment by minimizing context switching"
           }
         ],
-        "img": "assets/Company Search.png"
+        "img": "assets/Company Search.webp"
       },
       {
         "name": "Developer Hub — API Keys",
@@ -163,7 +163,7 @@
             "k": "Enterprise deals unblocked"
           }
         ],
-        "img": "assets/Developer Hub.png"
+        "img": "assets/Developer Hub.webp"
       },
       {
         "name": "Redrob Chrome Extension",
@@ -189,7 +189,7 @@
             "k": "Increase in prospects added to Redrob lists"
           }
         ],
-        "img": "assets/Chrome Extension.png"
+        "img": "assets/Chrome Extension.webp"
       },
       {
         "name": "Reimagining Search with AI Query & Prompt Library",
@@ -221,7 +221,7 @@
             "k": "Reduction in manual filter interactions for new users"
           }
         ],
-        "img": "assets/Prompt.png"
+        "img": "assets/Prompt.webp"
       },
       {
         "name": "Redrob AI — A Fully Conversational, LLM-Based Platform",
@@ -251,7 +251,7 @@
             "k": "Increase in AI-assisted search adoption"
           }
         ],
-        "img": "assets/RedrobAI.png"
+        "img": "assets/RedrobAI.webp"
       }
     ],
     "next": "phot-ai"
@@ -296,7 +296,7 @@
       "c1": "#333333",
       "c2": "#0a0a0a",
       "label": "Phot AI — Creative-Led Growth Platform",
-      "img": "assets/AiArtGenerator.png"
+      "img": "assets/AiArtGenerator.webp"
     },
     "sections": [
       {
@@ -315,7 +315,7 @@
       {
         "kicker": "Design Process",
         "body": "The project was divided into five phases:",
-        "image": "assets/DesignProcess.png"
+        "image": "assets/DesignProcess.webp"
       },
       {
         "kicker": "Research Strategy",
@@ -341,18 +341,18 @@
       {
         "kicker": "Competitive Analysis",
         "body": "I audited 14 tools spanning general creative AI (Canva, Adobe Firefly, Midjourney, DALL·E), ad-specific generators (Pencil, Smartly, Predis) and more, to understand where existing products stopped short. Most tools optimised for a single step in the workflow — generation, or editing, or publishing — but none closed the loop between what creative was produced and how it actually performed in market.",
-        "image": "assets/CompetitiveAnalysis.png",
+        "image": "assets/CompetitiveAnalysis.webp",
         "imgFit": true
       },
       {
         "kicker": "User Personas",
         "breakdown": [
           {
-            "img": "assets/UserPersona1.png",
+            "img": "assets/UserPersona1.webp",
             "imgFit": true
           },
           {
-            "img": "assets/UserPersona2.png",
+            "img": "assets/UserPersona2.webp",
             "imgFit": true
           }
         ]
@@ -360,19 +360,19 @@
       {
         "kicker": "Empathy Mapping",
         "body": "Mapping what users said, thought, and felt surfaced a consistent tension: marketers said they wanted 'more AI features,' but what they actually felt was anxiety about defending an AI decision they couldn't explain. The real gap wasn't capability — it was confidence. Every interface decision after this point was filtered through one question: does this make the AI's reasoning visible enough for a non-designer to trust and defend it?",
-        "image": "assets/EmpathyMapping.png",
+        "image": "assets/EmpathyMapping.webp",
         "imgFit": true
       },
       {
         "kicker": "Card Sorting",
         "body": "Labeled cards into categories according to own understanding and sorting it wisely.",
-        "image": "assets/CardSorting.png",
+        "image": "assets/CardSorting.webp",
         "imgFit": true
       },
       {
         "kicker": "User Flow",
         "body": "This user flow is of a tool named BG replacer which takes user from starting point through a set of steps till the final output.",
-        "image": "assets/User Flow.png",
+        "image": "assets/User Flow.webp",
         "imgFit": true
       },
       {
@@ -381,25 +381,25 @@
           {
             "title": "AI Art Generator",
             "subtext": "Turn simple text prompts into production-ready artwork in seconds. Explore multiple artistic styles, generate high-quality visuals, and accelerate creative exploration with AI-powered image generation.",
-            "img": "assets/AiArtGenerator.png",
+            "img": "assets/AiArtGenerator.webp",
             "imgFit": true
           },
           {
             "title": "Dashboard",
             "subtext": "A unified creative workspace for designing, editing, and managing visual assets. From templates and brand kits to AI-powered editing, every tool is organized into a streamlined workflow.",
-            "img": "assets/Dashboard.png",
+            "img": "assets/Dashboard.webp",
             "imgFull": true
           },
           {
             "title": "AI Background Replacer",
             "subtext": "Remove and replace backgrounds with a single click using AI. Generate clean, professional product visuals and lifestyle imagery without complex editing or manual masking.",
-            "img": "assets/AiBackgroundReplacer.png",
+            "img": "assets/AiBackgroundReplacer.webp",
             "imgFull": true
           },
           {
             "title": "Phot AI Magic Studio",
             "subtext": "An all-in-one mobile editing studio combining AI-powered creation, image enhancement, color adjustments, brush tools, and effects into a seamless creative workflow from start to finish.",
-            "img": "assets/MagicStudio.png",
+            "img": "assets/MagicStudio.webp",
             "imgFit": true
           }
         ]
@@ -447,7 +447,7 @@
       "c1": "#404040",
       "c2": "#0d0d0d",
       "label": "Big Cricket League — Designing the Official Digital Ecosystem",
-      "img": "assets/bcl-preview.jpg"
+      "img": "assets/bcl-preview.webp"
     },
     "sections": [
       {
@@ -511,7 +511,7 @@
       {
         "kicker": "Information Architecture",
         "body": "The sitemap organises into eight pillars, all reachable from a deliberately minimal four-item bottom navigation (Home, Fan Club, Videos, More) that pushes secondary destinations into an overflow rather than trying to surface everything at once.",
-        "image": "assets/Information Architecture.png"
+        "image": "assets/Information Architecture.webp"
       },
       {
         "kicker": "Feature wise Breakdown",
@@ -519,17 +519,17 @@
           {
             "title": "Transforming fans into Team Owners",
             "subtext": "Designed an end-to-end ownership journey that enables fans to discover teams, purchase ownership, manage memberships, unlock exclusive benefits, and access ownership documents through a seamless experience.",
-            "img": "assets/Fanowner.png"
+            "img": "assets/Fanowner.webp"
           },
           {
             "title": "A Central hub for the entire cricket league",
             "subtext": "Designed a unified league experience where fans can seamlessly explore tournament standings, player leaderboards, galleries, venue information, sponsors, and league-wide updates from a single destination.",
-            "img": "assets/League.png"
+            "img": "assets/League.webp"
           },
           {
             "title": "Building rich digital identities for every player",
             "subtext": "Designed comprehensive player profiles that combine statistics, achievements, awards, news, and career milestones, helping fans discover players beyond their on-field performance.",
-            "img": "assets/Players.png"
+            "img": "assets/Players.webp"
           }
         ]
       },
@@ -572,7 +572,7 @@
       "c1": "#383838",
       "c2": "#0a0a0a",
       "label": "Pritam Restaurant — Since 1942, Reimagined",
-      "img": "assets/pritam-preview.jpg"
+      "img": "assets/pritam-preview.webp"
     },
     "sections": [
       {
@@ -614,22 +614,22 @@
           {
             "title": "Setting the stage before the first scroll",
             "subtext": "The experience begins with a bilingual animated introduction, first revealing the brand in English, followed by Hindi, reflecting Pritam's deep-rooted identity and its connection with generations of visitors. The animation seamlessly transitions into the hero section with the message 80 rs of Continuity, immediately communicating the restaurant's remarkable legacy before users begin exploring the website.",
-            "img": "assets/Loading.png"
+            "img": "assets/Loading.webp"
           },
           {
             "title": "80 Years of Culinary Legacy",
             "subtext": "The hero section establishes authenticity by showcasing the original restaurant branding and visual elements inspired by its early identity. Rather than introducing the restaurant with marketing copy, the design highlights its 80-year journey, allowing visitors to instantly recognize Pritam as one of Mumbai's oldest and most iconic dining destinations.",
-            "img": "assets/History.png"
+            "img": "assets/History.webp"
           },
           {
             "title": "Celebrating decades of cultural connections",
             "subtext": "As an iconic restaurant in Mumbai, Pritam has been visited by generations of Bollywood celebrities and renowned personalities. This section showcases archival photographs to celebrate these associations, adding credibility while creating an emotional connection with visitors. The visual storytelling reinforces Pritam's cultural significance and highlights its place in Mumbai's cinematic history.",
-            "img": "assets/Bollywood Affair.png"
+            "img": "assets/Bollywood Affair.webp"
           },
           {
             "title": "Preserving moments beyond the plate",
             "subtext": "To bring the restaurant's atmosphere to life, an interactive gallery showcases interiors, signature dishes, memorable moments, and historic photographs. Instead of simply displaying images, the gallery helps visitors experience Pritam's warmth, heritage, and vibrant dining culture, making it easier for them to connect with the brand before visiting.",
-            "img": "assets/Snapshots.png"
+            "img": "assets/Snapshots.webp"
           }
         ]
       },
@@ -681,7 +681,7 @@
       "c1": "#464646",
       "c2": "#101010",
       "label": "Pulpy VPN — Privacy, Finally Effortless",
-      "img": "assets/Home.png"
+      "img": "assets/Home.webp"
     },
     "sections": [
       {
@@ -707,13 +707,13 @@
       {
         "kicker": "03 — Design Process",
         "body": "The design process which I followed was very simple but fully focused on better user experience.",
-        "image": "assets/DesignProcess copy.png",
+        "image": "assets/DesignProcess copy.webp",
         "imgFull": true
       },
       {
         "kicker": "04 — Creating Mascot",
         "body": "One of the most distinctive parts of the project was designing a mascot that could communicate different product states throughout the application.",
-        "image": "assets/Mascots.png",
+        "image": "assets/Mascots.webp",
         "imgFull": true
       },
       {
@@ -723,31 +723,31 @@
           {
             "title": "3-screen onboarding",
             "subtext": "Designed a lightweight onboarding experience introducing key product capabilities. The objective was to communicate value quickly without overwhelming new users.",
-            "img": "assets/Onboarding.png",
+            "img": "assets/Onboarding.webp",
             "imgFull": true
           },
           {
             "title": "Subscription Experience",
             "subtext": "Designed the premium upgrade flow including: Pricing plans, membership confirmation, upgrade success, subscription cancellation. The layouts emphasized clear pricing, benefits, and strong visual hierarchy.",
-            "img": "assets/Subscription.png",
+            "img": "assets/Subscription.webp",
             "imgFull": true
           },
           {
             "title": "'Network & Error States",
             "subtext": "Created illustrations and UI for different connectivity scenarios including: No Internet, retry states, connection failures. Instead of generic system messages, the mascot helped make these states more approachable while still communicating the issue clearly.",
-            "img": "assets/NoInternet.png",
+            "img": "assets/NoInternet.webp",
             "imgFull": true
           },
           {
             "title": "Promotional Cards",
             "subtext": "Designed reusable marketing cards for:Referral rewards, free data, subscription offers, and user engagement campaigns. These components were created for use across the application without requiring separate visual assets each time.",
-            "img": "assets/Promotion.png",
+            "img": "assets/Promotion.webp",
             "imgFull": true
           },
           {
             "title": "Email Templates",
             "subtext": "Designed responsive email templates for: Login links, account communication and brand consistency. The templates followed the same visual language as the mobile application to provide a cohesive user experience across touchpoints. ",
-            "img": "assets/EmailTemplates.png",
+            "img": "assets/EmailTemplates.webp",
             "imgFull": true
           }
         ]
@@ -792,6 +792,214 @@
           "Designing reusable components that improve scalability and developer efficiency.",
           "Collaborating closely with product managers and developers to move designs efficiently from concept to implementation.",
           "Building a memorable product identity through consistent visual language."
+        ]
+      }
+    ],
+    "next": "redrob-llm"
+  },
+  "design-system": {
+    "num": "06",
+    "client": "Design System",
+    "year": "2024",
+    "sector": "Design Systems · UI Kit",
+    "tag": "Scalable Design System",
+    "title": [
+      "Building a unified, accessible and",
+      "developer ready design system"
+    ],
+    "brief": "A design system built from scratch to unify a fast-growing product suite. What began as a scattered set of screens - inconsistent buttons, ad-hoc colors and copy-pasted components - became a single, documented source of truth spanning foundations, a component library and clear usage guidelines.",
+    "facts": [
+      {
+        "k": "Role",
+        "v": "Lead Product Designer"
+      },
+      {
+        "k": "Ownership",
+        "v": "Design System Strategy → Architecture → UX/UI → Documentation → Governance"
+      },
+      {
+        "k": "Collaboration",
+        "v": "Design · Engineering · QA · Product Leadership"
+      },
+      {
+        "k": "Scope",
+        "v": "Foundations · Components · Patterns · Responsive Grid · Accessibility · Documentation · Governance"
+      }
+    ],
+    "cover": {
+      "c1": "#464646",
+      "c2": "#101010",
+      "label": "Design System — Component Library & Foundations",
+      "img": "assets/DesignSystemCover.webp"
+    },
+    "sections": [
+      {
+        "kicker": "Challenge",
+        "body": "There was no centralized design system. Only basic colors style and typography existed which was one of main reason resulting in delay of sprint releases.Below are some more challenges which were faced by the team while working on the product.",
+        "challenges": [
+          {
+            "k": "Designers",
+            "points": [
+              "Rebuilt the same components from scratch in every file",
+              "Buttons, inputs and spacing looked different across products",
+              "No shared library - patterns were copy-pasted and drifted",
+              "Design reviews stuck on consistency instead of the product"
+            ]
+          },
+          {
+            "k": "Developers",
+            "points": [
+              "No single source of truth to build against",
+              "Re-interpreted specs, causing visual and behavioral bugs",
+              "Duplicated, hard-to-maintain component code everywhere",
+              "Slow, error-prone design-to-dev handoff on every feature"
+            ]
+          },
+          {
+            "k": "Product",
+            "points": [
+              "Delayed sprint releases due to constant rework",
+              "Accessibility gaps",
+              "Inconsistent experience weakened product credibility",
+              "Hard to scale and ship new features quickly"
+            ]
+          }
+        ],
+        "body2": ""
+      },
+      {
+        "kicker": "Goal",
+        "body": "Create a scalable design system that becomes the single source of truth for Design and Engineering - enabling teams to build faster, consistently and accessibly.",
+        "items": [
+          {
+            "k": "Scalable",
+            "v": "Support multiple products, teams and future use cases."
+          },
+          {
+            "k": "Accessible",
+            "v": "Designed against WCAG 2.2 AA principles."
+          },
+          {
+            "k": "Documented",
+            "v": "Reduce dependency on individual designers."
+          },
+          {
+            "k": "Developer-ready",
+            "v": "Provide clear specifications, behaviors and implementation guidance."
+          }
+        ]
+      },
+      {
+        "kicker": "My Role",
+        "body": "I led the system end-to-end - from auditing the existing chaos to defining foundations, building components, and rolling it out with documentation and adoption support.",
+        "items": [
+          "Audited existing screens and catalogued every UI inconsistency",
+          "Defined design tokens: color, typography, spacing, radius, elevation",
+          "Designed and built the core component library in Figma with variants and states",
+          "Partnered with engineering on a matching Storybook implementation and handoff docs"
+        ]
+      },
+      {
+        "kicker": "System Architecture",
+        "body": "I structured the system into multiple layers so that it could evolve without creating dependency or duplications. This created a clear relationship between the smallest design decisions and complete product experiences.",
+        "image": "assets/DesignProcess.webp",
+        "imgFull": true
+      },
+      {
+        "kicker": "Foundations",
+        "body": "Before creating components, I established the foundational language of the product.",
+        "table": [
+          {
+            "k": "Color",
+            "v": "Primitive + semantic scales (surface, text, border, accent, state) with AA-checked pairs"
+          },
+          {
+            "k": "Typography",
+            "v": "Modular type scale - display, heading, body, caption - on a single font family"
+          },
+          {
+            "k": "Spacing",
+            "v": "4px base grid with a fixed spacing scale (4 / 8 / 12 / 16 / 24 / 32)"
+          },
+          {
+            "k": "Radius & Elevation",
+            "v": "Consistent corner radius and a 4-step shadow scale for depth"
+          }
+        ]
+      },
+      {
+        "kicker": "Design Tokens",
+        "body": "One of the biggest shifts was moving from individual styling decisions to reusable design decisions. Tokens created a bridge between Figma and code. This made the system easier to maintain and allowed global changes without manually updating every component.",
+        "items": [
+          "Color Tokens — semantic color scales for text, surface, borders, accents and states",
+          "Typography Tokens — modular type scale for display, heading, body, and caption",
+          "Spacing Tokens — 4px base grid with a fixed spacing scale (4 / 8 / 12 / 16 / 24 / 32)",
+          "Radius Tokens — consistent corner radius",
+          "Elevation Tokens — 4-step shadow scale for depth"
+        ]
+      },
+      {
+        "kicker": "Library Components",
+        "body": "Created a centralized framework to eliminate inconsistent component usage.",
+        "breakdown": [
+          {
+            "title": "Iconography",
+            "subtext": "Defined icon library, naming conventions, sizes, states and accessibility considerations"
+          },
+          {
+            "title": "Colors",
+            "subtext": "Defined semantic color scales for text, surface, borders, accents and states. All colors were checked against WCAG 2.2 AA contrast ratios."
+          },
+          {
+            "title": "Input",
+            "subtext": "Designed comprehensive input behavior including: text fields, dropdowns, checkboxes, radio buttons, toggles, and validation states. Each input component was designed for accessibility and usability."
+          },
+          {
+            "title": "Buttons",
+            "subtext": "Established a unified button architecture. Variants include primary, secondary, tertiary, destructive, and disabled states, sizes and other states like hover, focus, loading, disabled and active."
+          }
+        ]
+      },
+      {
+        "kicker": "Documentation",
+        "body": "A design system without documentation becomes another dependency. To ensure adoption, I created clear usage guidelines for every component and pattern, including when to use what, and when not to.",
+        "items": [
+          "What - when - why documentation for every component and pattern",
+          "Accessibility guidelines and contrast ratios for every color and text combination",
+          "Engineering — component specs, props, and implementation guidance",
+          ""
+        ]
+      },
+      {
+        "kicker": "Impact",
+        "body": "The system turned consistency from a debate into a default — and gave every team a faster starting point.",
+        "table": [
+          {
+            "k": "Faster delivery",
+            "v": "Teams could leverage existing components instead of rebuilding common UI patterns."
+          },
+          {
+            "k": "Reduced design dependency and engineering ambiguity",
+            "v": "Designers no longer needed to repeatedly specify basic UI decisions."
+          },
+          {
+            "k": "Easier onboarding",
+            "v": "New team members could learn the product language from one source of truth."
+          },
+          {
+            "k": "Sustainable scalability",
+            "v": "New features could be built by extending an established system rather than creating isolated solutions."
+          }
+        ]
+      },
+      {
+        "kicker": "Key Learning",
+        "body": "Building the system was as much about people as pixels. The biggest lessons:",
+        "items": [
+          "A design system is a product — it needs an owner, a roadmap and versioning.",
+          "Tokens first: getting foundations right makes every downstream change cheap.",
+          "Adoption is a design problem too - documentation and defaults drive real usage.",
+          "Accessibility built in from day one costs far less than retrofitting it later."
         ]
       }
     ],

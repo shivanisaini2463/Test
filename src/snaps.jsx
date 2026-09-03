@@ -1,20 +1,20 @@
 // Snapshot tiles — real project imagery with gradient fillers
 const SNAPS_A = [
-  { label: "AI Pixel Go",           img: "assets/snap-new-ai-pixel-go-1.jpg" },
-  { label: "AI Video Generator",    img: "assets/snap-new-ai-video-generator.jpg" },
-  { label: "Agent Rider",           img: "assets/snap-new-agent-rider.jpg" },
-  { label: "Akina",                 img: "assets/snap-new-akina.jpg" },
-  { label: "Bricsgreen",            img: "assets/snap-new-bricsgreen.jpg" },
-  { label: "Bytelearn",             img: "assets/snap-new-bytelearn.jpg" },
+  { label: "AI Pixel Go",           img: "assets/snap-new-ai-pixel-go-1.webp" },
+  { label: "AI Video Generator",    img: "assets/snap-new-ai-video-generator.webp" },
+  { label: "Agent Rider",           img: "assets/snap-new-agent-rider.webp" },
+  { label: "Akina",                 img: "assets/snap-new-akina.webp" },
+  { label: "Bricsgreen",            img: "assets/snap-new-bricsgreen.webp" },
+  { label: "Bytelearn",             img: "assets/snap-new-bytelearn.webp" },
 ];
 
 const SNAPS_B = [
-  { label: "CCL",                   img: "assets/snap-new-ccl.jpg" },
-  { label: "Cleaner Go",            img: "assets/snap-new-cleaner-go.jpg" },
-  { label: "Grandmama's Café",      img: "assets/snap-new-grandmamas-cafe.jpg" },
-  { label: "Imagine Go",            img: "assets/snap-new-imagine-go.jpg" },
-  { label: "Scanner Go",            img: "assets/snap-new-scanner-go.jpg" },
-  { label: "Sikka Play",            img: "assets/snap-new-sikka-play.jpg" },
+  { label: "CCL",                   img: "assets/snap-new-ccl.webp" },
+  { label: "Cleaner Go",            img: "assets/snap-new-cleaner-go.webp" },
+  { label: "Grandmama's Café",      img: "assets/snap-new-grandmamas-cafe.webp" },
+  { label: "Imagine Go",            img: "assets/snap-new-imagine-go.webp" },
+  { label: "Scanner Go",            img: "assets/snap-new-scanner-go.webp" },
+  { label: "Sikka Play",            img: "assets/snap-new-sikka-play.webp" },
 ];
 
 function SnapTile({ s }) {

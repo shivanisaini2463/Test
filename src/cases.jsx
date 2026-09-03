@@ -4,8 +4,8 @@ const CASES = [
   {
     num: "01",
     slug: "redrob-llm",
-    logo: "assets/logo-case-redrob.png",
-    preview: "assets/RedrobAI.png",
+    logo: "assets/logo-case-redrob.webp",
+    preview: "assets/RedrobAI.webp",
     client: "Redrob LLM",
     year: "2025-26",
     sector: "B2B & B2C",
@@ -23,8 +23,8 @@ const CASES = [
   {
     num: "02",
     slug: "phot-ai",
-    logo: "assets/logo-case-photai.png",
-    preview: "assets/photai-preview.jpg",
+    logo: "assets/logo-case-photai.webp",
+    preview: "assets/photai-preview.webp",
     client: "Phot AI",
     year: "2024-25",
     sector: "AI · Creative Tools with Studio",
@@ -42,8 +42,8 @@ const CASES = [
   {
     num: "03",
     slug: "bcl",
-    logo: "assets/logo-case-bcl.png",
-    preview: "assets/bcl-preview.jpg",
+    logo: "assets/logo-case-bcl.webp",
+    preview: "assets/bcl-preview.webp",
     client: "Big Celebrity League",
     year: "2026",
     sector: "Sports · Entertainment",
@@ -62,8 +62,8 @@ const CASES = [
   {
     num: "04",
     slug: "pritam",
-    logo: "assets/logo-case-pritam.png",
-    preview: "assets/pritam-preview.jpg",
+    logo: "assets/logo-case-pritam.webp",
+    preview: "assets/pritam-preview.webp",
     client: "Pritam Restaurant",
     year: "2024",
     sector: "F&B · Heritage Brand",
@@ -80,22 +80,21 @@ const CASES = [
   },
   {
     num: "05",
-    slug: "pulpy-vpn",
-    logo: "assets/logo-case-pulpyvpn.png",
-    preview: "assets/pulpyvpn-preview.jpg",
-    client: "Pulpy VPN",
-    year: "2023",
-    sector: "Privacy · Consumer App",
-    title: ["Making digital privacy", "feel simple."],
+    slug: "design-system",
+    preview: "assets/DesignSystemCover.webp",
+    client: "Scalable Design System",
+    year: "",
+    sector: "",
+    title: ["From UI Inconsistency to a", "Scalable Product Foundation"],
     titleHighlight: 1,
-    description: "Built a consumer VPN experience that removes complexity from online security through intuitive onboarding, clear interactions, and a seamless everyday experience.",
+    description: "Building a unified, accessible and developer-ready design system that accelerated product delivery and reduced design & engineering dependency.",
     impact: [
-      { k: "Downloads", v: "100K+" },
-      { k: "Avg. onboarding", v: "88s" },
-      { k: "Play store rating", v: "4.2" },
+      { k: "Core components", v: "12+" },
+      { k: "Design principles", v: "4" },
+      { k: "Component states", v: "5" },
     ],
     visual: { c1: "#464646", c2: "#101010", accent: "#f0f0f0" },  /* Mono — grey */
-    live: "https://in.appyhigh.com/products/pulpy-vpn?sku_id=38266226",
+    ctaLabel: "Explore More",
   },
 ];
 
@@ -104,7 +103,7 @@ function RedrobVisual({ active }) {
   return (
     <div className={"case-visual pv-frame pv-frame-tint " + (active ? "active" : "")}>
       <img
-        src="assets/RedrobAI.png"
+        src="assets/RedrobAI.webp"
         alt="Redrob LLM — AI Intelligence Workspace"
         className="pv-svg-img pv-svg-img-contain"
       />
@@ -117,7 +116,7 @@ function PritamVisual({ active }) {
   return (
     <div className={"case-visual pv-frame " + (active ? "active" : "")}>
       <img
-        src="assets/pritam-preview.jpg"
+        src="assets/pritam-preview.webp"
         alt="Pritam Restaurant — 80 Years of Legacy"
         className="pv-svg-img"
       />
@@ -130,7 +129,7 @@ function PhotAIVisual({ active }) {
   return (
     <div className={"case-visual pv-frame " + (active ? "active" : "")}>
       <img
-        src="assets/MainCOver.png"
+        src="assets/MainCOver.webp"
         alt="Phot AI — AI Creative Studio"
         className="pv-svg-img pv-svg-img-contain"
       />
@@ -143,7 +142,7 @@ function BCLVisual({ active }) {
   return (
     <div className={"case-visual pv-frame " + (active ? "active" : "")}>
       <img
-        src="assets/bcl-preview.jpg"
+        src="assets/bcl-preview.webp"
         alt="Big Celebrity League — Cricket meets celebrity culture"
         className="pv-svg-img"
       />
@@ -151,13 +150,13 @@ function BCLVisual({ active }) {
   );
 }
 
-/* ── Pulpy VPN custom visual ── */
-function PulpyVisual({ active }) {
+/* ── Design System custom visual ── */
+function DesignSystemVisual({ active }) {
   return (
     <div className={"case-visual pv-frame " + (active ? "active" : "")}>
       <img
-        src="assets/pulpyvpn-preview.jpg"
-        alt="Pulpy VPN — Privacy, finally feels effortless"
+        src="assets/DesignSystemCover.webp"
+        alt="Design System — component library cover"
         className="pv-svg-img"
       />
     </div>
@@ -169,7 +168,7 @@ function CaseVisual({ c, active }) {
   if (c.slug === "phot-ai")    return <PhotAIVisual active={active} />;
   if (c.slug === "bcl")        return <BCLVisual    active={active} />;
   if (c.slug === "pritam")     return <PritamVisual active={active} />;
-  if (c.slug === "pulpy-vpn")  return <PulpyVisual  active={active} />;
+  if (c.slug === "design-system") return <DesignSystemVisual active={active} />;
   return (
     <div className={"case-visual " + (active ? "active" : "")}
       style={{background:`linear-gradient(135deg, ${c.visual.c1} 0%, ${c.visual.c2} 100%)`}}>
@@ -261,7 +260,9 @@ function CaseRow({ c, index }) {
 
       <div className="case-info case-row-info">
         <div className="meta">
-          <span>{c.client}</span><span>{c.year}</span><span>{c.sector}</span>
+          {[c.client, c.year, c.sector].filter(Boolean).map((m, i) => (
+            <span key={i}>{m}</span>
+          ))}
         </div>
         <h3>
           {c.title.map((line, li) => (
@@ -283,14 +284,14 @@ function CaseRow({ c, index }) {
         </div>
 
         <div className="ctas" style={{marginTop:32}}>
-          {c.locked ? (
+          {c.noPage ? null : c.locked ? (
             <button type="button" className="btn primary" data-cursor="open" onClick={() => setShowGate(true)}>
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="currentColor" strokeWidth="1.8"/><path d="M8 11V7a4 4 0 0 1 8 0v4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/></svg>
               Unlock Casestudy
             </button>
           ) : (
             <a href={"case-" + c.slug + ".html"} className="btn primary" data-cursor="open">
-              View case study
+              {c.ctaLabel || "View case study"}
               <svg className="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M7 17 L17 7 M9 7 H17 V15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </a>
           )}

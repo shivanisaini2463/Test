@@ -203,13 +203,28 @@ function PhaseSection({ phase, index, reveal }) {
 }
 
 /* ---------- Generic flexible section — used for simpler, non-phase case studies ---------- */
-function GenericSection({ kicker, body, body2, items, table, image, imgFit, imgFull, breakdown, alt }) {
+function GenericSection({ kicker, body, body2, items, table, image, imgFit, imgFull, breakdown, challenges, alt }) {
   return (
     <section className={"cd-section" + (alt ? " cd-alt" : "")}>
       <div className="container cd-grid">
         <div className="cd-left"><CaseKicker>{kicker}</CaseKicker></div>
         <div className="cd-right">
           {body && <p className="cd-p">{body}</p>}
+          {challenges && (
+            <div className="cd-artifacts" style={{marginTop: body ? 8 : 0}}>
+              {challenges.map((c, i) => (
+                <div className="cd-artifact" key={i}>
+                  <div className="cd-challenge-k">{c.k}</div>
+                  {c.v && <div className="cd-challenge-v">{c.v}</div>}
+                  {c.points && (
+                    <ul className="cd-challenge-list">
+                      {c.points.map((pt, j) => <li key={j}>{pt}</li>)}
+                    </ul>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
           {items && (
             <ul className="cd-summary-list" style={{marginTop: body ? 8 : 0, marginBottom: body2 || image ? 32 : 0}}>
               {items.map((it, i) => (

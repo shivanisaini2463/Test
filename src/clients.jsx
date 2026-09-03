@@ -1,14 +1,14 @@
 // Client logo grid — real PNG logos, 5×2 grid, synchronised flash animation
 
 const LOGOS = [
-  { id: "tata",       src: "assets/logo-tata-mono.png",       alt: "TATA Mutual Fund" },
-  { id: "poonawalla", src: "assets/logo-poonawalla-mono.png", alt: "Poonawalla Fincorp" },
-  { id: "redrob",     src: "assets/logo-redrob-mono.png",     alt: "Redrob" },
-  { id: "photai",     src: "assets/logo-photai-mono.png",     alt: "Phot AI" },
-  { id: "akina",      src: "assets/logo-akina-mono.png",      alt: "Akina" },
-  { id: "wwi",        src: "assets/logo-wwi-mono.png",        alt: "WWI Virtual Academy" },
+  { id: "tata",       src: "assets/logo-tata-mono.webp",       alt: "TATA Mutual Fund" },
+  { id: "poonawalla", src: "assets/logo-poonawalla-mono.webp", alt: "Poonawalla Fincorp" },
+  { id: "redrob",     src: "assets/logo-redrob-mono.webp",     alt: "Redrob" },
+  { id: "photai",     src: "assets/logo-photai-mono.webp",     alt: "Phot AI" },
+  { id: "akina",      src: "assets/logo-akina-mono.webp",      alt: "Akina" },
+  { id: "wwi",        src: "assets/logo-wwi-mono.webp",        alt: "WWI Virtual Academy" },
   { id: "bcl",        alt: "Big Celebrity League", text: "Big Celebrity League" },
-  { id: "pritam",     src: "assets/logo-pritam-mono.png",     alt: "Pritam da Dhaba" },
+  { id: "pritam",     src: "assets/logo-pritam-mono.webp",     alt: "Pritam da Dhaba" },
 ];
 
 function LogoCell({ logo }) {

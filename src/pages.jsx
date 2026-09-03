@@ -5,81 +5,81 @@ const WORK_CATS = [
     id: "fnb",
     name: "F&B",
     projects: [
-      { t: "Gupta Brands",          s: "Multi-brand F&B identity system",       c1: "#1c1c1c", img: "assets/work-gupta-brands.jpg" },
-      { t: "Grandmama's Café",      s: "Comfort dining, served with nostalgia", c1: "#242424", img: "assets/work-grandmamas.jpg" },
-      { t: "Akina",                 s: "Contemporary Japanese dining",          c1: "#2a2a2a", img: "assets/work-akina.jpg" },
-      { t: "The Food Town",         s: "QR-first ordering for dine-in crowds",  c1: "#1a1a1a", img: "assets/work-foodtown.jpg" },
-      { t: "Taftoon Bar & Kitchen", s: "Modern Indian brasserie, redesigned",   c1: "#303030", img: "assets/work-taftoon.jpg" },
-      { t: "Qinling",               s: "Refined Chinese dining, digitised",     c1: "#222222", img: "assets/work-qinling.jpg" },
-      { t: "SpiceKlub",             s: "Bold flavours, bolder digital presence",c1: "#282828", img: "assets/work-spiceklub.jpg" },
-      { t: "Rolling Pin",           s: "Artisan bakery brand & ordering app",   c1: "#1e1e1e", img: "assets/work-rollingpin.jpg" },
+      { t: "Gupta Brands",          s: "Multi-brand F&B identity system",       c1: "#1c1c1c", img: "assets/work-gupta-brands.webp" },
+      { t: "Grandmama's Café",      s: "Comfort dining, served with nostalgia", c1: "#242424", img: "assets/work-grandmamas.webp" },
+      { t: "Akina",                 s: "Contemporary Japanese dining",          c1: "#2a2a2a", img: "assets/work-akina.webp" },
+      { t: "The Food Town",         s: "QR-first ordering for dine-in crowds",  c1: "#1a1a1a", img: "assets/work-foodtown.webp" },
+      { t: "Taftoon Bar & Kitchen", s: "Modern Indian brasserie, redesigned",   c1: "#303030", img: "assets/work-taftoon.webp" },
+      { t: "Qinling",               s: "Refined Chinese dining, digitised",     c1: "#222222", img: "assets/work-qinling.webp" },
+      { t: "SpiceKlub",             s: "Bold flavours, bolder digital presence",c1: "#282828", img: "assets/work-spiceklub.webp" },
+      { t: "Rolling Pin",           s: "Artisan bakery brand & ordering app",   c1: "#1e1e1e", img: "assets/work-rollingpin.webp" },
     ],
   },
   {
     id: "ai",
     name: "AI-based",
     projects: [
-      { t: "Kyral AI",               s: "AI-powered productivity suite for modern teams",      c1: "#1c1c1c", img: "assets/work-kyral.jpg" },
-      { t: "AI Beauty App",          s: "Personalised AI skincare & beauty analysis app",      c1: "#242424", img: "assets/work-beauty-app.jpg" },
-      { t: "AI Pixel Go",            s: "One-tap AI image enhancement for mobile",             c1: "#2a2a2a", img: "assets/work-ai-pixel-go.jpg" },
-      { t: "Kuwaiti Bot",            s: "Conversational AI chatbot for Gulf market users",     c1: "#1a1a1a", img: "assets/work-kuwaiti-bot.jpg" },
-      { t: "AI Avatar Generator",    s: "Generative AI portrait studio for digital identities",c1: "#303030", img: "assets/work-ai-avatar.jpg" },
-      { t: "Pictoon",                s: "AI-driven cartoon & illustration creator app",        c1: "#222222", img: "assets/work-pictoon.jpg" },
-      { t: "AI Video Generator",     s: "Text-to-video AI tool for creators & marketers",     c1: "#282828", img: "assets/work-ai-video-gen.jpg" },
-      { t: "Imagine Go",             s: "AI image generation platform for visual storytelling",c1: "#1e1e1e", img: "assets/work-imagine-go.jpg" },
+      { t: "Kyral AI",               s: "AI-powered productivity suite for modern teams",      c1: "#1c1c1c", img: "assets/work-kyral.webp" },
+      { t: "AI Beauty App",          s: "Personalised AI skincare & beauty analysis app",      c1: "#242424", img: "assets/work-beauty-app.webp" },
+      { t: "AI Pixel Go",            s: "One-tap AI image enhancement for mobile",             c1: "#2a2a2a", img: "assets/work-ai-pixel-go.webp" },
+      { t: "Kuwaiti Bot",            s: "Conversational AI chatbot for Gulf market users",     c1: "#1a1a1a", img: "assets/work-kuwaiti-bot.webp" },
+      { t: "AI Avatar Generator",    s: "Generative AI portrait studio for digital identities",c1: "#303030", img: "assets/work-ai-avatar.webp" },
+      { t: "Pictoon",                s: "AI-driven cartoon & illustration creator app",        c1: "#222222", img: "assets/work-pictoon.webp" },
+      { t: "AI Video Generator",     s: "Text-to-video AI tool for creators & marketers",     c1: "#282828", img: "assets/work-ai-video-gen.webp" },
+      { t: "Imagine Go",             s: "AI image generation platform for visual storytelling",c1: "#1e1e1e", img: "assets/work-imagine-go.webp" },
     ],
   },
   {
     id: "edtech",
     name: "Ed-tech",
     projects: [
-      { t: "WWI Virtual Academy", s: "Media education for the digital age",       c1: "#1c1c1c", img: "assets/work-wwi.jpg" },
-      { t: "eVidya",              s: "Accessible e-learning for every learner",   c1: "#242424", img: "assets/work-evidya.jpg" },
-      { t: "Bytelearn",           s: "Personalised coding education platform",    c1: "#2a2a2a", img: "assets/work-bytelearn.jpg" },
-      { t: "Elite Education",     s: "Premium tutoring platform, built to scale", c1: "#1a1a1a", img: "assets/work-elite.jpg" },
+      { t: "WWI Virtual Academy", s: "Media education for the digital age",       c1: "#1c1c1c", img: "assets/work-wwi.webp" },
+      { t: "eVidya",              s: "Accessible e-learning for every learner",   c1: "#242424", img: "assets/work-evidya.webp" },
+      { t: "Bytelearn",           s: "Personalised coding education platform",    c1: "#2a2a2a", img: "assets/work-bytelearn.webp" },
+      { t: "Elite Education",     s: "Premium tutoring platform, built to scale", c1: "#1a1a1a", img: "assets/work-elite.webp" },
     ],
   },
   {
     id: "gaming",
     name: "Gaming & Sports",
     projects: [
-      { t: "Big Celebrity League",      s: "Celebrity cricket fantasy platform for India",        c1: "#303030", img: "assets/work-bcl.jpg" },
-      { t: "Fantom Play",               s: "Fantasy sports & real-time fan engagement app",       c1: "#222222", img: "assets/work-fantomplay.jpg" },
-      { t: "Sikka Play",                s: "Skill-based gaming platform with real rewards",       c1: "#282828", img: "assets/work-sikkaplay.jpg" },
-      { t: "Celebrity Cricket League",  s: "Live cricket experience for celebrity team fans",     c1: "#1e1e1e", img: "assets/work-ccl.jpg" },
+      { t: "Big Celebrity League",      s: "Celebrity cricket fantasy platform for India",        c1: "#303030", img: "assets/work-bcl.webp" },
+      { t: "Fantom Play",               s: "Fantasy sports & real-time fan engagement app",       c1: "#222222", img: "assets/work-fantomplay.webp" },
+      { t: "Sikka Play",                s: "Skill-based gaming platform with real rewards",       c1: "#282828", img: "assets/work-sikkaplay.webp" },
+      { t: "Celebrity Cricket League",  s: "Live cricket experience for celebrity team fans",     c1: "#1e1e1e", img: "assets/work-ccl.webp" },
     ],
   },
   {
     id: "entertainment",
     name: "Entertainment & Media",
     projects: [
-      { t: "Needy",       s: "Social platform connecting people through shared needs",  c1: "#1c1c1c", img: "assets/work-needy.jpg" },
-      { t: "Flyer",       s: "Event discovery & social nightlife planning app",         c1: "#242424", img: "assets/work-flyer.jpg" },
-      { t: "Eventy",      s: "End-to-end event ticketing & experience platform",        c1: "#2a2a2a", img: "assets/work-eventy.jpg" },
-      { t: "Masterfeed",  s: "Personalised content feed for creators & consumers",     c1: "#1a1a1a", img: "assets/work-masterfeed.jpg" },
+      { t: "Needy",       s: "Social platform connecting people through shared needs",  c1: "#1c1c1c", img: "assets/work-needy.webp" },
+      { t: "Flyer",       s: "Event discovery & social nightlife planning app",         c1: "#242424", img: "assets/work-flyer.webp" },
+      { t: "Eventy",      s: "End-to-end event ticketing & experience platform",        c1: "#2a2a2a", img: "assets/work-eventy.webp" },
+      { t: "Masterfeed",  s: "Personalised content feed for creators & consumers",     c1: "#1a1a1a", img: "assets/work-masterfeed.webp" },
     ],
   },
   {
     id: "realestate",
     name: "Real Estate",
     projects: [
-      { t: "Condo Kharido", s: "Smart property search & buying platform",   c1: "#303030", img: "assets/work-condo-kharido.jpg" },
-      { t: "Builder CRM",   s: "End-to-end CRM for real estate developers", c1: "#222222", img: "assets/work-builder-crm.jpg" },
-      { t: "Agent Rider",   s: "Field agent app for on-ground property ops", c1: "#282828", img: "assets/work-agent-rider.jpg" },
+      { t: "Condo Kharido", s: "Smart property search & buying platform",   c1: "#303030", img: "assets/work-condo-kharido.webp" },
+      { t: "Builder CRM",   s: "End-to-end CRM for real estate developers", c1: "#222222", img: "assets/work-builder-crm.webp" },
+      { t: "Agent Rider",   s: "Field agent app for on-ground property ops", c1: "#282828", img: "assets/work-agent-rider.webp" },
     ],
   },
   {
     id: "misc",
     name: "Miscellaneous",
     projects: [
-      { t: "TV Lens",         s: "AI-powered TV content discovery platform",           c1: "#1e1e1e", img: "assets/work-tv-lens.jpg" },
-      { t: "Cleaner Go",      s: "Smart phone cleaner & storage optimiser app",        c1: "#1c1c1c", img: "assets/work-cleaner-go.jpg" },
-      { t: "Steelora",        s: "B2B steel procurement & supply chain platform",      c1: "#242424", img: "assets/work-steelora.jpg" },
-      { t: "Share Karo",      s: "Fast peer-to-peer file sharing app for mobile",      c1: "#2a2a2a", img: "assets/work-share-karo.jpg" },
-      { t: "Stock",           s: "Real-time stock portfolio tracking & alerts app",    c1: "#1a1a1a", img: "assets/work-stock.jpg" },
-      { t: "Bricsgreen",      s: "Sustainable investment platform for green projects", c1: "#303030", img: "assets/work-bricsgreen.jpg" },
-      { t: "Scanner Go",      s: "AI-powered document scanner & PDF converter app",   c1: "#222222", img: "assets/work-scanner-go.jpg" },
-      { t: "Screen Recorder", s: "Lightweight screen recording & editing tool",        c1: "#282828", img: "assets/work-screen-recorder.jpg" },
+      { t: "TV Lens",         s: "AI-powered TV content discovery platform",           c1: "#1e1e1e", img: "assets/work-tv-lens.webp" },
+      { t: "Cleaner Go",      s: "Smart phone cleaner & storage optimiser app",        c1: "#1c1c1c", img: "assets/work-cleaner-go.webp" },
+      { t: "Steelora",        s: "B2B steel procurement & supply chain platform",      c1: "#242424", img: "assets/work-steelora.webp" },
+      { t: "Share Karo",      s: "Fast peer-to-peer file sharing app for mobile",      c1: "#2a2a2a", img: "assets/work-share-karo.webp" },
+      { t: "Stock",           s: "Real-time stock portfolio tracking & alerts app",    c1: "#1a1a1a", img: "assets/work-stock.webp" },
+      { t: "Bricsgreen",      s: "Sustainable investment platform for green projects", c1: "#303030", img: "assets/work-bricsgreen.webp" },
+      { t: "Scanner Go",      s: "AI-powered document scanner & PDF converter app",   c1: "#222222", img: "assets/work-scanner-go.webp" },
+      { t: "Screen Recorder", s: "Lightweight screen recording & editing tool",        c1: "#282828", img: "assets/work-screen-recorder.webp" },
     ],
   },
 ];
@@ -163,10 +163,12 @@ function RailCard({ c }) {
             <div key={ii}><b>{m.v}</b><span>{m.k}</span></div>
           ))}
         </div>
-        <div className="rail-go">
-          <span>{c.locked ? "Unlock Casestudy" : "View Casestudy"}</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17 L17 7 M9 7 H17 V15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-        </div>
+        {!c.noPage && (
+          <div className="rail-go">
+            <span>{c.locked ? "Unlock Casestudy" : "View Casestudy"}</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M7 17 L17 7 M9 7 H17 V15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          </div>
+        )}
       </div>
     </>
   );
@@ -187,6 +189,10 @@ function RailCard({ c }) {
         )}
       </>
     );
+  }
+
+  if (c.noPage) {
+    return <div className="rail-card">{card}</div>;
   }
 
   return (
@@ -374,7 +380,7 @@ const TESTIMONIALS = [
     n: "Victor Samson",
     d: "Principal Engineering Lead at McKinley Rice",
     init: "VS",
-    img: "assets/Victor.jpg",
+    img: "assets/Victor.webp",
     c1: "#242424", c2: "#101010",
   },
   {
@@ -382,7 +388,7 @@ const TESTIMONIALS = [
     n: "Tejal Temkar",
     d: "Product Designer, Growth & Conversion Optimization",
     init: "TT",
-    img: "assets/Tejal.jpg",
+    img: "assets/Tejal.webp",
     c1: "#242424", c2: "#0d0d0d",
   },
   {
@@ -390,7 +396,7 @@ const TESTIMONIALS = [
     n: "Divyansh Jaiswal",
     d: "Backend Engineer, Senior SDE / Tech Lead",
     init: "DJ",
-    img: "assets/Divyansh.jpg",
+    img: "assets/Divyansh.webp",
     c1: "#222222", c2: "#141414",
   },
   {
@@ -398,7 +404,7 @@ const TESTIMONIALS = [
     n: "Nishant Kumar",
     d: "Sr. Backend Developer II, Project Lead",
     init: "NK",
-    img: "assets/Nishant.jpg",
+    img: "assets/Nishant.webp",
     c1: "#1c1c1c", c2: "#2a2a2a",
   },
   {
@@ -406,7 +412,7 @@ const TESTIMONIALS = [
     n: "Aiyush Kumar",
     d: "Backend Engineer @ Redrob",
     init: "AK",
-    img: "assets/Aiyush.jpg",
+    img: "assets/Aiyush.webp",
     c1: "#2a2a2a", c2: "#151515",
   },
   {
@@ -414,7 +420,7 @@ const TESTIMONIALS = [
     n: "Rishabh Utekar",
     d: "UX Designer @ TechStalwarts",
     init: "RU",
-    img: "assets/Rishabh.jpg",
+    img: "assets/Rishabh.webp",
     c1: "#1a1a1a", c2: "#262626",
   },
   {
@@ -422,7 +428,7 @@ const TESTIMONIALS = [
     n: "Sumit Sharma",
     d: "Lead Product Designer / Product Owner",
     init: "SS",
-    img: "assets/Sumit.jpg",
+    img: "assets/Sumit.webp",
     c1: "#1e1e1e", c2: "#1a1a1a",
   },
   {
@@ -430,7 +436,7 @@ const TESTIMONIALS = [
     n: "Tuyam Tushar Medhi",
     d: "Associate Software Developer",
     init: "TM",
-    img: "assets/Tuyam.jpg",
+    img: "assets/Tuyam.webp",
     c1: "#1c1c1c", c2: "#242424",
   },
 ];
